@@ -2,20 +2,23 @@
   <div id="app">
   {{ $store.state.count }}
 
-  {{evenOrOdd}}
-  {{yOrn}}
+  <!-- {{evenOrOdd}} -->
+  <!-- {{yOrn}} -->
     <img src="./assets/logo.png">
-    <Menu></Menu>
+    <HomePage v-if="true"></HomePage>
+    <!-- <Menu></Menu> -->
     <router-view/>
   </div>
 </template>
 
 <script>
 import { mapGetters } from 'vuex'
+import HomePage from './components/home/home'
 import Menu from './components/Menu'
 export default {
   name: 'app',
   components: {
+    HomePage,
     Menu
   },
   computed: mapGetters([
