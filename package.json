@@ -2,15 +2,19 @@
   "name": "fooodie2",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "karan <kverma@encyclokidia.com>",
+  "author": "supi",
   "private": true,
+  "config": {
+    "src": "./src"
+  },
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "npm run dev",
     "build": "node build/build.js",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "test": "npm run unit",
-    "lint": "eslint --ext .js,.vue src test/unit/specs"
+    "lint": "eslint --ext .js,.vue src test/unit/specs",
+    "commitmsg": "validate-commit-msg"
   },
   "dependencies": {
     "vue": "^2.5.2",
@@ -43,6 +47,7 @@
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^3.0.1",
     "eventsource-polyfill": "^0.9.6",
+    "es6-promise": "^4.1.1",
     "express": "^4.14.1",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^1.1.4",
@@ -75,7 +80,11 @@
     "validate-commit-msg": "^2.14.0",
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.1",
+    "style-loader": "^0.18.2",
     "vue-template-compiler": "^2.5.2",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "smoothscroll-polyfill": "^0.3.6",
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-middleware": "^1.12.0",

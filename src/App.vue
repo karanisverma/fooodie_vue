@@ -1,18 +1,19 @@
 <template>
   <div id="app">
-  {{ $store.state.count }}
+  <!-- {{ $store.state.count }} -->
 
   <!-- {{evenOrOdd}} -->
   <!-- {{yOrn}} -->
-    <img src="./assets/logo.png">
-    <HomePage v-if="true"></HomePage>
+    <!-- <img src="./assets/logo.png"> -->
+    <!-- <HomePage></HomePage> -->
     <!-- <Menu></Menu> -->
     <router-view/>
   </div>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import './app.scss'
+// import { mapGetters } from 'vuex'
 import HomePage from './components/home/home'
 import Menu from './components/Menu'
 export default {
@@ -20,21 +21,11 @@ export default {
   components: {
     HomePage,
     Menu
-  },
-  computed: mapGetters([
-    'evenOrOdd',
-    'yOrn'
-  ])
+  }
+  // ,
+  // computed: mapGetters([
+  //   'evenOrOdd',
+  //   'yOrn'
+  // ])
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
