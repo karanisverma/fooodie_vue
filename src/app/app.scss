@@ -1,0 +1,27 @@
+body {
+	width: 25%;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #ccc;
+  /*margin-top: 60px;*/
+}
+
+
+@media screen and (max-width: 48em) {
+	body {
+		width: 100%;
+	}
+
+}

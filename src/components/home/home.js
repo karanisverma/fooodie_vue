@@ -1,24 +1,25 @@
 // import HomePage from './home.vue'
 // export default HomePage
 
-// import store from './store/store'
 export default {
   name: 'HomePage',
   // data () {
 
   // },
-  // computed: {
-  //   allNewItems () {
-
-  //   }
-  // },
+  computed: {
+    allNewItems () {
+      const Item = this.$store.state
+      return Item.allNewCategory
+    }
+  },
   created () {
     this.getAllNewItems()
   },
   methods: {
     getAllNewItems () {
-      const {Item} = this.$store.state
-      console.log('itemmmm')
+      // const {Item} = this.$store.state
+      const Item = this.$store.state
+      console.log('itemmmm', Item)
       Item.newCategory().then(res => {
         let data = res.json()
         console.log('dataaaaaaa', data)
@@ -26,21 +27,10 @@ export default {
       })
       .then(data => {
         if (data) {
-          // Item.allTripDetails = data;
+          Item.allNewCategory = data
           console.log('data==>', data)
         }
       })
     }
   }
 }
-
-// export default
-// {
-//   name: 'HomePage',
-//   components: {
-//     HomePage
-//   },
-//   method: {
-
-//   }
-// }

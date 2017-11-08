@@ -2,10 +2,11 @@
   <div class="home-page">
     <div class="home-banner">new</div>
     <div class="new-products">
-    	<div class="product">
-    		1
+    	<div class="product" v-for="item in allNewItems">
+            <img :src="item.image">
+    		<!-- {{item}} -->
     	</div>
-    	<div class="product">
+    	<!-- <div class="product">
     		2
     	</div>
     	<div class="product">
@@ -16,7 +17,7 @@
     	</div>
     	<div class="product">
     		5
-    	</div>
+    	</div> -->
     </div>
 
     <div class="all-category">
