@@ -10,6 +10,7 @@ export default new Router({
       path: '/',
       name: 'HomePage',
       component: HomePage
+      // component: () => import(/* webpackChunkName: "page-home" */ '@/components/home')
     }
   ]
 })
