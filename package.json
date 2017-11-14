@@ -17,12 +17,13 @@
     "commitmsg": "validate-commit-msg"
   },
   "dependencies": {
-    "vue": "^2.5.2",
-    "vue-router": "^3.0.1",
-    "vuex": "^3.0.0",
+    "babel-plugin-dynamic-import-node": "^1.1.0",
     "babel-plugin-module-resolver": "^2.7.1",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
-    "babel-plugin-dynamic-import-node": "^1.1.0"
+    "node": "^9.1.0",
+    "vue": "^2.5.2",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

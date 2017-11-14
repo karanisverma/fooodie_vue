@@ -8,8 +8,8 @@
 
 import Vue from 'vue'
 import App from './app.vue'
-import router from '../router'
-import store from '../store/store.js'
+import router from '~/router'
+import store from '~/store/store.js'
 
 Vue.config.productionTip = false
 Vue.performance = true
