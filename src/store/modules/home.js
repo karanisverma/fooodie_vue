@@ -2,9 +2,9 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 Vue.use(Vuex)
 
-class ProductState {
+class HomeState {
   constructor () {
-    this.name = 'Item'
+    this.name = 'Home'
     this.allNewCategory = []
   }
   // Fetching data for new category
@@ -16,7 +16,7 @@ class ProductState {
 }
 
 export default new Vuex.Store({
-  state: new ProductState()
+  state: new HomeState()
 })
 
 // const state = {

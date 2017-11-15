@@ -1,6 +1,3 @@
-// import HomePage from './home.vue'
-// export default HomePage
-
 export default {
   name: 'HomePage',
   // data () {
@@ -8,8 +5,8 @@ export default {
   // },
   computed: {
     allNewItems () {
-      const Item = this.$store.state
-      return Item.allNewCategory
+      const {Home} = this.$store.state
+      return Home.allNewCategory
     }
   },
   created () {
@@ -17,18 +14,15 @@ export default {
   },
   methods: {
     getAllNewItems () {
-      // const {Item} = this.$store.state
-      const Item = this.$store.state
-      console.log('itemmmm', Item)
-      Item.newCategory().then(res => {
+      const {Home} = this.$store.state
+      Home.newCategory().then(res => {
         let data = res.json()
-        console.log('dataaaaaaa', data)
         return Promise.resolve(data)
       })
       .then(data => {
         if (data) {
-          Item.allNewCategory = data
-          console.log('data==>', data)
+          Home.allNewCategory = data
+          // console.log('data==>', data)
         }
       })
     }
