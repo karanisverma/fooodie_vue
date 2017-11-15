@@ -11,7 +11,12 @@ export default new Router({
       path: '/',
       name: 'HomePage',
       // component: HomePage
-      component: () => import(/* webpackChunkName: "page-home" */ '../components/home')
+      component: () => import(/* webpackChunkName: "page-home" */ '../pages/home')
+    },
+    {
+      path: '/menu-list',
+      name: 'MenuList',
+      component: () => import(/* webpackChunkName: "page-menu-list" */ '../pages/menu-list')
     }
   ]
 })

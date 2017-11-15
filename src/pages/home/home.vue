@@ -3,8 +3,8 @@
     <div class="home-banner">new</div>
     <div class="new-products">
     	<div class="product" v-for="item in allNewItems">
-            <img :src="item.image">
-    		<!-- {{item}} -->
+            <img :src="item.name">
+    		<!-- {{item.image}} -->
     	</div>
     	<!-- <div class="product">
     		2

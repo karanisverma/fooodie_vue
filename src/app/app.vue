@@ -14,8 +14,8 @@
 <script>
 import './app.scss'
 // import { mapGetters } from 'vuex'
-import HomePage from '../components/home/home'
-import Menu from '../components/Menu'
+import HomePage from '~/pages/home'
+import Menu from '../pages/menu-list'
 export default {
   name: 'app',
   components: {
