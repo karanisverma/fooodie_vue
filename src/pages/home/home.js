@@ -1,8 +1,23 @@
+import Toolbar from '~/components/toolbar'
 export default {
   name: 'HomePage',
-  // data () {
-
-  // },
+  components: {
+    Toolbar
+  },
+  data () {
+    return {
+      toolbarProps: {
+        title: {
+          text: 'hello',
+          position: 'left'
+        },
+        leftAction: {
+          icon: 'arrow_back'
+          // method: () => this.$router.back()
+        }
+      }
+    }
+  },
   computed: {
     allNewItems () {
       const {Home} = this.$store.state

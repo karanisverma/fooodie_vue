@@ -1,0 +1,134 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+:not(input):not(textarea):not(button) {
+  -webkit-touch-callout: none;
+  user-select: none;
+  // -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.d-b {
+  display: block;
+}
+.d-f {
+  display: flex;
+}
+.f-1 {
+  flex: 1;
+}
+.fd-r {
+  flex-direction: row;
+}
+.fd-c {
+  flex-direction: column;
+}
+.fw-w {
+  flex-wrap: wrap;
+}
+.jc-sb {
+  justify-content: space-between;
+}
+.jc-sa {
+  justify-content: space-around;
+}
+.jc-fe{
+  justify-content: flex-end;
+}
+.jc-c {
+  justify-content: center;
+}
+.ai-c {
+  align-items: center;
+}
+.ai-l {
+  align-items: left;
+}
+.as-fs {
+  align-self: flex-start;
+}
+.as-fe {
+  align-self: flex-end;
+}
+.fs-0 {
+  flex-shrink: 0;
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+.material-icons.md-24 {
+  font-size: 24px;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+}
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+body {
+  background: #fff;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  background-color: #efefef;
+}
+
+// ::-webkit-scrollbar{
+//   display:none
+// }
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media only screen
+  and (min-width: 450px)
+  and (max-width: 780px)
+  and (orientation: landscape) {
+
+  body, html {
+    overflow: hidden;
+  }
+
+  .orientation-landscape {
+    display: flex!important;
+  }
+}
+
+.page-home {
+  .page-container {
+    &.has-open-search-field {
+      overflow: hidden;
+    }
+  }
+
+  .top {
+    background: rgba(#000, .5);
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    margin-bottom: 20px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(#000, .5);
+    }
+  }
+}

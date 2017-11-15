@@ -1,5 +1,6 @@
 <template>
   <div class="home-page">
+    <Toolbar v-bind="toolbarProps"/>
     <div class="home-banner">new</div>
     <div class="new-products">
     	<div class="product" v-for="item in allNewItems">
