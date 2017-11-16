@@ -122,23 +122,6 @@
     flex: 1;
     margin: 0 5px;
   }
-
-  &:before,
-  &:after {
-    content: '';
-    display: block;
-    width: 10px;
-    height: 10px;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  &:before {
-    background-image: url('/img/icons/ic-green.svg');
-  }
-  &:after {
-    background-image: url('/img/icons/ic-red.svg');
-  }
 }
 
 .dummy-field {

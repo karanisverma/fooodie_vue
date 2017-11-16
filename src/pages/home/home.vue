@@ -1,6 +1,8 @@
 <template>
   <div class="home-page">
-    <Toolbar v-bind="toolbarProps"/>
+    <Toolbar
+      v-bind="toolbarProps"
+      @toggleSidebar="$emit('toggleSidebar');"/>
     <div class="home-banner">new</div>
     <div class="new-products">
     	<div class="product" v-for="item in allNewItems">

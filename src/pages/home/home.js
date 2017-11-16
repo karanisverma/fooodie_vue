@@ -8,11 +8,12 @@ export default {
     return {
       toolbarProps: {
         title: {
-          text: 'hello',
+          text: 'Home',
           position: 'left'
         },
         leftAction: {
-          icon: 'arrow_back'
+          icon: 'menu',
+          method: () => this.$emit('toggleSidebar')
           // method: () => this.$router.back()
         }
       }

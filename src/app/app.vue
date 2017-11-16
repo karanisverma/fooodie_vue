@@ -1,31 +1,28 @@
 <template>
   <div id="app">
+    <router-view @toggleSidebar="showSidebar = !showSidebar"></router-view>
   <!-- {{ $store.state.count }} -->
 
   <!-- {{evenOrOdd}} -->
   <!-- {{yOrn}} -->
-    <!-- <img src="./assets/logo.png"> -->
-    <!-- <HomePage></HomePage> -->
     <!-- <Menu></Menu> -->
-    <router-view/>
+    <!-- <router-view/> -->
+    <sidebar :show.sync="showSidebar"/>
   </div>
 </template>
 
 <script>
 import './app.scss'
+import app from './app'
+export default app
 // import { mapGetters } from 'vuex'
-import HomePage from '~/pages/home'
-import Menu from '../pages/menu-list'
-export default {
-  name: 'app',
-  components: {
-    HomePage,
-    Menu
-  }
-  // ,
-  // computed: mapGetters([
-  //   'evenOrOdd',
-  //   'yOrn'
-  // ])
-}
+// import HomePage from '~/pages/home'
+// export default {
+//   name: 'app'
+//   // ,
+//   // computed: mapGetters([
+//   //   'evenOrOdd',
+//   //   'yOrn'
+//   // ])
+// }
 </script>

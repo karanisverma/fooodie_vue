@@ -1,5 +1,6 @@
 <template>
   <div class="page-menu-list">
+  	<Toolbar v-bind="toolbarProps"/>
     <h1>Hellllloooo</h1>
      <div class="reddit-list">
        <p>We are testing if compoenent works?---> {{message}}</p>
