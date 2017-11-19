@@ -1,0 +1,27 @@
+[
+   {
+      "name":"Snacks",
+      "image":"https://fooodie.store/static/img/menu/paneer_sandwich.jpg",
+      "id": 1
+   },
+   {
+      "name":"Rice & Biriyani",
+      "image":"https://fooodie.store/static/img/menu/veg_biriyani.jpg",
+      "id": 2
+   },
+   {
+      "name":"Curry",
+      "image":"https://fooodie.store/static/img/menu/aalu_lehsaniya.jpg",
+      "id": 3
+   },
+   {
+      "name":"Roll & Prathas",
+      "image":"https://fooodie.store/static/img/menu/tandoori_roti.jpg",
+      "id": 4
+   },
+   {
+      "name":"Drink & Desserts",
+      "image":"https://fooodie.store/static/img/menu/sprite.jpg",
+      "id": 5
+   }
+ ]

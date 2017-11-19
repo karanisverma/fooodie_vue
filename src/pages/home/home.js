@@ -8,7 +8,7 @@ export default {
     return {
       toolbarProps: {
         title: {
-          text: 'Home',
+          text: 'Fooodie',
           position: 'left'
         },
         leftAction: {
@@ -38,7 +38,7 @@ export default {
       .then(data => {
         if (data) {
           Home.allNewCategory = data
-          console.log('data==>', data)
+          // console.log('data==>', data);
         }
       })
     }

@@ -10,7 +10,7 @@
             :src="leftAction.iconImg" class="img-icon">
         </div>
       </div>
-      <h1 class="title f-1" :style="title.position === 'center' ? 'text-align: center;' : ''">
+      <h1 class="title" :style="title.position === 'center' ? 'text-align: center;' : ''">
         {{title.text}}
       </h1>
 
