@@ -6,10 +6,17 @@ class HomeState {
   constructor () {
     this.name = 'Home'
     this.allNewCategory = []
+    this.allProductDescription = []
   }
   // Fetching data for new category
   newCategory () {
     return fetch('https://fooodie.store/static/js/category.json', {
+      method: 'GET'
+    })
+  }
+
+  productDescription () {
+    return fetch(`https://fooodie.store/static/js/product-description.json`, {
       method: 'GET'
     })
   }

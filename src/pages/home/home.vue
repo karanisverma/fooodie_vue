@@ -11,7 +11,12 @@
         <h3>Featured Product</h3>
         <div class="new-products">
         	<div class="product" v-for="item in allNewItems">
-                <img :src="item.image">
+            <!-- <img :src="item.image"> -->
+            <router-link
+              :to="{ name: 'ProductDescription',
+              params: {faq_id: 1} } ">
+              <img :src="item.image">
+            </router-link>
         	</div>
         </div>
     </div>

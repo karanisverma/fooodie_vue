@@ -1,0 +1,64 @@
+.product-description {
+  .product-img {
+    position: relative;
+    img {
+      width: 100%;
+      min-height: 200px;
+    }
+    .product-info-overlay {
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(83, 83, 83, 0.13));
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      padding: 7px 0;
+      font-weight: 400;
+      color: white;
+      .product-name {
+        font-size: 26px;
+      }
+      .product-price {
+        font-size: 26px;
+      }
+    }
+  }
+  .product-desc-ingredients {
+    position: relative;
+    top: -6px;
+    display: inline-table;
+    .desc-ingre-content {
+      background: #fff;
+      color: #373737;
+    }
+    .desc-ingre-content>div {
+      display: none;
+      padding: 20px 25px 5px;
+    }
+    input {
+      display: none;
+      &:checked + label {
+        border-bottom: 5px solid yellow;
+        color: #fff;
+      }
+    }
+    label {
+      display: inline-block;
+      padding: 12px 0px;
+      width: 50%;
+      font-weight: 600;
+      text-align: center;
+      background-color: #484848;
+      border-bottom: 5px solid #484848;
+      &:hover {
+        color: #fff;
+        cursor: pointer;
+      } 
+    }
+    #description:checked~.desc-ingre-content #item-description,
+    #ingredients:checked~.desc-ingre-content #item-ingredient {
+      display: block;
+    }
+  }
+
+}

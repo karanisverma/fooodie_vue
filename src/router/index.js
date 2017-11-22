@@ -17,6 +17,11 @@ export default new Router({
       path: '/menu-list',
       name: 'MenuList',
       component: () => import(/* webpackChunkName: "page-menu-list" */ '../pages/menu-list')
+    },
+    {
+      path: '/menu-list/1',
+      name: 'ProductDescription',
+      component: () => import(/* webpackChunkName: "page-product-description" */ '../pages/product-description')
     }
   ]
 })
