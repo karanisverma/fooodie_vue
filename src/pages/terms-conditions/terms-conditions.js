@@ -12,8 +12,8 @@ export default {
           position: 'left'
         },
         leftAction: {
-          icon: 'arrow_back'
-          // method: () => this.$router.back()
+          icon: 'arrow_back',
+          method: () => this.$router.back()
         }
       }
     }

@@ -1,3 +1,23 @@
 .page-menu-list {
   color: red;
+  .menu-scrollbar {
+    ::-webkit-scrollbar { 
+        display: none; 
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      justify-content: flex-start;
+      overflow: scroll;
+      border: 1px solid #323a44;
+      margin: 0;
+      line-height: 3;
+      background: #323a44;
+      color: white;
+      li {
+        margin: 0 20px;
+      }
+    }
+  }
 }

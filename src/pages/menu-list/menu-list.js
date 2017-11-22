@@ -5,13 +5,12 @@ export default {
     return {
       toolbarProps: {
         title: {
-          text: 'hello',
+          text: 'Menu',
           position: 'left'
         },
         leftAction: {
-          icon: 'arrow_back'
-          // icon: 'arrow_back'
-          // method: () => this.$router.back()
+          icon: 'menu',
+          method: () => this.$emit('toggleSidebar')
         }
       }
     }

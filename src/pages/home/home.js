@@ -14,7 +14,6 @@ export default {
         leftAction: {
           icon: 'menu',
           method: () => this.$emit('toggleSidebar')
-          // method: () => this.$router.back()
         }
       }
     }

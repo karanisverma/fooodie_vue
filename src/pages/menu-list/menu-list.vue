@@ -1,9 +1,15 @@
 <template>
   <div class="page-menu-list">
   	<Toolbar v-bind="toolbarProps"/>
-    <h1>Hellllloooo</h1>
-     <div class="reddit-list">
-       <p>We are testing if compoenent works?---> {{message}}</p>
+     <div class="menu-scrollbar">
+      <ul>
+        <li>BreakFast</li>
+        <li>Lunch</li>
+        <li>Snacks</li>
+        <li>Dinner</li>
+        <li>Dinner1</li>
+        <li>Dinner2</li>
+      </ul>
      </div>
   </div>
 </template>

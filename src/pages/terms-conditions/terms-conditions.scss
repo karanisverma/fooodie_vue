@@ -62,14 +62,14 @@
   input[type=checkbox] + label::after {
     content: "+";
   }
-  input[type=radio] + label::after {
-    content: "\25BC";
-  }
+  // input[type=radio] + label::after {
+  //   content: "\25BC";
+  // }
   input[type=checkbox]:checked + label::after {
     transform: rotate(315deg);
   }
-  input[type=radio]:checked + label::after {
-    transform: rotateX(180deg);
-  }
+  // input[type=radio]:checked + label::after {
+  //   transform: rotateX(180deg);
+  // }
   
 }
