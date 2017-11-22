@@ -57,11 +57,14 @@
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 2em 0;
-    .category {
-      width: 150px;
-      height: 150px;
-      border: 1px solid red;
-      margin-bottom: 15px;
+    .category-info {
+      .category-img {
+        width: 50%;
+        height: 50%;
+      }
+      .category-name {
+
+      }
     }
   }
 }

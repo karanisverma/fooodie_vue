@@ -18,17 +18,17 @@
 
       <nav class="all-list f-1">
         <!-- <div class="item d-f ai-c" @click="openMyTrips"> -->
-        <div class="item d-f ai-c">
+        <div class="item" @click="openMenuList">
           <div class="icon">
             <i class="material-icons">restaurant_menu</i>
           </div>
-          <div class="f-1">Menu</div>
+          <div class="item-name">Menu</div>
         </div>
-        <div class="item d-f ai-c">
+        <div class="item">
           <div class="icon">
             <i class="material-icons">help</i>
           </div>
-          <div class="f-1">Terms & Conditions</div>
+          <div class="item-name">Terms & Conditions</div>
         </div>
       </nav>
 

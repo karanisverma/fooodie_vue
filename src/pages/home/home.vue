@@ -30,9 +30,28 @@
       </div>
     </div>
     <!-- all category -->
-    <div class="all-category">
-      
-    </div>
+    <!-- <div class="all-category">
+      <div class="category-info">
+        <img class="category-img" src="../../assets/egg_roll.jpg">
+        <p class="category-name">Egg Roll</p>
+      </div>
+      <div class="category-info">
+        <img class="category-img" src="../../assets/egg_sandwich.jpg">
+        <p class="category-name">Egg Sandwich</p>
+      </div>
+      <div class="category-info">
+        <img class="category-img" src="../../assets/jira_rice.jpg">
+        <p class="category-name">Jira Rice</p>
+      </div>
+      <div class="category-info">
+        <img class="category-img" src="../../assets/logo.png">
+        <p class="category-name">Logo</p>
+      </div>
+      <div class="category-info">
+        <img class="category-img" src="../../assets/tawa_roti.jpg">
+        <p class="category-name">Tawa Roti</p>
+      </div>
+    </div> -->
   </div>
 </template>
 

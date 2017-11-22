@@ -14,10 +14,15 @@ export default {
   methods: {
     toggleSidebar () {
       this.$emit('update:show', !this.show)
+    },
+    openMenuList () {
+      this.$router.push({
+        name: 'MenuList'
+      })
     }
-    // menuList() {
+    // termsAndConditions() {
     //   this.$router.push({
-    //     name: 'MenuList'
+    //     name: 'termsConditions'
     //   })
     // }
   }

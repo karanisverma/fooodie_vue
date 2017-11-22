@@ -67,11 +67,16 @@
         padding: 14px 17px;
         font-size: 14px;
         font-weight: 500;
+        display: flex;
+        align-items: center;
         .icon {
           height: 20px;
           width: 20px;
           margin-right: 33px;
           color: #a4a8ac;
+        }
+        .item-name {
+          // flex: 1;
         }
       }
     }
