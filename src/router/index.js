@@ -22,6 +22,10 @@ export default new Router({
       path: '/menu-list/1',
       name: 'ProductDescription',
       component: () => import(/* webpackChunkName: "page-product-description" */ '../pages/product-description')
+    }, {
+      path: '*',
+      name: 'PageNotFound',
+      component: () => import(/* webpackChunkName: "page-404" */ '../pages/no-found')
     }
   ]
 })
