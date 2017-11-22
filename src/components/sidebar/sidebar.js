@@ -19,6 +19,11 @@ export default {
       this.$router.push({
         name: 'MenuList'
       })
+    },
+    openTermsConditions () {
+      this.$router.push({
+        name: 'TermsAndConditions'
+      })
     }
     // termsAndConditions() {
     //   this.$router.push({

@@ -24,7 +24,7 @@
           </div>
           <div class="item-name">Menu</div>
         </div>
-        <div class="item">
+        <div class="item" @click="openTermsConditions">
           <div class="icon">
             <i class="material-icons">help</i>
           </div>
