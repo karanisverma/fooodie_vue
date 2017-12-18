@@ -16,6 +16,9 @@ Vue.config.productionTip = false
 Vue.performance = true
 
 Vue.use(Vuex)
+
+var VueTouch = require('vue-touch')
+Vue.use(VueTouch, { name: 'v-touch' })
 /* eslint-disable no-new */
 
 Promise.resolve(window.fetch).then(() => {

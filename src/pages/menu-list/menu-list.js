@@ -3,6 +3,12 @@ export default {
   name: 'MenuList',
   data () {
     return {
+      slider: {
+        sensitivity: 20,
+        activeSlide: 0,
+        slideCount: 0,
+        sliderPanelSelector: '.menu-category'
+      },
       toolbarProps: {
         title: {
           text: 'Menu',
@@ -17,5 +23,93 @@ export default {
   },
   components: {
     Toolbar
+  },
+  mounted () {
+    this.slider_init('.menu-slider')
+  },
+  methods: {
+    goTo (number) {
+      // 5a. Stop it from doing weird things like moving to slides that don’t exist
+
+      var classOne = document.querySelector('#category-1')
+      var classTwo = document.querySelector('#category-2')
+      var classThree = document.querySelector('#category-3')
+      var classFour = document.querySelector('#category-4')
+      var classFive = document.querySelector('#category-5')
+
+      var allClasses = [classOne, classTwo, classThree, classFour, classFive]
+
+      allClasses.forEach(function (el) {
+        el.classList.remove('active-category')
+      })
+      if (number < 0) {
+        this.slider.activeSlide = 0
+      } else if (number > this.slider.slideCount - 1) {
+        this.slider.activeSlide = this.slider.slideCount - 1
+      } else {
+        this.slider.activeSlide = number
+      }
+      // console.log('active slider -> ', slider.activeSlide)
+      // console.log('slider count -> ', slider.slideCount)
+      // 5b. Apply transformation & smoothly animate via .is-animating CSS
+      var s = document.getElementById('category-' + (this.slider.activeSlide + 1))
+      s.classList.add('active-category')
+      this.slider.sliderEl.classList.add('is-animating')
+      var percentage = -(100 / this.slider.slideCount) * this.slider.activeSlide
+      this.slider.sliderEl.style.transform = 'translateX( ' + percentage + '% )'
+      clearTimeout(this.slider.timer)
+      this.slider.timer = setTimeout(function () {
+        this.slider.sliderEl.classList.remove('is-animating')
+      }, 400)
+    },
+    slider_init (selector) {
+      console.log('slider selector-->', document.querySelector('.menu-slider'))
+      this.slider.sliderEl = document.querySelector(selector)
+      this.slider.slideCount = this.slider.sliderEl.querySelectorAll(this.slider.sliderPanelSelector).length
+      // var sliderManager = new VueTouch.Manager(this.slider.sliderEl)
+      // sliderManager.add(new VueTouch.Pan({ threshold: 0, pointers: 0 }))
+    },
+    onSwipeLeft () {
+      console.log('onSwipeLeftonSwipeLeftonSwipeLeftonSwipeLeft')
+    },
+    onTap () {
+      console.log('onTaponTaponTaponTaponTaponTaponTaponTaponTaponTaponTap')
+    },
+    // call this function on -> panright panleft
+    slideMenu (e) {
+      // if (isScrolling) {
+      //     return;
+      // }
+      // 4e. Calculate pixel movements into 1:1 screen percents so gestures track with motion
+      var percentage = 100 / this.slider.slideCount * e.deltaX / window.innerWidth
+
+      // 4f. Multiply percent by # of slide we’re on
+      var percentageCalculated = percentage - 100 / this.slider.slideCount * this.slider.activeSlide
+
+      // 4g. Apply transformation
+      this.slider.sliderEl.style.transform = 'translateX( ' + percentageCalculated + '% )'
+      console.log('----slideMenu----', e.deltaX)
+      console.log('----percentageCalculated----', percentageCalculated)
+      // 4h. Snap to slide when done
+      if (e.isFinal) {
+        if (e.velocityX > 1) {
+          console.log('e.velocityX > 1')
+          this.goTo(this.slider.activeSlide - 1)
+        } else if (e.velocityX < -1) {
+          console.log('e.velocityX < -1')
+          this.goTo(this.slider.activeSlide + 1)
+        } else {
+          if (percentage <= -(this.slider.sensitivity / this.slider.slideCount)) {
+            console.log('percentage <= -( this.slider.sensitivity / this.slider.slideCount ) -', this.slider.sensitivity / this.slider.slideCount)
+            this.goTo(this.slider.activeSlide + 1)
+          } else if (percentage >= (this.slider.sensitivity / this.slider.slideCount)) {
+            console.log(' percentage >= ( this.slider.sensitivity / this.slider.slideCount) ', this.slider.sensitivity / this.slider.slideCount)
+            this.goTo(this.slider.activeSlide - 1)
+          } else {
+            this.goTo(this.slider.activeSlide)
+          }
+        }
+      }
+    }
   }
 }
