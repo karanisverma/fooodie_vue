@@ -1,0 +1,98 @@
+[
+   {
+      "img":"https://fooodie.store/static/img/menu/veg_sandwich.jpg",
+      "name":"Veg Sandwich",
+      "cost":35,
+      "status":"instock",
+      "fav":2,
+      "type": "veg",
+      "category":"snacks",
+      "product_id":1,
+      "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
+      "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+   },
+   {
+      "img":"https://fooodie.store/static/img/menu/paneer_sandwich.jpg",
+      "name":"Paneer Sandwich",
+      "cost":45,
+      "status":"instock",
+      "fav":2,
+      "type": "veg",
+      "category":"snacks",
+      "product_id":2,
+      "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
+      "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+   },
+   {
+      "img":"https://fooodie.store/static/img/menu/alloo_sandwich.jpg",
+      "name":"Alloo Sandwich",
+      "cost":35,
+      "status":"instock",
+      "fav":2,
+      "type": "veg",
+      "category":"snacks",
+      "product_id":3,
+      "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
+      "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+   },
+   {
+      "img":"https://fooodie.store/static/img/menu/maggi.jpg",
+      "name":"Maggi",
+      "cost":35,
+      "status":"instock",
+      "fav":2,
+      "type": "veg",
+      "category":"snacks",
+      "product_id":4,
+      "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
+      "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+   },
+   {
+      "img":"https://fooodie.store/static/img/menu/top_ramen.jpg",
+      "name":"Top Ramen",
+      "cost":35,
+      "status":"instock",
+      "fav":2,
+      "type": "veg",
+      "category":"snacks",
+      "product_id":5,
+      "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
+      "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+   },
+   {
+      "img":"https://fooodie.store/static/img/menu/chowmein.jpg",
+      "name":"Chowmein",
+      "cost":60,
+      "status":"instock",
+      "fav":2,
+      "type": "veg",
+      "category":"snacks",
+      "product_id":6,
+      "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
+      "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+   },
+   {
+      "img":"https://fooodie.store/static/img/menu/egg_sandwich.jpg",
+      "name":"Egg Sandwich",
+      "cost":50,
+      "status":"instock",
+      "fav":2,
+      "type": "veg",
+      "category":"snacks",
+      "product_id":7,
+      "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
+      "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+   },
+   {
+      "img":"https://fooodie.store/static/img/menu/egg_chowmein.jpg",
+      "name":"Egg Chowmein",
+      "cost":100,
+      "status":"instock",
+      "fav":2,
+      "type": "veg",
+      "category":"snacks",
+      "product_id":8,
+      "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
+      "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+   }
+]
