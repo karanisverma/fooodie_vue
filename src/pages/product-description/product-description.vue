@@ -29,6 +29,9 @@
           <p>{{allProductDesc.ingredients}}</p>
         </div>
       </div>
+      <div class="desc-add-to-cart">
+        <QuantityButtonComponent :product-id="allProductDesc.product_id" :quantity="0"></QuantityButtonComponent>
+      </div>
     </div>
   </div>
 </template>

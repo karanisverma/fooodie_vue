@@ -1,8 +1,10 @@
 import Toolbar from '~/components/toolbar'
+import QuantityButtonComponent from '~/components/quantity-button'
 export default {
   name: 'ProductDescription',
   components: {
-    Toolbar
+    Toolbar,
+    QuantityButtonComponent
   },
   data () {
     return {
