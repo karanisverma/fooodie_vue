@@ -25,17 +25,24 @@
   <div class="menu-slider-wrapper">
       <div class="menu-slider">
           <section class="menu-category">
-              <div class="product" v-for="(product, i) in allProducts" v-if="product.category=='snacks'">
+            <div class="product" v-for="(product, i) in allProducts" v-if="product.category=='snacks'">
                 <div class="crop">
-                <router-link
-                :to="{ name: 'ProductDescription',
-                params: {productId: product.product_id} } ">
-                <img :src="product.img">
-                </router-link>  
-                </div>  
-                <h3>{{product.name}}</h3>
-                <p>&#8377;{{product.cost}}</p>
-              </div>
+                    <router-link
+                    :to="{ name: 'ProductDescription',
+                    params: {productId: product.product_id} } ">
+                    <img :src="product.img">
+                    </router-link>  
+                </div>
+                <div class="product-info">
+                    <div class="product-name-cost">
+                        <h3>{{product.name}}</h3>
+                        <p>&#8377;{{product.cost}}</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <QuantityButtonComponent :product-id="product.product_id" :quantity="0"></QuantityButtonComponent>
+                    </div>
+                </div>
+            </div>
           </section>
 
           <section class="menu-category">
@@ -46,9 +53,16 @@
                     params: {productId: product.product_id} } ">
                     <img :src="product.img">
                     </router-link>  
-                </div>  
-                <h3>{{product.name}}</h3>
-                <p>&#8377;{{product.cost}}</p>
+                </div>
+                <div class="product-info">
+                    <div class="product-name-cost">
+                        <h3>{{product.name}}</h3>
+                        <p>&#8377;{{product.cost}}</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <QuantityButtonComponent :product-id="product.product_id" :quantity="0"></QuantityButtonComponent>
+                    </div>
+                </div>
               </div>
           </section>
 
@@ -60,9 +74,16 @@
                     params: {productId: product.product_id} } ">
                     <img :src="product.img">
                     </router-link>  
-                </div>  
-                  <h3>{{product.name}}</h3>
-                  <p>&#8377;{{product.cost}}</p>
+                </div>
+                <div class="product-info">
+                    <div class="product-name-cost">
+                        <h3>{{product.name}}</h3>
+                        <p>&#8377;{{product.cost}}</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <QuantityButtonComponent :product-id="product.product_id" :quantity="0"></QuantityButtonComponent>
+                    </div>
+                </div>
               </div>
           </section>
 
@@ -74,9 +95,16 @@
                     params: {productId: product.product_id} } ">
                     <img :src="product.img">
                     </router-link>  
-                </div>  
-                  <h3>{{product.name}}</h3>
-                  <p>&#8377;{{product.cost}}</p>
+                </div>
+                <div class="product-info">
+                    <div class="product-name-cost">
+                        <h3>{{product.name}}</h3>
+                        <p>&#8377;{{product.cost}}</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <QuantityButtonComponent :product-id="product.product_id" :quantity="0"></QuantityButtonComponent>
+                    </div>
+                </div>
               </div>
           </section>
 
@@ -88,9 +116,16 @@
                     params: {productId: product.product_id} } ">
                     <img :src="product.img">
                     </router-link>  
-                </div>  
-                  <h3>{{product.name}}</h3>
-                  <p>&#8377;{{product.cost}}</p>
+                </div>
+                <div class="product-info">
+                    <div class="product-name-cost">
+                        <h3>{{product.name}}</h3>
+                        <p>&#8377;{{product.cost}}</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <QuantityButtonComponent :product-id="product.product_id" :quantity="0"></QuantityButtonComponent>
+                    </div>
+                </div>
               </div>
           </section>
 
