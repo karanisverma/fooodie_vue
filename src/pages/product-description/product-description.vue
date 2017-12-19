@@ -3,14 +3,14 @@
     <Toolbar v-bind="toolbarProps"/>
     <div class="product-img">
       <!-- <img src="../../assets/img/img1.jpg"> -->
-      <img :src="allProductDesc.image">
+      <img :src="allProductDesc.img">
 
       <div class="product-info-overlay">
         <div class="product-name">
           {{allProductDesc.name}}
         </div>
         <div class="product-price">
-          ₹ {{allProductDesc.price}}/-
+          ₹ {{allProductDesc.cost}}/-
         </div>
       </div>
     </div>
@@ -23,7 +23,7 @@
 
       <div class="desc-ingre-content">  
         <div id="item-description">
-          <p>{{allProductDesc.desc}}</p>
+          <p>{{allProductDesc.detail}}</p>
         </div>
         <div id="item-ingredient">
           <p>{{allProductDesc.ingredients}}</p>

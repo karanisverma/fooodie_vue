@@ -12,21 +12,27 @@ export default {
           position: 'left'
         },
         leftAction: {
-          icon: 'menu',
-          method: () => this.$emit('toggleSidebar')
-          // method: () => this.$router.back()
+          icon: 'arrow_back',
+          // method: () => this.$emit('toggleSidebar')
+          method: () => this.$router.back()
         }
       }
     }
   },
   computed: {
     allProductDesc () {
-      const {Home} = this.$store.state
-      return Home.allProductDescription
+      const {Products} = this.$store.state
+      var urlId = window.location.pathname.split('/')[3]
+      var result = Products.allProducts.filter(function (obj) {
+        return parseInt(obj.product_id) === parseInt(urlId)
+      })
+      console.log('result--->', Products.allProducts)
+      console.log('result--->', result)
+      return result[0]
     }
   },
   created () {
-    this.allProductsDesc()
+    // this.allProductsDesc()
   },
   methods: {
     allProductsDesc () {

@@ -17,7 +17,8 @@ export default {
     },
     openMenuList () {
       this.$router.push({
-        name: 'MenuList'
+        name: 'MenuList',
+        params: {categoryId: 0}
       })
     },
     openTermsConditions () {

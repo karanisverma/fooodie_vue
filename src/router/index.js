@@ -14,12 +14,12 @@ export default new Router({
       component: () => import(/* webpackChunkName: "page-home" */ '../pages/home')
     },
     {
-      path: '/menu-list',
+      path: '/menu-list/:categoryId',
       name: 'MenuList',
       component: () => import(/* webpackChunkName: "page-menu-list" */ '../pages/menu-list')
     },
     {
-      path: '/menu-list/1',
+      path: '/menu-list/product/:productId',
       name: 'ProductDescription',
       component: () => import(/* webpackChunkName: "page-product-description" */ '../pages/product-description')
     },

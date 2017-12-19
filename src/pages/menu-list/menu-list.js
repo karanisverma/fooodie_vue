@@ -1,6 +1,12 @@
 import Toolbar from '~/components/toolbar'
 export default {
   name: 'MenuList',
+  computed: {
+    allProducts () {
+      let {Products} = this.$store.state
+      return Products.allProducts
+    }
+  },
   data () {
     return {
       slider: {
@@ -26,6 +32,7 @@ export default {
   },
   mounted () {
     this.slider_init('.menu-slider')
+    this.goTo(parseInt(window.location.pathname.split('/')[2]))
   },
   methods: {
     goTo (number) {
@@ -49,8 +56,7 @@ export default {
       } else {
         this.slider.activeSlide = number
       }
-      // console.log('active slider -> ', slider.activeSlide)
-      // console.log('slider count -> ', slider.slideCount)
+
       // 5b. Apply transformation & smoothly animate via .is-animating CSS
       var s = document.getElementById('category-' + (this.slider.activeSlide + 1))
       s.classList.add('active-category')
@@ -58,28 +64,16 @@ export default {
       var percentage = -(100 / this.slider.slideCount) * this.slider.activeSlide
       this.slider.sliderEl.style.transform = 'translateX( ' + percentage + '% )'
       clearTimeout(this.slider.timer)
-      this.slider.timer = setTimeout(function () {
-        this.slider.sliderEl.classList.remove('is-animating')
-      }, 400)
+      this.$router.push({
+        name: 'MenuList',
+        params: {categoryId: number}
+      })
     },
     slider_init (selector) {
-      console.log('slider selector-->', document.querySelector('.menu-slider'))
       this.slider.sliderEl = document.querySelector(selector)
       this.slider.slideCount = this.slider.sliderEl.querySelectorAll(this.slider.sliderPanelSelector).length
-      // var sliderManager = new VueTouch.Manager(this.slider.sliderEl)
-      // sliderManager.add(new VueTouch.Pan({ threshold: 0, pointers: 0 }))
     },
-    onSwipeLeft () {
-      console.log('onSwipeLeftonSwipeLeftonSwipeLeftonSwipeLeft')
-    },
-    onTap () {
-      console.log('onTaponTaponTaponTaponTaponTaponTaponTaponTaponTaponTap')
-    },
-    // call this function on -> panright panleft
     slideMenu (e) {
-      // if (isScrolling) {
-      //     return;
-      // }
       // 4e. Calculate pixel movements into 1:1 screen percents so gestures track with motion
       var percentage = 100 / this.slider.slideCount * e.deltaX / window.innerWidth
 
@@ -88,22 +82,17 @@ export default {
 
       // 4g. Apply transformation
       this.slider.sliderEl.style.transform = 'translateX( ' + percentageCalculated + '% )'
-      console.log('----slideMenu----', e.deltaX)
-      console.log('----percentageCalculated----', percentageCalculated)
+
       // 4h. Snap to slide when done
       if (e.isFinal) {
         if (e.velocityX > 1) {
-          console.log('e.velocityX > 1')
           this.goTo(this.slider.activeSlide - 1)
         } else if (e.velocityX < -1) {
-          console.log('e.velocityX < -1')
           this.goTo(this.slider.activeSlide + 1)
         } else {
           if (percentage <= -(this.slider.sensitivity / this.slider.slideCount)) {
-            console.log('percentage <= -( this.slider.sensitivity / this.slider.slideCount ) -', this.slider.sensitivity / this.slider.slideCount)
             this.goTo(this.slider.activeSlide + 1)
           } else if (percentage >= (this.slider.sensitivity / this.slider.slideCount)) {
-            console.log(' percentage >= ( this.slider.sensitivity / this.slider.slideCount) ', this.slider.sensitivity / this.slider.slideCount)
             this.goTo(this.slider.activeSlide - 1)
           } else {
             this.goTo(this.slider.activeSlide)

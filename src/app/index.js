@@ -29,4 +29,3 @@ Promise.resolve(window.fetch).then(() => {
     render: h => h(App)
   })
 })
-// new Vue(App).$mount('#app')

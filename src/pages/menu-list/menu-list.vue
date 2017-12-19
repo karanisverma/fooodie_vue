@@ -25,310 +25,75 @@
   <div class="menu-slider-wrapper">
       <div class="menu-slider">
           <section class="menu-category">
-              <div class="product" style="opacity:0">
-                  <div class="crop">
-                      <!-- <img src='./fooodie_menu/alloo_gobi.jpg'> -->
-                  </div>
-                  <h3>Product Name</h3>
-                  <p>&#8377;50</p>
+              <div class="product" v-for="(product, i) in allProducts" v-if="product.category=='snacks'">
+                <div class="crop">
+                <router-link
+                :to="{ name: 'ProductDescription',
+                params: {productId: product.product_id} } ">
+                <img :src="product.img">
+                </router-link>  
+                </div>  
+                <h3>{{product.name}}</h3>
+                <p>&#8377;{{product.cost}}</p>
               </div>
-              
-              <div class="product">
-                  <div class="crop">
-                          <!-- <img src='./fooodie_menu/alloo_sandwich.JPG'> -->
-                  </div>
-                  <h3>Product Name</h3>
-                  <p>&#8377;50</p>
-              </div>
-              
-              <div class="product">
-                      <div class="crop">
-                              <!-- <img src='./fooodie_menu/dum_biriysni.jpg'> -->
-                      </div>
-                      <h3>Product Name</h3>
-                      <p>&#8377;50</p>
-                  </div>
-          
-              <div class="product">
-                      <div class="crop">
-                              <!-- <img src='./fooodie_menu/egg_biriyani.jpg'> -->
-                      </div>
-                      <h3>Product Name</h3>
-                      <p>&#8377;50</p>
-                  </div>
-      
-              <div class="product">
-                      <div class="crop">
-                              <!-- <img src='./fooodie_menu/chicken_roll.jpg'> -->
-                      </div>
-                      <h3>Product Name</h3>
-                      <p>&#8377;50</p>
-                  </div>
-          
-              <div class="product">
-                      <div class="crop">
-                              <!-- <img src='./fooodie_menu/egg_chowmein.jpg'> -->
-                      </div>
-                      <h3>Product Name</h3>
-                      <p>&#8377;50</p>
-                  </div>
+          </section>
 
-              <div class="product">
-                      <div class="crop">
-                              <!-- <img src='./fooodie_menu/jira_rice.png'> -->
-                      </div>
-                      <h3>Product Name</h3>
-                      <p>&#8377;50</p>
-                  </div>
-          </section>
           <section class="menu-category">
-                  <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
+              <div class="product" v-for="(product, i) in allProducts" v-if="product.category=='rice_and_biriyani'">
+                <div class="crop">
+                    <router-link
+                    :to="{ name: 'ProductDescription',
+                    params: {productId: product.product_id} } ">
+                    <img :src="product.img">
+                    </router-link>  
+                </div>  
+                <h3>{{product.name}}</h3>
+                <p>&#8377;{{product.cost}}</p>
+              </div>
           </section>
+
           <section class="menu-category">
-                  <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
+              <div class="product" v-for="(product, i) in allProducts" v-if="product.category=='curry'">
+                <div class="crop">
+                    <router-link
+                    :to="{ name: 'ProductDescription',
+                    params: {productId: product.product_id} } ">
+                    <img :src="product.img">
+                    </router-link>  
+                </div>  
+                  <h3>{{product.name}}</h3>
+                  <p>&#8377;{{product.cost}}</p>
+              </div>
           </section>
+
           <section class="menu-category">
-                  <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
+              <div class="product" v-for="(product, i) in allProducts" v-if="product.category=='rolls_and_paratha'">
+                <div class="crop">
+                    <router-link
+                    :to="{ name: 'ProductDescription',
+                    params: {productId: product.product_id} } ">
+                    <img :src="product.img">
+                    </router-link>  
+                </div>  
+                  <h3>{{product.name}}</h3>
+                  <p>&#8377;{{product.cost}}</p>
+              </div>
           </section>
+
           <section class="menu-category">
-                  <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
-                      <div class="product">
-                          <h3>Product Name</h3>
-                      </div>
+              <div class="product" v-for="(product, i) in allProducts" v-if="product.category=='drink_and_dessert'">
+                <div class="crop">
+                    <router-link
+                    :to="{ name: 'ProductDescription',
+                    params: {productId: product.product_id} } ">
+                    <img :src="product.img">
+                    </router-link>  
+                </div>  
+                  <h3>{{product.name}}</h3>
+                  <p>&#8377;{{product.cost}}</p>
+              </div>
           </section>
+
       </div>
   </div>
 </v-touch>
