@@ -18,6 +18,9 @@ body {
   text-align: center;
   color: #ccc;
   /*margin-top: 60px;*/
+  .web-header {
+    display: block;
+  }
 }
 
 
@@ -25,5 +28,11 @@ body {
 	body {
 		width: 100%;
 	}
+
+  #app {
+    .web-header {
+      display: none;
+    }
+  }
 
 }

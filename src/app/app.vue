@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+  	<div class="web-header">Hello header</div>
     <router-view @toggleSidebar="showSidebar = !showSidebar"></router-view>
   <!-- {{ $store.state.count }} -->
 

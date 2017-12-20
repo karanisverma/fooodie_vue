@@ -1,5 +1,6 @@
 <template>
   <div class="home-page">
+
     <Toolbar
       v-bind="toolbarProps"
       @toggleSidebar="$emit('toggleSidebar');"/>
