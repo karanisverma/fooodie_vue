@@ -7,16 +7,24 @@
     />
     <!-- slider animation effect -->
     <div class="sidebar animate of-a d-f fd-c jc-sb"
-      :style="{transform: `translate3d(${this.show ? 0:120}%,0,0)`}"
+      :style="{transform: `translate3d(${this.show ? 0:100}%,0,0)`}"
     >
       <div class="user">
-        <div class="user-icon"></div>
-        <!-- <i class="material-icons">account_circle</i> -->
-        <span>Food</span>
+        <!-- <div class="user-icon"></div> -->
+        <i class="material-icons">shopping_cart</i>
+        <span>Shopping Cart</span>
       </div>
-
+      <div class="item-wrapper">
+        <div class="cart-item-row" v-for="item in cartItems" v-if="item.quantity>0">
+          <p class="cart-item-name">{{item.name}}</p>
+          <p class="cart-item-quantity">
+            <QuantityButtonComponent :product-id="item.product_id" :quantity="item.quantity"></QuantityButtonComponent>
+          </p>
+          <p class="cart-item-cost">{{item.cost}}</p>
+        </div>
+      </div>
       <div class="footer-note">
-        © Copyright 2017 Food. All rights reserved.
+        <button> Checkout</button>
       </div>
     </div>
   </div>

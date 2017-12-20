@@ -1,5 +1,6 @@
 /* @flow */
 // import {bus} from '~/app'
+import QuantityButtonComponent from '~/components/quantity-button'
 export default {
   name: 'Cart',
   props: {
@@ -9,9 +10,18 @@ export default {
     }
   },
   data () {
-    return {}
+    return {
+
+    }
   },
   computed: {
+    cartItems () {
+      let {Cart} = this.$store.state
+      return Cart.items
+    }
+  },
+  components: {
+    QuantityButtonComponent
   },
   methods: {
     toggleSidebar () {
