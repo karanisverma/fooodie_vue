@@ -25,12 +25,12 @@ export default {
     allProductDesc () {
       const {Products} = this.$store.state
       var urlId = window.location.pathname.split('/')[3]
-      var result = Products.allProducts.filter(function (obj) {
-        return parseInt(obj.product_id) === parseInt(urlId)
-      })
-      console.log('result--->', Products.allProducts)
-      console.log('result--->', result)
-      return result[0]
+      if (Products.allProducts.length > 0) {
+        var result = Products.allProducts.filter(function (obj) {
+          return parseInt(obj.product_id) === parseInt(urlId)
+        })
+        return result[0]
+      }
     }
   },
   created () {

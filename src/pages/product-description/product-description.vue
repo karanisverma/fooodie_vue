@@ -1,5 +1,5 @@
 <template>
-  <div class="product-description" v-if="allProductDesc.name">
+  <div class="product-description" v-if="allProductDesc">
     <Toolbar v-bind="toolbarProps"/>
     <div class="product-img">
       <!-- <img src="../../assets/img/img1.jpg"> -->
