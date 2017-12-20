@@ -24,7 +24,13 @@ export default {
         leftAction: {
           icon: 'menu',
           method: () => this.$emit('toggleSidebar')
-        }
+        },
+        rightActions: [
+          {
+            icon: 'shopping_cart',
+            method: () => this.$emit('toggleCartSidebar')
+          }
+        ]
       }
     }
   },

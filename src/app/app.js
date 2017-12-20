@@ -2,7 +2,8 @@ export default {
   name: 'app-entry',
   data () {
     return {
-      showSidebar: true
+      showSidebar: false,
+      showCartSidebar: false
     }
   },
   created () {
@@ -31,7 +32,8 @@ export default {
     }
   },
   components: {
-    Sidebar: () => import(/* webpackChunkName: 'component-sidebar' */ '../components/sidebar')
+    Sidebar: () => import(/* webpackChunkName: 'component-sidebar' */ '../components/sidebar'),
+    Cart: () => import(/* webpackChunkName: 'component-sidebar' */ '../components/cart')
   },
   watch: {
     '$route' () {

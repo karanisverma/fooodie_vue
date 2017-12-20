@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view @toggleSidebar="showSidebar = !showSidebar"></router-view>
+    <router-view @toggleSidebar="showSidebar = !showSidebar" @toggleCartSidebar ="showCartSidebar = !showCartSidebar"></router-view>
   <!-- {{ $store.state.count }} -->
 
   <!-- {{evenOrOdd}} -->
@@ -8,6 +8,7 @@
     <!-- <Menu></Menu> -->
     <!-- <router-view/> -->
     <sidebar :show.sync="showSidebar"/>
+    <cart :show.sync="showCartSidebar"/>
   </div>
 </template>
 
