@@ -1,0 +1,123 @@
+.cart-sidebar-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  .cart-sidebar-overlay {
+    position: absolute;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    opacity: 0;
+    will-change: opacity;
+    width: 100%;
+    pointer-events: none;
+
+    &.visible {
+      pointer-events: auto;
+      opacity: 1;
+    }
+  }
+
+  .sidebar {
+    background: #fff;
+    position: fixed;
+    width: 85%;
+    height: 100%;
+    top: 0;
+    left: 15%;
+    transform: translate3d(100%,0,0);
+    will-change: transform;
+    background-color: #ffffff;
+    box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.24), 0 0 16px 0 rgba(0, 0, 0, 0.18);
+    color: #000;
+    .item-wrapper{
+      height: 34em;
+      overflow: auto;
+    }
+    &.animate {
+      transition: transform .25s cubic-bezier(0.4, 0.0, 0.6, 1);
+    }
+    .cart-item-row{
+      display: flex;
+      padding: 5%;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.06);
+      .quantity-button p{
+        margin: 0;
+        text-align: center;
+        width:30%;
+      }
+      p{
+        width: 30%;
+      }
+      .cart-item-name{
+        text-align: left;
+        width: 30%;
+      }
+      .cart-item-cost{
+        text-align: right;
+        width: 20%;
+      }
+      .cart-item-quantity{
+        text-align: right;
+        width: 40%;
+      }
+    }
+     .cart-item-row:nth-child(2n) {
+      background: none;
+    }
+    .user {
+      padding: 17px;
+      box-shadow: 0 0.5px 0 0 rgba(255, 255, 255, 0.16);
+      width: auto;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.43;
+      text-align: left;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      background: #323a44;
+      .user-icon {
+        margin-right: 16px;
+        background: #ccc;
+        width: 39px;
+        height: 39px;
+        border-radius: 50%;
+      }
+      span {
+        flex: 1;
+      }
+    }
+
+    .all-list {
+      overflow-y: scroll;
+      .item {
+        padding: 14px 17px;
+        font-size: 14px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        .icon {
+          height: 20px;
+          width: 20px;
+          margin-right: 33px;
+          color: #a4a8ac;
+        }
+        .item-name {
+          // flex: 1;
+        }
+      }
+    }
+
+    .footer-note {
+      padding: 29px 17px;
+      color: rgb(0, 0, 0);
+      font-size: 13px;
+      font-weight: 300;
+    }
+  }
+}

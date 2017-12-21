@@ -1,14 +1,9 @@
 <template>
   <div id="app">
   	<div class="web-header">Hello header</div>
-    <router-view @toggleSidebar="showSidebar = !showSidebar"></router-view>
-  <!-- {{ $store.state.count }} -->
-
-  <!-- {{evenOrOdd}} -->
-  <!-- {{yOrn}} -->
-    <!-- <Menu></Menu> -->
-    <!-- <router-view/> -->
+    <router-view @toggleSidebar="showSidebar = !showSidebar" @toggleCartSidebar ="showCartSidebar = !showCartSidebar"></router-view>
     <sidebar :show.sync="showSidebar"/>
+    <cart :show.sync="showCartSidebar"/>
   </div>
 </template>
 
@@ -16,14 +11,4 @@
 import './app.scss'
 import app from './app'
 export default app
-// import { mapGetters } from 'vuex'
-// import HomePage from '~/pages/home'
-// export default {
-//   name: 'app'
-//   // ,
-//   // computed: mapGetters([
-//   //   'evenOrOdd',
-//   //   'yOrn'
-//   // ])
-// }
 </script>

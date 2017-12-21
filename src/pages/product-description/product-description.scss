@@ -1,4 +1,25 @@
 .product-description {
+  .quantity-button-component .quantity-button .quantity-buy{
+    margin: 0;
+  }
+  .quantity-button-component .quantity-button{
+    width: 60%;
+    margin: auto;
+  }
+  .quantity-button-component .quantity-button .add-sign{
+    margin: 0;
+    padding: .5em;
+    padding-right:1em;
+  }
+  .quantity-button-component .quantity-button .minus-sign{
+    margin: 0;
+    padding: .5em;
+    padding-left: 1em;
+  }
+  .quantity-button-component .add-to-cart-button button{
+    margin:0;
+  }
+  height: 100%;
   .product-img {
     position: relative;
     img {
@@ -27,6 +48,7 @@
     position: relative;
     top: -6px;
     display: inline-table;
+    width: 100%;
     .desc-ingre-content {
       background: #fff;
       color: #373737;
@@ -53,12 +75,19 @@
       &:hover {
         color: #fff;
         cursor: pointer;
-      } 
+      }
     }
     #description:checked~.desc-ingre-content #item-description,
     #ingredients:checked~.desc-ingre-content #item-ingredient {
       display: block;
     }
   }
-
+  .add-to-cart-button{
+    padding: 15px 30px;
+  }
+  .desc-add-to-cart{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
 }

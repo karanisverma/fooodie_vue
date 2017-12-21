@@ -24,7 +24,13 @@ export default {
         leftAction: {
           icon: 'menu',
           method: () => this.$emit('toggleSidebar')
-        }
+        },
+        rightActions: [
+          {
+            icon: 'shopping_cart',
+            method: () => this.$emit('toggleCartSidebar')
+          }
+        ]
       }
     }
   },
@@ -99,6 +105,19 @@ export default {
           } else {
             this.goTo(this.slider.activeSlide)
           }
+        }
+      }
+    },
+    updateQuantity (updatedProductInfo) {
+      console.log('doing emitttt.....', updatedProductInfo)
+      const {Products} = this.$store.state
+      // console.log('doing product list.....', Products.allProducts[0].quantity)
+      for (let i = 0; i < Products.allProducts.length; i++) {
+        // console.log('for looppp ===>', Products.allProducts[i])
+        // console.log('Products.allProducts[i].product_id', Products.allProducts[i].product_id)
+        // console.log('updatedProductInfo.productId', updatedProductInfo.productId)
+        if (Products.allProducts[i].product_id === updatedProductInfo.productId) {
+          Products.allProducts[i].quantity = updatedProductInfo.quantity
         }
       }
     }

@@ -31,7 +31,7 @@
                     :to="{ name: 'ProductDescription',
                     params: {productId: product.product_id} } ">
                     <img :src="product.img">
-                    </router-link>  
+                    </router-link>
                 </div>
                 <div class="product-info">
                     <div class="product-name-cost">
@@ -39,7 +39,9 @@
                         <p>&#8377;{{product.cost}}</p>
                     </div>
                     <div class="add-to-cart">
-                        <QuantityButtonComponent :product-id="product.product_id" :quantity="0"></QuantityButtonComponent>
+                        <QuantityButtonComponent :product-id="product.product_id" :quantity="product.quantity"
+                          @UpdateProductsQuantity="updateQuantity"
+                          ></QuantityButtonComponent>
                     </div>
                 </div>
             </div>
@@ -52,7 +54,7 @@
                     :to="{ name: 'ProductDescription',
                     params: {productId: product.product_id} } ">
                     <img :src="product.img">
-                    </router-link>  
+                    </router-link>
                 </div>
                 <div class="product-info">
                     <div class="product-name-cost">
@@ -60,7 +62,9 @@
                         <p>&#8377;{{product.cost}}</p>
                     </div>
                     <div class="add-to-cart">
-                        <QuantityButtonComponent :product-id="product.product_id" :quantity="0"></QuantityButtonComponent>
+                        <QuantityButtonComponent :product-id="product.product_id" :quantity="product.quantity"
+                          @UpdateProductsQuantity="updateQuantity"
+                          ></QuantityButtonComponent>
                     </div>
                 </div>
               </div>
@@ -73,7 +77,7 @@
                     :to="{ name: 'ProductDescription',
                     params: {productId: product.product_id} } ">
                     <img :src="product.img">
-                    </router-link>  
+                    </router-link>
                 </div>
                 <div class="product-info">
                     <div class="product-name-cost">
@@ -81,7 +85,9 @@
                         <p>&#8377;{{product.cost}}</p>
                     </div>
                     <div class="add-to-cart">
-                        <QuantityButtonComponent :product-id="product.product_id" :quantity="0"></QuantityButtonComponent>
+                        <QuantityButtonComponent :product-id="product.product_id" :quantity="product.quantity"
+                          @UpdateProductsQuantity="updateQuantity"
+                          ></QuantityButtonComponent>
                     </div>
                 </div>
               </div>
@@ -94,7 +100,7 @@
                     :to="{ name: 'ProductDescription',
                     params: {productId: product.product_id} } ">
                     <img :src="product.img">
-                    </router-link>  
+                    </router-link>
                 </div>
                 <div class="product-info">
                     <div class="product-name-cost">
@@ -102,7 +108,9 @@
                         <p>&#8377;{{product.cost}}</p>
                     </div>
                     <div class="add-to-cart">
-                        <QuantityButtonComponent :product-id="product.product_id" :quantity="0"></QuantityButtonComponent>
+                        <QuantityButtonComponent :product-id="product.product_id" :quantity="product.quantity"
+                          @UpdateProductsQuantity="updateQuantity"
+                          ></QuantityButtonComponent>
                     </div>
                 </div>
               </div>
@@ -115,7 +123,7 @@
                     :to="{ name: 'ProductDescription',
                     params: {productId: product.product_id} } ">
                     <img :src="product.img">
-                    </router-link>  
+                    </router-link>
                 </div>
                 <div class="product-info">
                     <div class="product-name-cost">
@@ -123,7 +131,9 @@
                         <p>&#8377;{{product.cost}}</p>
                     </div>
                     <div class="add-to-cart">
-                        <QuantityButtonComponent :product-id="product.product_id" :quantity="0"></QuantityButtonComponent>
+                        <QuantityButtonComponent :product-id="product.product_id" :quantity="product.quantity"
+                          @UpdateProductsQuantity="updateQuantity"
+                          ></QuantityButtonComponent>
                     </div>
                 </div>
               </div>

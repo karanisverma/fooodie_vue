@@ -1,5 +1,5 @@
 <template>
-  <div class="product-description" v-if="allProductDesc.name">
+  <div class="product-description" v-if="allProductDesc">
     <Toolbar v-bind="toolbarProps"/>
     <div class="product-img">
       <!-- <img src="../../assets/img/img1.jpg"> -->
@@ -21,7 +21,7 @@
       <input id="ingredients" type="radio" name="tabs">
       <label for="ingredients">Ingredients</label>
 
-      <div class="desc-ingre-content">  
+      <div class="desc-ingre-content">
         <div id="item-description">
           <p>{{allProductDesc.detail}}</p>
         </div>
@@ -29,9 +29,12 @@
           <p>{{allProductDesc.ingredients}}</p>
         </div>
       </div>
-      <div class="desc-add-to-cart">
-        <QuantityButtonComponent :product-id="allProductDesc.product_id" :quantity="0"></QuantityButtonComponent>
-      </div>
+
+    </div>
+    <div class="desc-add-to-cart">
+      <QuantityButtonComponent :product-id="allProductDesc.product_id" :quantity="allProductDesc.quantity"
+        @UpdateProductsQuantity="updateQuantity"
+        ></QuantityButtonComponent>
     </div>
   </div>
 </template>

@@ -15,7 +15,6 @@
       </h1>
 
       <div class="right-actions d-f fd-r jc-sb ai-c">
-        {{rightActions}}
         <div v-for="(action, i) in rightActions" v-if="rightActions" class="item cur-p d-f ai-c jc-c"
           @click.prevent="action.method">
              <i class="material-icons">
