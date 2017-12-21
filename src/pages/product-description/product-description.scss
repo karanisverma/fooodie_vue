@@ -9,7 +9,7 @@
   .quantity-button-component .quantity-button .add-sign{
     margin: 0;
     padding: .5em;
-    padding-right:1em;  
+    padding-right:1em;
   }
   .quantity-button-component .quantity-button .minus-sign{
     margin: 0;
@@ -48,6 +48,7 @@
     position: relative;
     top: -6px;
     display: inline-table;
+    width: 100%;
     .desc-ingre-content {
       background: #fff;
       color: #373737;
@@ -74,7 +75,7 @@
       &:hover {
         color: #fff;
         cursor: pointer;
-      } 
+      }
     }
     #description:checked~.desc-ingre-content #item-description,
     #ingredients:checked~.desc-ingre-content #item-ingredient {

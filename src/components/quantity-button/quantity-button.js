@@ -3,6 +3,11 @@
 export default {
   name: 'QuantityButtonComponent',
   props: ['productId', 'quantity'],
+  data () {
+    return {
+      // mutableQuantity: this.quantity
+    }
+  },
   computed: {
     mutableQuantity: {
       get: function () {
@@ -18,6 +23,12 @@ export default {
     addToCart (q, type = '') {
       console.log('added to cart', q)
       this.mutableQuantity = q
+      var productInfo = {
+        productId: this.productId,
+        quantity: this.mutableQuantity,
+        type: type
+      }
+      this.$emit('UpdateProductsQuantity', productInfo)
     }
     // addToCart (q, type = '') {
     //   console.log('ADDDDDDD TOOOOOO CART--------------------------------------->')

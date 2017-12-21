@@ -21,7 +21,7 @@
       <input id="ingredients" type="radio" name="tabs">
       <label for="ingredients">Ingredients</label>
 
-      <div class="desc-ingre-content">  
+      <div class="desc-ingre-content">
         <div id="item-description">
           <p>{{allProductDesc.detail}}</p>
         </div>
@@ -32,7 +32,9 @@
 
     </div>
     <div class="desc-add-to-cart">
-      <QuantityButtonComponent :product-id="allProductDesc.product_id" :quantity="0"></QuantityButtonComponent>
+      <QuantityButtonComponent :product-id="allProductDesc.product_id" :quantity="allProductDesc.quantity"
+        @UpdateProductsQuantity="updateQuantity"
+        ></QuantityButtonComponent>
     </div>
   </div>
 </template>

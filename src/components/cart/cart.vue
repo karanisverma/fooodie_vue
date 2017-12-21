@@ -18,9 +18,11 @@
         <div class="cart-item-row" v-for="item in cartItems" v-if="item.quantity>0">
           <p class="cart-item-name">{{item.name}}</p>
           <p class="cart-item-quantity">
-            <QuantityButtonComponent :product-id="item.product_id" :quantity="item.quantity"></QuantityButtonComponent>
+            <QuantityButtonComponent :product-id="item.product_id" :quantity="item.quantity"
+              @UpdateProductsQuantity="updateQuantity"
+            ></QuantityButtonComponent>
           </p>
-          <p class="cart-item-cost">{{item.cost}}</p>
+          <p class="cart-item-cost">{{item.cost * item.quantity}}</p>
         </div>
       </div>
       <div class="footer-note">

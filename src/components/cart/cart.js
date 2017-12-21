@@ -16,8 +16,8 @@ export default {
   },
   computed: {
     cartItems () {
-      let {Cart} = this.$store.state
-      return Cart.items
+      let {Products} = this.$store.state
+      return Products.allProducts
     }
   },
   components: {
@@ -26,6 +26,15 @@ export default {
   methods: {
     toggleSidebar () {
       this.$emit('update:show', !this.show)
+    },
+    updateQuantity (updatedProductInfo) {
+      console.log('dkjasgdjkgdjksaghdjkhsa dsukadgsiadyas ', updatedProductInfo)
+      const {Products} = this.$store.state
+      for (let i = 0; i < Products.allProducts.length; i++) {
+        if (Products.allProducts[i].product_id === updatedProductInfo.productId) {
+          Products.allProducts[i].quantity = updatedProductInfo.quantity
+        }
+      }
     }
   }
 }

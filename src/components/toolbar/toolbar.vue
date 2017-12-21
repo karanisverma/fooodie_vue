@@ -31,4 +31,4 @@ import './toolbar.scss'
 
 import Toolbar from './toolbar'
 export default Toolbar
-</script> 
+</script>

@@ -20,8 +20,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #ccc;
-  /*margin-top: 60px;*/
   height: 100%;
+  /*margin-top: 60px;*/
+  .web-header {
+    display: block;
+  }
 }
 
 
@@ -29,5 +32,11 @@ body {
 	body {
 		width: 100%;
 	}
+
+  #app {
+    .web-header {
+      display: none;
+    }
+  }
 
 }
