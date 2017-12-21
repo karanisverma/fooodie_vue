@@ -113,11 +113,11 @@ export default {
       const {Products} = this.$store.state
       // console.log('doing product list.....', Products.allProducts[0].quantity)
       for (let i = 0; i < Products.allProducts.length; i++) {
-        // console.log('for looppp ===>', Products.allProducts[i])
         // console.log('Products.allProducts[i].product_id', Products.allProducts[i].product_id)
         // console.log('updatedProductInfo.productId', updatedProductInfo.productId)
         if (Products.allProducts[i].product_id === updatedProductInfo.productId) {
           Products.allProducts[i].quantity = updatedProductInfo.quantity
+          localStorage.setItem('Product Item', JSON.stringify(Products.allProducts))
         }
       }
     }

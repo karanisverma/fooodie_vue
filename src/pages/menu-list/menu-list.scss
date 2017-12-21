@@ -1,8 +1,8 @@
 .page-menu-list {
   color: red;
   .menu-scrollbar {
-    ::-webkit-scrollbar { 
-        display: none; 
+    ::-webkit-scrollbar {
+        display: none;
     }
     ul {
       list-style: none;
@@ -101,7 +101,10 @@ section.menu-category {
     width:100%;
 }
 .active-category{
-    font-weight:700; 
+  font-weight:bold;
+  color: #dada00;
+  // border-bottom: 2px solid #dada00;
+  // padding-bottom: 5px;
 }
 button{
     width: 19%;
