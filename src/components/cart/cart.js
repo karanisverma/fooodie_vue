@@ -30,9 +30,12 @@ export default {
     updateQuantity (updatedProductInfo) {
       console.log('dkjasgdjkgdjksaghdjkhsa dsukadgsiadyas ', updatedProductInfo)
       const {Products} = this.$store.state
+      const {Cart} = this.$store.state
       for (let i = 0; i < Products.allProducts.length; i++) {
         if (Products.allProducts[i].product_id === updatedProductInfo.productId) {
           Products.allProducts[i].quantity = updatedProductInfo.quantity
+          Cart.items[updatedProductInfo.productId] = updatedProductInfo.quantity
+          localStorage.setItem('Cart', JSON.stringify(Cart.items))
         }
       }
     }
