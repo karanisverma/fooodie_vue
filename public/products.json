@@ -5,11 +5,12 @@
        "cost":35,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"snacks",
        "product_id":1,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/paneer_sandwich.jpg",
@@ -17,11 +18,12 @@
        "cost":45,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"snacks",
        "product_id":2,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/alloo_sandwich.jpg",
@@ -29,11 +31,12 @@
        "cost":35,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"snacks",
        "product_id":3,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/maggi.jpg",
@@ -41,11 +44,12 @@
        "cost":35,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"snacks",
        "product_id":4,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/top_ramen.jpg",
@@ -53,11 +57,12 @@
        "cost":35,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"snacks",
        "product_id":5,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/chowmein.jpg",
@@ -65,11 +70,12 @@
        "cost":60,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"snacks",
        "product_id":6,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/egg_sandwich.jpg",
@@ -77,11 +83,12 @@
        "cost":50,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"snacks",
        "product_id":7,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/egg_chowmein.jpg",
@@ -89,11 +96,12 @@
        "cost":100,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"snacks",
        "product_id":8,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/veg_biriyani.jpg",
@@ -101,11 +109,12 @@
        "cost":140,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"rice_and_biriyani",
        "product_id":9,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/veg_pulaw.jpg",
@@ -113,11 +122,12 @@
        "cost":140,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"rice_and_biriyani",
        "product_id":10,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/paneer_biriyani.jpg",
@@ -125,11 +135,12 @@
        "cost":160,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"rice_and_biriyani",
        "product_id":11,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/veg_fried_rice.jpg",
@@ -137,11 +148,12 @@
        "cost":100,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"rice_and_biriyani",
        "product_id":12,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/jira_rice.jpg",
@@ -149,11 +161,12 @@
        "cost":70,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"rice_and_biriyani",
        "product_id":13,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/plain_rice.jpg",
@@ -161,11 +174,12 @@
        "cost":60,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"rice_and_biriyani",
        "product_id":14,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/chicken_dum_biriyani.jpg",
@@ -173,11 +187,12 @@
        "cost":180,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"rice_and_biriyani",
        "product_id":15,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/chicken_fried_rice.jpg",
@@ -185,11 +200,12 @@
        "cost":120,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"rice_and_biriyani",
        "product_id":16,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/chicken_biriyani.jpg",
@@ -197,11 +213,12 @@
        "cost":180,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"rice_and_biriyani",
        "product_id":17,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/egg_biriyani.jpg",
@@ -209,11 +226,12 @@
        "cost":150,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"rice_and_biriyani",
        "product_id":18,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/egg_fried_rice.jpg",
@@ -221,11 +239,12 @@
        "cost":100,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"rice_and_biriyani",
        "product_id":19,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/chilli_paneer.jpg",
@@ -233,11 +252,12 @@
        "cost":100,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"curry",
        "product_id":20,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/gobi_manchurian.jpg",
@@ -245,11 +265,12 @@
        "cost":100,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"curry",
        "product_id":21,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/kadaiPaneer.jpg",
@@ -257,11 +278,12 @@
        "cost":130,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"curry",
        "product_id":22,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/aalu_jirra.jpg",
@@ -269,11 +291,12 @@
        "cost":130,
        "status":"instock",
        "fav":3,
-       "type": "veg",
+       "type":"veg",
        "category":"curry",
        "product_id":23,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/aalu_lehsaniya.jpg",
@@ -281,11 +304,12 @@
        "cost":130,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"curry",
        "product_id":24,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/allu_gobhi_matar.jpg",
@@ -293,11 +317,12 @@
        "cost":120,
        "status":"instock",
        "fav":5,
-       "type": "veg",
+       "type":"veg",
        "category":"curry",
        "product_id":25,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/allu_matar_masala.jpg",
@@ -305,11 +330,12 @@
        "cost":130,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"curry",
        "product_id":26,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/ghobhi_masala.jpg",
@@ -317,11 +343,12 @@
        "cost":70,
        "status":"instock",
        "fav":6,
-       "type": "veg",
+       "type":"veg",
        "category":"snacks",
        "product_id":27,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/ghobi_matar.jpg",
@@ -329,11 +356,12 @@
        "cost":80,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"curry",
        "product_id":28,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/mix_veg.jpg",
@@ -341,11 +369,12 @@
        "cost":110,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"curry",
        "product_id":29,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/paneer_do_pyaza.jpg",
@@ -353,11 +382,12 @@
        "cost":120,
        "status":"instock",
        "fav":8,
-       "type": "veg",
+       "type":"veg",
        "category":"curry",
        "product_id":30,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/panner_masala.jpg",
@@ -365,11 +395,12 @@
        "cost":100,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"curry",
        "product_id":31,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/paneer_butter_masala.jpg",
@@ -377,11 +408,12 @@
        "cost":130,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"curry",
        "product_id":32,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/alloo_gobi.jpg",
@@ -389,11 +421,12 @@
        "cost":88,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"curry",
        "product_id":33,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/dal_fry.jpg",
@@ -401,11 +434,12 @@
        "cost":100,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"curry",
        "product_id":34,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/kadaichicken.JPG",
@@ -413,11 +447,12 @@
        "cost":200,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"curry",
        "product_id":35,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/kadaichicken.JPG",
@@ -425,11 +460,12 @@
        "cost":300,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"curry",
        "product_id":36,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/chicken_roast.jpg",
@@ -437,11 +473,12 @@
        "cost":180,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"curry",
        "product_id":37,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/chicken_butter_masala.jpg",
@@ -449,11 +486,12 @@
        "cost":20,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"curry",
        "product_id":38,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/chicken_butter_masala.jpg",
@@ -461,11 +499,12 @@
        "cost":300,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"curry",
        "product_id":39,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/egg_curry.jpg",
@@ -473,11 +512,12 @@
        "cost":80,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"curry",
        "product_id":40,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/chicken_chilli.jpg",
@@ -485,11 +525,12 @@
        "cost":160,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"curry",
        "product_id":41,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/alloo_pratha.jpg",
@@ -497,11 +538,12 @@
        "cost":25,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"rolls_and_paratha",
        "product_id":42,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/tandoori_roti.jpg",
@@ -509,11 +551,12 @@
        "cost":10,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"rolls_and_paratha",
        "product_id":43,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/tandoori_butter_roti.jpg",
@@ -521,11 +564,12 @@
        "cost":10,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"rolls_and_paratha",
        "product_id":44,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/paneer_roll.jpg",
@@ -533,11 +577,12 @@
        "cost":50,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"rolls_and_paratha",
        "product_id":45,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/veg_roll.jpg",
@@ -545,11 +590,12 @@
        "cost":30,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"rolls_and_paratha",
        "product_id":46,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/paneer_cheese_roll.jpg",
@@ -557,11 +603,12 @@
        "cost":70,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"rolls_and_paratha",
        "product_id":47,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/chicken_roll.jpg",
@@ -569,11 +616,12 @@
        "cost":80,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"rolls_and_paratha",
        "product_id":48,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/egg_roll.jpg",
@@ -581,11 +629,12 @@
        "cost":70,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"rolls_and_paratha",
        "product_id":49,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/coco_cola.jpg",
@@ -593,11 +642,12 @@
        "cost":20,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"drink_and_dessert",
        "product_id":50,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/thumbs_up.jpg",
@@ -605,11 +655,12 @@
        "cost":35,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"drink_and_dessert",
        "product_id":51,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/sprite.jpg",
@@ -617,11 +668,12 @@
        "cost":35,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"drink_and_dessert",
        "product_id":52,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/choclate_icecream.jpg",
@@ -629,11 +681,12 @@
        "cost":40,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"drink_and_dessert",
        "product_id":53,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/vanilla_icecream.jpg",
@@ -641,11 +694,12 @@
        "cost":40,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"drink_and_dessert",
        "product_id":54,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     },
     {
        "img":"https://fooodie.store/static/img/menu/straberry_icecream.jpg",
@@ -653,10 +707,11 @@
        "cost":40,
        "status":"instock",
        "fav":2,
-       "type": "veg",
+       "type":"veg",
        "category":"drink_and_dessert",
        "product_id":55,
        "detail":"Combination of butter, cucumber, tomato, onion served with toasted bread.",
-       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|"
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
     }
  ]
