@@ -14,7 +14,7 @@ export default {
       let {Products} = this.$store.state
       let {Cart} = this.$store.state
       console.log('Products-->', Products)
-      Cart.items = JSON.parse(localStorage.getItem('Cart'))
+      Cart.items = JSON.parse(localStorage.getItem('Cart')) || {}
       Products.getAllProduct().then(res => {
         Products.allProducts = res
         // console.log('Object.keys(Cart.items)', Object.keys(Cart.items))

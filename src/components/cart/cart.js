@@ -32,17 +32,43 @@ export default {
     QuantityButtonComponent
   },
   methods: {
-    placeOrder () {
-      console.log('placeOrder is clicked')
-      const {Products} = this.$store.state
-      Products.allProducts.forEach(function (product) {
-        '{0}({1})   : {3}'.format(product.name, product.quantity, product.quantity * product.cost)
-      })
+    getLocation () {
+      if (navigator.geolocation) {
+        let vm = this
+        navigator.geolocation.getCurrentPosition(function (position) { vm.setPosition(position) })
+        // navigator.geolocation.getCurrentPosition(function (position) { this.setPosition(position) })
+      } else {
+        console.log('not supported by your browser')
+      }
     },
-    // *Order*:
-    // ProductName Quantity Cost
-    // _Biriyani     1       100_
-    //
+    setPosition (position) {
+      console.log('http://www.google.com/maps/dir/?api=1&destination=' + position.coords.latitude + ',' + position.coords.longitude)
+      return 'http://www.google.com/maps/dir/?api=1&destination=' + position.coords.latitude + ',' + position.coords.longitude
+    },
+    placeOrder () {
+      // let userLocation = this.getLocation()
+      // console.log('placeOrder is clicked and user location -> ', userLocation)
+      const {Products} = this.$store.state
+      let order = []
+      let totalCost = '*Total ----> ' + this.totalCost + '*'
+      order.push('*Order:*')
+      Products.allProducts.forEach(function (product) {
+        if (product.quantity > 0) {
+          let orderRow = '_' + product.name + '_(' + product.quantity + ') ----> ' + 'Rs.' + (product.quantity * product.cost)
+          order.push(orderRow)
+          // console.log('Order Row-> ', orderRow)
+        }
+      })
+
+      order.push(totalCost)
+      let orderString = order.join('\n')
+      console.log('Order string-> ', orderString)
+      let whatsappOrderUri = encodeURIComponent(orderString)
+      window.open(
+        'https://api.whatsapp.com/send?phone=919111351935&text=' + whatsappOrderUri,
+        '_blank' // <- This is what makes it open in a new window.
+        )
+    },
     toggleSidebar () {
       this.$emit('update:show', !this.show)
     },

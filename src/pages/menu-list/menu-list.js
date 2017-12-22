@@ -115,6 +115,7 @@ export default {
       for (let i = 0; i < Products.allProducts.length; i++) {
         if (Products.allProducts[i].product_id === updatedProductInfo.productId) {
           Products.allProducts[i].quantity = updatedProductInfo.quantity
+          console.log('{Cart--->', Cart)
           Cart.items[updatedProductInfo.productId] = updatedProductInfo.quantity
           localStorage.setItem('Cart', JSON.stringify(Cart.items))
         }
