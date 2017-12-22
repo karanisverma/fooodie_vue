@@ -12,10 +12,19 @@ export default {
   methods: {
     getAllProducts () {
       let {Products} = this.$store.state
+      let {Cart} = this.$store.state
       console.log('Products-->', Products)
+      Cart.items = JSON.parse(localStorage.getItem('Cart'))
       Products.getAllProduct().then(res => {
         Products.allProducts = res
-        console.log('res====> ', res)
+        // console.log('Object.keys(Cart.items)', Object.keys(Cart.items))
+        Object.keys(Cart.items).forEach(function (cartProduct) {
+          Products.allProducts.forEach(function (product) {
+            if (product.product_id === parseInt(cartProduct)) {
+              product.quantity = Cart.items[cartProduct]
+            }
+          })
+        })
       })
     }
     // getAllProducts2 () {
