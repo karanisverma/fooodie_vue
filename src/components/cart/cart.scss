@@ -49,11 +49,21 @@
       padding: 5%;
       align-items: center;
       background: rgba(0, 0, 0, 0.06);
-      .quantity-button p{
+      
+      .quantity-button{ 
+        .quantity-buy{
+          left: 30%;
+        }
+        .minus-sign{
+          padding: 0.5em;
+        }
+        p{
         margin: 0;
         text-align: center;
         width:30%;
       }
+
+    }
       p{
         width: 30%;
       }
