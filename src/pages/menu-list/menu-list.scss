@@ -76,7 +76,7 @@ section.menu-category {
 .add-to-cart{
     width: 50%;
     position: absolute;
-    left: 5.8em;
+    left: 45%;    
     top: 3.8em;
 }
 .product h3, .product p{
@@ -127,4 +127,8 @@ button{
     height: 350px;
     margin: -85px 0 0 -124px;
 }
+}
+
+@media screen and (max-width: 425px) {
+
 }

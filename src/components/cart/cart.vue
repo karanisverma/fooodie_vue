@@ -15,6 +15,10 @@
         <span>Shopping Cart</span>
       </div>
       <div class="item-wrapper">
+        <div class="empty-cart" v-if="totalCost===0">
+        <img class="empty-cart-img" src="../../assets/empty_cart/010-dishes.svg">
+        <p>Your cart is empty</p>
+        </div>
         <div class="cart-item-row" v-for="item in cartItems" v-if="item.quantity>0">
           <p class="cart-item-name">{{item.name}}</p>
           <p class="cart-item-quantity">
@@ -30,8 +34,10 @@
           <span id="total-cost-lable">Total</span>
           <span class="total-cost-amount">{{totalCost}}</span>
         </div>
-        <button @click="placeOrder">
+        <button @click="placeOrder" v-if="totalCost>0">
           Order Using Whatsapp</button>
+        <button @click="toggleSidebar" v-if="totalCost===0">
+          Go back to menu</button>
       </div>
     </div>
   </div>
