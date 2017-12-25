@@ -10,10 +10,13 @@
       :style="{transform: `translate3d(${this.show ? 0:-100}%,0,0)`}"
     >
 
-      <div class="user">
-        <div class="user-icon"></div>
+      <div class="user" @click="toggleSidebar">
+      <router-link
+        :to="{ name: 'HomePage' } ">
+        <div class="user-icon"> <img src="https://s3.amazonaws.com/aws-website-fooodiestore-s7bs1/static/img/fooodie_dark_logo.png"></div>
         <!-- <i class="material-icons">account_circle</i> -->
-        <span>Food</span>
+        <span>Fooodie</span>
+        </router-link>
       </div>
 
       <nav class="all-list f-1">

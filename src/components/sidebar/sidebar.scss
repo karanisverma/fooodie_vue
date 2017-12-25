@@ -39,6 +39,10 @@
     }
 
     .user {
+      a{
+        display: flex;
+        align-items: center;
+      }
       padding: 17px;
       box-shadow: 0 0.5px 0 0 rgba(255, 255, 255, 0.16);
       width: 100%;
@@ -51,10 +55,25 @@
       align-items: center;
       .user-icon {
         margin-right: 16px;
-        background: #ccc;
+        background: #fcfcfc;
         width: 39px;
         height: 39px;
         border-radius: 50%;
+        img{
+          width: 80%;
+          display: block;
+          margin: auto;
+          position: relative;
+          top: 19%;
+        }
+      }
+      a{
+        text-decoration: none;
+        span{
+          font-size: 17px;
+          text-decoration: none;
+          color: #d1d2d5;
+        }
       }
       span {
         flex: 1;

@@ -4,9 +4,10 @@
     <button @click="addToCart(1, 'add')">Add</button>
   </div>
   <div v-else class="quantity-button">
-    <p href="" class="minus-sign" @click="addToCart(mutableQuantity-1, 'remove')">-</p>
+    <p href="" class="minus-sign" @click="addToCart(mutableQuantity-1, 'remove')"><i class="material-icons">remove</i></p>
     <p class="quantity-buy">{{mutableQuantity}}</p>
-    <p href="" class="add-sign" @click="addToCart(mutableQuantity+1, 'add')">+</p>
+    <!-- <p href="" class="add-sign" @click="addToCart(mutableQuantity+1, 'add')">+</p> -->
+    <p href="" class="add-sign" @click="addToCart(mutableQuantity+1, 'add')"><i class="material-icons">add</i></p>
   </div>
 </div>
 </template>

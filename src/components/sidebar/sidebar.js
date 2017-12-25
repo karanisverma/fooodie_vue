@@ -20,6 +20,7 @@ export default {
         name: 'MenuList',
         params: {categoryId: 0}
       })
+      this.$emit('update:show', !this.show)
     },
     openTermsConditions () {
       this.$router.push({

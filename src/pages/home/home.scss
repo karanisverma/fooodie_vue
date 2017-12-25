@@ -1,4 +1,8 @@
 .home-page {
+  .component-toolbar{
+    position: fixed;
+    width:100%;
+  }
   color: black;
 	::-webkit-scrollbar { 
     display: none; 

@@ -50,12 +50,13 @@
       align-items: center;
       background: rgba(0, 0, 0, 0.06);
       
-      .quantity-button{ 
+      .quantity-button{
+        font-weight: 200; 
         .quantity-buy{
           left: 30%;
         }
-        .minus-sign{
-          padding: 0.5em;
+        .minus-sign, .add-sign, .quantity-buy{
+          padding: 0.25em;
         }
         p{
         margin: 0;
@@ -135,17 +136,40 @@
     }
 
     .footer-note {
-      padding: 20px 17px;
+      padding: 0px;
       color: rgb(0, 0, 0);
       font-size: 13px;
       font-weight: 300;
       flex: 1;
       background: pink;
+      .total-cost{
+        width: 100%;
+        height: 2em;
+        position: relative;
+        background: #e7e7e7;
+        font-size: 1.3em;
+        text-align: center;
+        display: flex;
+        font-weight: 500;
+        align-items: center;
+        span{
+          padding-left: 1em;
+        }
+        .total-cost-amount{
+          position: absolute;
+          right: 15px;
+        }
+      }
       button {
         font-size: 18px;
         align-items: center;
         justify-content: space-around;
         display: inline-flex;
+        background: #dada00;
+        width: 100%;
+        height: 3em;
+        color: black;
+        font-weight: 500;
         svg {
           margin-right: 10px;
         }
