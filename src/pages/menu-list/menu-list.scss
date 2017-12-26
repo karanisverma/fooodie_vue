@@ -129,6 +129,28 @@ button{
 }
 }
 
-@media screen and (max-width: 425px) {
-
+@media screen and (min-width: 768px) {
+.page-menu-list{
+    .menu-slider{
+      margin-top: 6em;
+      max-height: 85vh;
+    }
+    .menu-category{
+          display: flex;
+          flex-wrap: wrap;
+    }
+    .add-to-cart{
+      top:65%;
+    }
+    .product {
+      height: 13%;
+      width: 45%;
+      margin: 2%;
+      background-color: white;
+      display: flex;
+    }
+    .cart-sidebar-wrapper .sidebar{
+      width: 50%;
+    }
+}
 }
