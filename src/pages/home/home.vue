@@ -17,26 +17,44 @@
             </router-link>
         </div>
     </div>
-    <!-- <img src="../../assets/logo.png"> -->
-    <div class="featured-products">
-        <h3>Featured Product</h3>
-        <div class="new-products">
-        	<div class="product" v-for="item in allNewItems">
-            <!-- <img :src="item.image"> -->
-            <router-link
-              :to="{ name: 'ProductDescription',
-              params: {faq_id: 1} } ">
-              <img :src="item.image">
-            </router-link>
-        	</div>
+
+    <!-- Offer Section -->
+    <div class="web-wrapper">
+      <h3>Offers</h3>
+      <div class="offer-wrapper">
+        <div class="offer"  v-for="item in allNewItems">
+          <img :src="item.image">
         </div>
+      </div>
+    </div>
+    <!-- <img src="../../assets/logo.png"> -->
+    <div class="web-wrapper">
+      <div class="featured-products">
+          <h3>Featured Product</h3>
+          <div class="new-products">
+          	<div class="product" v-for="item in allNewItems">
+              <!-- <img :src="item.image"> -->
+              <router-link
+                :to="{ name: 'ProductDescription',
+                params: {faq_id: 1} } ">
+                <img :src="item.image">
+              </router-link>
+          	</div>
+          </div>
+      </div>
     </div>
     <!-- previous products -->
-    <div class="featured-products">
-      <h3>Previous Order</h3>
-      <div class="new-products">
-        <div class="product" v-for="item in allNewItems">
-          <img :src="item.image">
+    <div class="web-wrapper">
+      <div class="featured-products">
+        <h3>Previous Order</h3>
+        <div class="new-products">
+          <div class="product" v-for="item in allNewItems">
+            <router-link
+                :to="{ name: 'ProductDescription',
+                params: {faq_id: 1} } ">
+            <img :src="item.image">
+          </router-link>
+          </div>
         </div>
       </div>
     </div>
