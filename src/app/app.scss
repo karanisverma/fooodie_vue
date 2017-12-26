@@ -11,7 +11,10 @@ body {
   left: 0;
   height: 100%;
   right: 0;
+}
 
+.d-f {
+  display: flex;
 }
 
 #app {
@@ -23,6 +26,27 @@ body {
   height: 100%;
   /*margin-top: 60px;*/
   .web-header {
+    position: fixed;
+    background: rgba(149, 149, 149, 0.49);
+    width: 100%;
+    img {
+      width: 75px;
+      float: left;
+      position: absolute;
+      top: 16px;
+      left: 26px;
+    }
+    ul {
+      list-style-type: none;
+      display: flex;
+      color: black;
+      justify-content: flex-end;
+      li {
+        margin: 0 15px;
+      }
+    }
+  }
+  .web-view {
     display: block;
   }
 }
@@ -34,7 +58,7 @@ body {
 	}
 
   #app {
-    .web-header {
+    .web-view {
       display: none;
     }
   }
