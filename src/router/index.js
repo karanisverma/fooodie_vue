@@ -29,6 +29,11 @@ export default new Router({
       component: () => import(/* webpackChunkName: "page-terms-conditions" */ '../pages/terms-conditions')
     },
     {
+      path: '/how-it-works',
+      name: 'HowItWorksPage',
+      component: () => import(/* webpackChunkName: "page-how-it-works" */ '../pages/how-it-works')
+    },
+    {
       path: '*',
       name: 'PageNotFound',
       component: () => import(/* webpackChunkName: "page-404" */ '../pages/no-found')

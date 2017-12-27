@@ -2,12 +2,29 @@
   <div id="app">
     <div class="web-view">
       <div class="web-header">
-        <img src="../assets/logo.png">
+        <router-link
+          :to="{ name: 'HomePage'}">
+          <img src="../assets/logo.png">
+        </router-link>
         <ul>
-          <li>Menu</li>
-          <li>About Us</li>
-          <li>How it Works</li>
-          <li>Terms and Conditions</li>
+          <li>
+            <router-link
+              :to="{ name: 'TermsAndConditions'}">
+                Menu
+            </router-link>
+          </li>
+          <li>
+          <router-link
+            :to="{ name: 'HowItWorksPage'}">
+            How it Works
+          </router-link>
+          </li>
+          <li>
+            <router-link
+              :to="{ name: 'TermsAndConditions'}">
+              Terms and Conditions
+            </router-link>
+          </li>
         </ul>
       </div>
     </div>

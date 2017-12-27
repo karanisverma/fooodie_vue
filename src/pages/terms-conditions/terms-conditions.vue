@@ -1,6 +1,7 @@
 <template>
   <div class="terms-conditions">
-    <Toolbar v-bind="toolbarProps"/>    
+    <Toolbar v-bind="toolbarProps"/>
+    <div class="web-wrapper">
       <div class="t-n-c">
         <input id="tab-one" type="checkbox" name="tabs">
         <label for="tab-one">What is the minimum order I can place?</label>
@@ -72,7 +73,7 @@
           <p>If Fooodie contact number is not reachable then you can reach us on +91 9993312277.</p>
         </div>
       </div>
-
+      </div>
   </div>
 </template>
 

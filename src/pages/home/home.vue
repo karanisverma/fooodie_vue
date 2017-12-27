@@ -58,6 +58,12 @@
         </div>
       </div>
     </div>
+
+    <!-- Testimonial -->
+
+    <div class="testimonial">
+      <p>testimonial will come here</p>
+    </div>
   </div>
 </template>
 

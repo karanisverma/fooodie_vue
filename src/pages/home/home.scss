@@ -21,10 +21,11 @@
     background-image: url('../../assets/img/img1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 450px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-position-y: -90px;
     // height: 10em;
     // background-color: #ccffcc;
     h1 {
@@ -33,13 +34,13 @@
       justify-content: center;
       align-items: center;
       // height: 100%;
-      padding-top: 6em;
+      padding-top: 3em;
       font-weight: 100;
     }
     .menu-search {
       .menu-box {
         margin: auto;
-        width: 300px;
+        width: 400px;
         background: white;
         border-radius: 5px;
         p {
@@ -108,6 +109,7 @@
   .home-page {
     .home-banner {
       height: 285px;
+      background-position: 0px;
       h1 {
         padding-top: 0em;
         display: flex;

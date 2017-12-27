@@ -1,4 +1,10 @@
 .terms-conditions {
+    min-height: 100%;
+    padding-top: 10%;
+    .web-wrapper {
+      border: 1px solid #dddddd;
+      border-bottom: none;
+    }
   .t-n-c {
     position: relative;
     margin-bottom: 1px;
@@ -71,5 +77,11 @@
   // input[type=radio]:checked + label::after {
   //   transform: rotateX(180deg);
   // }
-  
+
+}
+
+@media screen and (max-width: 48em) {
+  .terms-conditions {
+    padding-top: 0%;
+  }
 }
