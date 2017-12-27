@@ -123,12 +123,105 @@ button{
 }
 
 .crop img {
-    width: 300px;
-    height: 350px;
-    margin: -85px 0 0 -124px;
+  width: 110%;
+  height: 100%;
 }
 }
 
+
+// For dekstop
+@media screen and (min-width: 1024px) {
+  .pe-n{
+    pointer-events: auto;
+  }
+  .no-select{
+    -moz-user-select: auto;
+    -ms-user-select: auto;
+    -khtml-user-select: auto;
+    -webkit-user-select: auto;
+    -webkit-touch-callout: auto
+  }
+  .sidebar-wrapper{
+    display: none;
+  }
+  .page-menu-list
+  { 
+    .touch-zone{
+      width: 55%;
+      margin: auto;
+    }
+    background: #f4f4f4;
+    nav{
+      width: 20%;
+      text-align: left;
+      margin-top: 5.5em;
+      margin-left: 2em;
+      background: white;
+      button{
+        width:100%;
+        text-align: right;
+        font-size: 1em;
+        font-weight: 100;
+        padding: .5em;
+        padding-right: .5em;
+        color: black;
+      }
+      .active-category{
+        background: rgba(77, 77, 77, 0.7490196078431373);
+        color: yellow;
+        font-weight: bold;
+      }
+    }
+    button{
+      display: block
+    }
+    .menu-slider-wrapper{
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      .menu-category{
+      .product {
+        height: 35%;
+        width: 45%;
+        margin: 2%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+      .crop {
+        width: 100%;
+        height: 70%;
+        overflow: hidden;
+        }
+      .product-info {
+        width: 100%;
+        height: 20%;
+        position: relative;
+      }
+    }
+    }
+  }
+}
+.cart-sidebar-wrapper{
+  position: absolute;
+  width: 20%;
+  top: 0;
+  right: 0;
+  left: auto;
+  .sidebar{
+    transform: translate3d(0%, 0px, 0px) !important;
+    width: 100%;
+    left: -11%;
+    min-height: 50%;
+    height: 50%;
+    position: relative;
+    top: 6.5em;
+    box-shadow: none;
+    }
+  .cart-sidebar-overlay{
+    display: none;
+  }
+  }
+}
 @media screen and (min-width: 768px) {
 .page-menu-list{
     .menu-slider{
@@ -149,8 +242,5 @@ button{
       background-color: white;
       display: flex;
     }
-    .cart-sidebar-wrapper .sidebar{
-      width: 50%;
-    }
-}
+  }
 }

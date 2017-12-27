@@ -1,5 +1,6 @@
 import Toolbar from '~/components/toolbar'
 import QuantityButtonComponent from '~/components/quantity-button'
+import Cart from '~/components/cart'
 export default {
   name: 'MenuList',
   computed: {
@@ -36,7 +37,8 @@ export default {
   },
   components: {
     Toolbar,
-    QuantityButtonComponent
+    QuantityButtonComponent,
+    Cart
   },
   mounted () {
     this.slider_init('.menu-slider')
