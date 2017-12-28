@@ -23,7 +23,11 @@
       <h3>Offers</h3>
       <div class="offer-wrapper">
         <div class="offer"  v-for="item in allNewItems">
-          <img :src="item.image">
+              <router-link
+                :to="{ name: 'ProductDescription',
+                params: {productId: item.product_id} } ">
+                <img :src="item.img">
+              </router-link>
         </div>
       </div>
     </div>
@@ -36,8 +40,8 @@
               <!-- <img :src="item.image"> -->
               <router-link
                 :to="{ name: 'ProductDescription',
-                params: {faq_id: 1} } ">
-                <img :src="item.image">
+                params: {productId: item.product_id} } ">
+                <img :src="item.img">
               </router-link>
           	</div>
           </div>

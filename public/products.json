@@ -13,6 +13,19 @@
        "quantity":0
     },
     {
+        "img":"https://fooodie.store/static/img/menu/french_fries.jpg",
+        "name":"French Fries",
+        "cost":40,
+        "status":"instock",
+        "fav":5,
+        "type":"veg",
+        "category":"snacks",
+        "product_id":56,
+        "detail":"French fries or simply fries or chips, are pieces of potato that have been deep-fried.",
+        "ingredients":"2 1/2 pounds russet potatoes Vegetable or peanut oil, for frying Sea salt, for sprinkling",
+        "quantity":0
+     },
+    {
        "img":"https://fooodie.store/static/img/menu/paneer_sandwich.jpg",
        "name":"Paneer Sandwich",
        "cost":45,

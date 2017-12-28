@@ -30,7 +30,7 @@ export default {
   methods: {
     getAllNewItems () {
       const {Home} = this.$store.state
-      Home.newCategory().then(res => {
+      Home.getFeaturedProducts().then(res => {
         let data = res.json()
         return Promise.resolve(data)
       })
