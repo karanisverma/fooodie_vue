@@ -9,8 +9,8 @@ class HomeState {
     this.allProductDescription = []
   }
   // Fetching data for new category
-  newCategory () {
-    return fetch('https://fooodie.store/static/js/category.json', {
+  getFeaturedProducts () {
+    return fetch('https://fooodie.store/static/js/feature_products.json', {
       method: 'GET'
     })
   }

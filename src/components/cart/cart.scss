@@ -5,7 +5,11 @@
   top: 0;
   left: 0;
   z-index: 1000;
-
+  transform: translate3d(0,100%,0);
+  will-change: transform;
+  &.animate {
+    transition: transform .25s cubic-bezier(0.4, 0.0, 0.6, 1);
+  }
   .cart-sidebar-overlay {
     position: absolute;
     height: 100%;
@@ -13,10 +17,8 @@
     opacity: 0;
     will-change: opacity;
     width: 100%;
-    pointer-events: none;
 
     &.visible {
-      pointer-events: auto;
       opacity: 1;
     }
   }
@@ -24,11 +26,11 @@
   .sidebar {
     background: #fff;
     position: fixed;
-    width: 85%;
+    width: 100%;
     height: 100%;
     top: 0;
-    left: 15%;
-    transform: translate3d(100%,0,0);
+    left: 0%;
+    
     will-change: transform;
     background-color: #ffffff;
     box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.24), 0 0 16px 0 rgba(0, 0, 0, 0.18);

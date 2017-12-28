@@ -1,18 +1,18 @@
 <template>
-  <div class="cart-sidebar-wrapper no-select" :class="{'pe-n': !show}">
+  <div class="cart-sidebar-wrapper no-select animate"  v-if="totalCost>0" :style="{transform: `translate3d(0,${this.show ? 0:91}%,0)`}">
     <!-- slider background overlay -->
     <div class="cart-sidebar-overlay"
       @click.prevent="toggleSidebar"
       :class="{visible: show}"
     />
     <!-- slider animation effect -->
-    <div class="sidebar animate of-a d-f fd-c jc-sb"
-      :style="{transform: `translate3d(${this.show ? 0:100}%,0,0)`}"
+    <div class="sidebar of-a d-f fd-c jc-sb"
+      
     >
       <div class="user">
         <!-- <div class="user-icon"></div> -->
-        <i class="material-icons">shopping_cart</i>
-        <span>Shopping Cart</span>
+        <i class="material-icons" v-if="this.show" @click="toggleSidebar">arrow_back</i>
+        <span @click="toggleSidebar">Checkout(₹{{totalCost}})</span>
       </div>
       <div class="item-wrapper">
         <div class="empty-cart" v-if="totalCost===0">
@@ -36,7 +36,7 @@
         </div>
         <button @click="placeOrder" v-if="totalCost>0">
           Order Using Whatsapp</button>
-        <button @click="toggleSidebar" v-if="totalCost===0" class="show-in-mobile">
+        <button @click="toggleSidebar" v-if="totalCost===0" class="">
           Go back to menu</button>
       </div>
     </div>
