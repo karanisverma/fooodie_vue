@@ -63,10 +63,7 @@ section.menu-category {
     overflow-y: auto;
     overflow-x: hidden;
     background: #f4f4f4;
-
-}
-::-webkit-scrollbar {
-  display: none;
+    -webkit-overflow-scrolling: touch;
 }
 .product{
     height: 20%;
@@ -301,10 +298,10 @@ button{
   right: 0;
   left: auto;
   z-index: 0;
+  transform: translate3d(0%, 0px, 0px) !important;
   .sidebar{
-    transform: translate3d(0%, 0px, 0px) !important;
-    width: 20%;
-    left: 77%;
+    width: 100%;
+    left: -20%;
     min-height: 55%;
     height: 50%;
     position: fixed;
