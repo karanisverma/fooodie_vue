@@ -32,7 +32,6 @@
     <sidebar :show.sync="showSidebar"/>
     <cart :show.sync="showCartSidebar"/>
 
-
     <footer class="web-view">
       <div class="web-wrapper">
         <div class="footer-title">

@@ -68,7 +68,12 @@
   }
 }
 
-
+@media screen and (min-width: 1024px) {
+  .quantity-button-component .quantity-button{
+    border: 1px solid #f57d20;
+    
+  }
+}
 @media screen and (max-width: 48em) {
   .quantity-button-component {
     .add-to-cart-button {

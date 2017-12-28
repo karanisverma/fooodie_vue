@@ -190,3 +190,13 @@
     }
   }
 }
+
+
+@media screen and (min-width: 1024px) {
+  .home-page{    
+    display: block;
+    position: relative;
+    z-index: 2;
+    background: white;
+  }
+  }

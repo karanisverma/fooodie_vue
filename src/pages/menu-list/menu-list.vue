@@ -2,6 +2,7 @@
   <div class="page-menu-list">
     <Toolbar v-bind="toolbarProps"/>
     <nav>
+        <div class="category-header" style=""><span>Category</span></div>
         <button @click="goTo(0)" class="active-category" id='category-1'>Snacks</button>
         <button @click="goTo(1)" id='category-2'>Rice & Biriyani</button>
         <button @click="goTo(2)" id='category-3'>Curry</button>
