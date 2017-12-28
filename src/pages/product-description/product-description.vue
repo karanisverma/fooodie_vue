@@ -1,6 +1,7 @@
 <template>
   <div class="product-description" v-if="allProductDesc">
     <Toolbar v-bind="toolbarProps"/>
+    <div class="web-wrapper">
     <div class="product-img">
       <!-- <img src="../../assets/img/img1.jpg"> -->
       <img :src="allProductDesc.img">
@@ -18,8 +19,8 @@
     <div class="product-desc-ingredients">
       <input id="description" type="radio" name="tabs" checked>
       <label for="description">Description</label>
-      <input id="ingredients" type="radio" name="tabs">
-      <label for="ingredients">Ingredients</label>
+      <!-- <input id="ingredients" type="radio" name="tabs"> -->
+      <!-- <label for="ingredients">Ingredients</label> -->
 
       <div class="desc-ingre-content">
         <div id="item-description">
@@ -36,6 +37,7 @@
         @UpdateProductsQuantity="updateQuantity"
         ></QuantityButtonComponent>
     </div>
+  </div>
   </div>
 </template>
 

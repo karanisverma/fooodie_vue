@@ -1,5 +1,8 @@
 <template>
   <div class="how-it-works-page">
+    <Toolbar
+      v-bind="toolbarProps"
+      @toggleSidebar="$emit('toggleSidebar');"/>
     <div class="web-wrapper">
       <div class="how-it-works-1">
 

@@ -27,6 +27,13 @@
           </div>
           <div class="item-name">Menu</div>
         </div>
+        <div class="item" @click="openHowItWorks">
+          <div class="icon">
+            <!-- <i class="material-icons">work</i> -->
+            <i class="material-icons">directions_run</i>
+          </div>
+          <div class="item-name">How It Works</div>
+        </div>
         <div class="item" @click="openTermsConditions">
           <div class="icon">
             <i class="material-icons">help</i>

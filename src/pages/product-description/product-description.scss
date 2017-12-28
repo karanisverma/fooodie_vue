@@ -67,7 +67,8 @@
     label {
       display: inline-block;
       padding: 12px 0px;
-      width: 50%;
+      width: 100%;
+      // width: 50%;
       font-weight: 600;
       text-align: center;
       background-color: #484848;
@@ -95,7 +96,7 @@
 
 
 @media screen and (min-width: 1024px) {
-  .product-description{    
+  .product-description{
     display: block;
     position: relative;
     z-index: 2;

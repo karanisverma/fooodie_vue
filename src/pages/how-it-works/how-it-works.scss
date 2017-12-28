@@ -55,6 +55,9 @@
     p {
       font-size: 25px;
       font-weight: 600;
+      text-transform: capitalize;
+      width: 90%;
+      margin: auto;
     }
     }
   }
@@ -76,18 +79,36 @@
     p {
       font-size: 25px;
       font-weight: 600;
+      text-transform: capitalize;
+      width: 90%;
+      margin: auto;
     }
     }
   }
 }
 
-
-
-@media screen and (min-width: 1024px) {
-  .how-it-works-page{    
+@media screen and (max-width: 48em) {
+  .how-it-works-page{
     display: block;
     position: relative;
     z-index: 2;
-    background: white;
+    // background: white;
+    padding-top:0;
+    .step-1 {
+      width: 90%;
+    }
+    .web-wrapper {
+      width: 100% !important;
+    }
+    .how-it-works-2, .how-it-works-3, .how-it-works-4 {
+      display: block;
+      .image {
+        width: 250px;
+        margin: auto;
+        img {
+          width: 100%;
+        }
+      }
+    }
   }
   }

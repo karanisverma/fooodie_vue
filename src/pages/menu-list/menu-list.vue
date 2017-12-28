@@ -3,11 +3,26 @@
     <Toolbar v-bind="toolbarProps"/>
     <nav>
         <div class="category-header" style=""><span>Category</span></div>
-        <button @click="goTo(0)" class="active-category" id='category-1'>Snacks</button>
-        <button @click="goTo(1)" id='category-2'>Rice & Biriyani</button>
-        <button @click="goTo(2)" id='category-3'>Curry</button>
-        <button @click="goTo(3)" id='category-4'>Rolls & Prathas</button>
-        <button @click="goTo(4)" id='category-5'>Drink & Desserts</button>
+        <button @click="goTo(0)" class="active-category" id='category-1'>
+            <span>Snacks</span>
+            <i class="material-icons">keyboard_arrow_right</i>
+        </button>
+        <button @click="goTo(1)" id='category-2'>
+            <span>Rice & Biriyani</span>
+            <i class="material-icons">keyboard_arrow_right</i>
+        </button>
+        <button @click="goTo(2)" id='category-3'>
+            <span>Curry</span>
+            <i class="material-icons">keyboard_arrow_right</i>
+        </button>
+        <button @click="goTo(3)" id='category-4'>
+            <span>Rolls & Prathas</span>
+            <i class="material-icons">keyboard_arrow_right</i>
+        </button>
+        <button @click="goTo(4)" id='category-5'>
+            <span>Drink & Desserts</span>
+            <i class="material-icons">keyboard_arrow_right</i>
+        </button>
     </nav>
     <v-touch
     @panright="slideMenu"

@@ -33,6 +33,11 @@
     .category-header{
       display: none;
     }
+    button {
+      i {
+        display: none;
+      }
+    }
 }
 .menu-slider-wrapper{
     overflow: hidden;
@@ -58,6 +63,10 @@ section.menu-category {
     overflow-y: auto;
     overflow-x: hidden;
     background: #f4f4f4;
+
+}
+::-webkit-scrollbar {
+  display: none;
 }
 .product{
     height: 20%;
@@ -154,7 +163,7 @@ button{
 //     .touch-zone {
 //       width: 35%;
 //     }
-//   } 
+//   }
 // }
 // For dekstop
 @media screen and (min-width: 1024px) {
@@ -201,17 +210,28 @@ button{
         }
       }
       button{
+        cursor: pointer;
         width: 100%;
         text-align: center;
         font-size: 1em;
         font-weight: 100;
         padding: .8em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         color: black;
+        i {
+          color: #828282;
+          display: block;
+        }
       }
       .active-category{
         background: rgba(240, 240, 240, 0.39);
         color: black;
         font-weight: bold;
+        i {
+          color: black;
+        }
       }
     }
     .touch-zone{
@@ -224,7 +244,7 @@ button{
     }
 
     button{
-      display: block
+      display: block;
     }
     .menu-slider-wrapper{
       width: 100%;
@@ -239,8 +259,8 @@ button{
             background-color: white;
             display: flex;
             flex-direction: column;
-            width: 14em;  
-            border: 1px solid #e2e2e2;  
+            width: 14em;
+            border: 1px solid #e2e2e2;
             .crop {
               width: 100%;
               height: 70%;
@@ -259,6 +279,8 @@ button{
                   padding: 0;
                   background: #dada00cc;
                   button{
+                    cursor: pointer;
+                    outline: none;
                     padding-top: 1em;
                     padding-bottom: 1em;
                     padding-right: 1.85714286em;
@@ -298,6 +320,10 @@ button{
     .footer-note{
       .total-cost{
         font-weight:300;
+      }
+      button {
+        cursor: pointer;
+        outline: none;
       }
     }
     }

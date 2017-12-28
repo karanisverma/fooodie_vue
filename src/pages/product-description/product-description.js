@@ -17,7 +17,13 @@ export default {
           icon: 'arrow_back',
           // method: () => this.$emit('toggleSidebar')
           method: () => this.$router.back()
-        }
+        },
+        rightActions: [
+          {
+            icon: 'shopping_cart',
+            method: () => this.$emit('toggleCartSidebar')
+          }
+        ]
       }
     }
   },
