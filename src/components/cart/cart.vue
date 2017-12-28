@@ -36,7 +36,7 @@
         </div>
         <button @click="placeOrder" v-if="totalCost>0">
           Order Using Whatsapp</button>
-        <button @click="toggleSidebar" v-if="totalCost===0">
+        <button @click="toggleSidebar" v-if="totalCost===0" class="show-in-mobile">
           Go back to menu</button>
       </div>
     </div>

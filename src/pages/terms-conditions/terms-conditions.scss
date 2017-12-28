@@ -85,3 +85,13 @@
     padding-top: 0%;
   }
 }
+
+
+@media screen and (min-width: 1024px) {
+  .terms-conditions{    
+    display: block;
+    position: relative;
+    z-index: 2;
+    background: white;
+  }
+  }

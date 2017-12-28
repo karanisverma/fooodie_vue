@@ -80,3 +80,14 @@
     }
   }
 }
+
+
+
+@media screen and (min-width: 1024px) {
+  .how-it-works-page{    
+    display: block;
+    position: relative;
+    z-index: 2;
+    background: white;
+  }
+  }

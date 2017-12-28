@@ -6,7 +6,7 @@
       @toggleSidebar="$emit('toggleSidebar');"/>
     <div class="home-banner">
         <h1>Why sleep hungry?</h1>
-        <div class="web-view menu-search">
+        <div class="menu-search">
            <router-link
               :to="{ name: 'MenuList', params: { categoryId: 0 }}">
               <div class="menu-box">
@@ -44,7 +44,7 @@
       </div>
     </div>
     <!-- previous products -->
-    <div class="web-wrapper">
+    <!-- <div class="web-wrapper">
       <div class="featured-products">
         <h3>Previous Order</h3>
         <div class="new-products">
@@ -57,7 +57,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Testimonial -->
     <div class="web-wrapper web-view">

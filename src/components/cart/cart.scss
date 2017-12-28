@@ -185,6 +185,9 @@
           margin-right: 10px;
         }
       }
+      .show-in-mobile{
+        display: block;
+      }
     }
   }
 }
@@ -194,4 +197,12 @@
   width: 50%;
   left: 50%;
 }
+
 }
+
+@media screen and (min-width: 1024px) {
+  .cart-sidebar-wrapper .sidebar .footer-note .show-in-mobile{
+    display: none
+  }
+}
+

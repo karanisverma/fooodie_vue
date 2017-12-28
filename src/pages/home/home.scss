@@ -45,8 +45,8 @@
         border-radius: 5px;
         p {
           margin: 10px;
-          text-align: left;
-          line-height: 40px;
+          line-height: 45px;
+          font-size: 1.5em;
           i {
             line-height: 40px;
             float: right;
@@ -58,8 +58,9 @@
 
   .offer-wrapper {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    overflow: auto;
+    // justify-content: space-around;
+    // flex-wrap: wrap;
     .offer {
       margin: 20px auto;
       padding: 0px 12px;
@@ -72,9 +73,10 @@
   .featured-products {
     .new-products {
       display: flex;
-      justify-content: space-around;
+      // justify-content: space-around;
       scroll-behavior: smooth;
-      flex-wrap: wrap;
+      // flex-wrap: wrap;
+      overflow: auto;
       margin: 1em 0;
       .product {
         display: flex;
@@ -142,14 +144,28 @@
 @media screen and (max-width: 48em) {
   .home-page {
     .home-banner {
-      height: 285px;
+      height: 100vh;
       background-position: 0px;
       h1 {
         padding-top: 0em;
         display: flex;
-        height: 100%;
+        height: auto;
+      }
+    .menu-search{
+      margin-top: 1em;
+      a{
+        .menu-box{
+          width: 65%;
+          p{
+          margin: auto;
+          // width: 65%;
+          background: white;
+          border-radius: 5px;
+          }
+        }
       }
     }
+  }
     .web-wrapper {
       width: 100%;
     }
