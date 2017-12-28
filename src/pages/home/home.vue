@@ -8,9 +8,9 @@
         <h1>Why sleep hungry?</h1>
         <div class="web-view menu-search">
            <router-link
-              :to="{ name: 'TermsAndConditions'}">
+              :to="{ name: 'MenuList', params: { categoryId: 0 }}">
               <div class="menu-box">
-                <p>Check Your Menu
+                <p>Order Now
                   <i class="material-icons">keyboard_arrow_right</i>
                 </p>
               </div>
