@@ -6,7 +6,7 @@
       :class="{visible: show}"
     />
     <!-- slider animation effect -->
-    <div class="sidebar animate of-a d-f fd-c jc-sb"
+    <div class="sidebar animate of-a fd-c jc-sb"
       :style="{transform: `translate3d(${this.show ? 0:-100}%,0,0)`}"
     >
 

@@ -168,6 +168,11 @@
   }
     .web-wrapper {
       width: 100%;
+      .testimonial{
+        .images{
+          width: auto;
+        }
+      }
     }
 
     .offer-wrapper {

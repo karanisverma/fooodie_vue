@@ -2,10 +2,12 @@
   <div id="app">
     <div class="web-view">
       <div class="web-header">
+        <div class="circle">
         <router-link
           :to="{ name: 'HomePage'}">
           <img src="../assets/logo.png">
         </router-link>
+        </div>
         <ul>
           <li>
             <router-link

@@ -60,7 +60,7 @@
     </div> -->
 
     <!-- Testimonial -->
-    <div class="web-wrapper web-view">
+    <div class="web-wrapper">
       <div class="testimonial">
         <input type="radio" name="image-slider" class="to-one" checked>
         <input type="radio" name="image-slider" class="to-two">
