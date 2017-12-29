@@ -38,5 +38,8 @@ export default new Router({
       name: 'PageNotFound',
       component: () => import(/* webpackChunkName: "page-404" */ '../pages/no-found')
     }
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    return { x: 0, y: 0 }
+  }
 })
