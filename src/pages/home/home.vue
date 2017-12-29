@@ -26,7 +26,7 @@
               <router-link
                 :to="{ name: 'ProductDescription',
                 params: {productId: item.product_id} } ">
-                <img :src="item.img">
+                <img v-lazy="item.img">
               </router-link>
         </div>
       </div>
@@ -41,7 +41,7 @@
               <router-link
                 :to="{ name: 'ProductDescription',
                 params: {productId: item.product_id} } ">
-                <img :src="item.img">
+                <img v-lazy="item.img">
               </router-link>
           	</div>
           </div>

@@ -11,10 +11,17 @@ import Vuex from 'vuex'
 import App from './app.vue'
 import store from '~/store'
 import router from '~/router'
+import VueLazyload from 'vue-lazyload'
 
 Vue.config.productionTip = false
 Vue.performance = true
 
+Vue.use(VueLazyload, {
+  preLoad: 1.3,
+  error: 'https://fooodie.store/static/img/loading/fooodie_loading_big.gif',
+  loading: 'https://fooodie.store/static/img/loading/fooodie_loading_big.gif',
+  attempt: 1
+})
 Vue.use(Vuex)
 
 var VueTouch = require('vue-touch')
