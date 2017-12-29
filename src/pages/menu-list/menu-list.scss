@@ -186,10 +186,16 @@ button{
     display: none;
   }
   .page-menu-list
-
   {
     background: white;
     padding-top: 3em;
+    .menu-slider{
+      margin-top: 0em!important;
+      height: 100%;
+      .menu-category{
+        padding-top:6em; 
+      }
+    }
     nav{
       padding-top:0;
       width: 20%;
@@ -257,6 +263,7 @@ button{
       margin: 0 auto;
         .menu-category{
           background: white;
+          height: 90%;
           .product {
             height: 280px;
             // width: 45%;
@@ -300,7 +307,7 @@ button{
   }
 }
 .cart-sidebar-wrapper{
-  position: absolute;
+  position: fixed;
   width: 20%;
   top: 0;
   right: 0;
