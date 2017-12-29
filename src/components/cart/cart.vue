@@ -31,7 +31,7 @@
         <div v-if="showDelviery" class="cart-item-row delivery-charge">
           <p class="cart-item-name">Delivery Charge</p>
           <p class="cart-item-cost">{{deliveryCharge}}</p>
-          <span class="delivery-text">Free delivery on order above ₹150</span>
+          <span class="delivery-text">Free delivery on order above ₹200</span>
         </div>
         <div v-else class="cart-item-row delivery-charge">
           <p class="cart-item-name">Delivery Charge</p>
@@ -44,10 +44,10 @@
           <span id="total-cost-lable">Total</span>
           <span class="total-cost-amount">{{totalCost}}</span>
         </div>
-        <button @click="placeOrder" v-if="totalCost>0">
+        <button @click="placeOrder" v-if="totalCost>0 && !showMinimumOrderWarning">
           Order Using Whatsapp</button>
-        <button @click="toggleSidebar" v-if="totalCost===0" class="">
-          Go back to menu</button>
+        <button v-else style="background:#888888">
+          Minimum Order of ₹100</button>
       </div>
     </div>
   </div>
