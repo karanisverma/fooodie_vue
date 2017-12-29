@@ -144,6 +144,9 @@ button{
   height: 100%;
 }
 }
+.cart-sidebar-wrapper{
+  display: block;
+}
 
 // @media screen and (min-width: 1366px) {
 //     .page-menu-list {
@@ -191,7 +194,8 @@ button{
     padding-top: 3em;
     .menu-slider{
       margin-top: 0em!important;
-      height: 100%;
+      height: 90%!important;
+      padding-bottom: 4em!important;
       .menu-category{
         padding-top:6em; 
       }
