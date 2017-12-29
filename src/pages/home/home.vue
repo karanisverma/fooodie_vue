@@ -102,7 +102,8 @@
 
     <div class="web-wrapper">
       <div class="testimonial">
-        <carousel :perPage="1" :autoplay="true" :minSwipeDistance="3" :autoplayTimeout="5000" :autoplayHoverPause="true">
+        <carousel :perPage = "1" :autoplay = "true" :minSwipeDistance = "3" :autoplayTimeout = "5000" :autoplayHoverPause = "true"
+        :navigationEnabled = "true">
           <slide>
             <div class="label">
               <div class="slide-one">
@@ -110,35 +111,35 @@
                 <p class="review-desc">It's good to have such kind of service in our home town, delicious food, punctual delivery, thanks foodie, even my parents liked the food. Keep growing .</p>
                 <p class="name">- Akansha Shrivastava</p>
                 <p class="designation">Student</p> -->
-                 <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FAgrawal07mudit%2Fposts%2F1588895457868122%3A0&width=500" width="300" height="373" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                 <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FAgrawal07mudit%2Fposts%2F1588895457868122%3A0&width=500" width="250" height="373" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
               </div>
             </div>
           </slide>
           <slide>
             <div class="label">
               <div class="slide-two">
-                 <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fshubhi.singh.52%2Fposts%2F1480571191996128%3A0&width=500" width="300" height="430" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                 <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fshubhi.singh.52%2Fposts%2F1480571191996128%3A0&width=500" width="250" height="430" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
               </div>
             </div>
           </slide>
           <slide>
             <div class="label">
               <div class="slide-three">
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fvinayfns%2Fposts%2F1611081485590429%3A0&width=500" width="300" height="373" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fvinayfns%2Fposts%2F1611081485590429%3A0&width=500" width="250" height="373" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
               </div>
             </div>
           </slide>
           <slide>
             <div class="label">
               <div class="slide-four">
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fshuklasiddhartha12%2Fposts%2F1694981723908243%3A0&width=500" width="300" height="411" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fshuklasiddhartha12%2Fposts%2F1694981723908243%3A0&width=500" width="250" height="411" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
               </div>
             </div>
           </slide>
           <slide>
             <div class="label">
               <div class="slide-five">
-               <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsaurabh.banerjee123%2Fposts%2F10212172118670693%3A0&width=500" width="300" height="373" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+               <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsaurabh.banerjee123%2Fposts%2F10212172118670693%3A0&width=500" width="250" height="373" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
               </div>
             </div>
           </slide>

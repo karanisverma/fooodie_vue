@@ -8,12 +8,12 @@ export default {
     return {
       toolbarProps: {
         title: {
-          text: 'Terms and Conditions',
+          text: 'Terms & Conditions',
           position: 'left'
         },
         leftAction: {
-          icon: 'arrow_back',
-          method: () => this.$router.back()
+          icon: 'menu',
+          method: () => this.$emit('toggleSidebar')
         }
       }
     }

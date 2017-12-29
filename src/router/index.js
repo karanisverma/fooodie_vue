@@ -24,7 +24,7 @@ export default new Router({
       component: () => import(/* webpackChunkName: "page-product-description" */ '../pages/product-description')
     },
     {
-      path: '/terms-and-conditions',
+      path: '/help-and-support',
       name: 'TermsAndConditions',
       component: () => import(/* webpackChunkName: "page-terms-conditions" */ '../pages/terms-conditions')
     },

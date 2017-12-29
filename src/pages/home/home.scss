@@ -9,7 +9,7 @@
 	}
   a {
     text-decoration: none;
-    color:black;
+    color:white;
     font-size: 12px;
     display: block;
   }
@@ -41,7 +41,7 @@
       .menu-box {
         margin: auto;
         width: 400px;
-        background: #FCE54E;
+        background: #883e2f;
         border-radius: 5px;
         p {
           margin: 10px;
@@ -93,7 +93,9 @@
   .testimonial {
     overflow: -webkit-paged-y;
     width: 75%;
-    margin: 5% auto;
+    padding: 10%;
+    margin-left: 2%;
+    padding-bottom: 13%;
     .VueCarousel-inner {
       // flex-basis: 500px ;
       // transform: translateX(-550px);
@@ -106,9 +108,12 @@
       color: #F6F6F6;
       text-align: center;
       min-height: 100px;
-      box-shadow: 0 0 20px 0 rgba(0,0,0,.06);
+      box-shadow: inset 0px 3px 11px 0px #ABABAB;
+      -webkit-box-shadow: inset 0px 3px 11px 0px #ABABAB;
+      -moz-box-shadow: inset 0px 3px 11px 0px #ABABAB;
+      -o-box-shadow: inset 0px 3px 11px 0px #ABABAB;
       padding: 15px 0;
-      background: #FCE54E;
+      background: #fff;
       .label {
         color: black;
         img {
@@ -186,7 +191,7 @@
 @media screen and (max-width: 48em) {
   .home-page {
     .home-banner {
-      height: 100vh;
+      height: 80vh;
       background-position: 0px;
       h1 {
         padding-top: 0em;
@@ -201,7 +206,7 @@
           p{
           margin: auto;
           // width: 65%;
-          background: #efeb42;
+          background: #883e2f;
           border-radius: 5px;
           i {
             margin-right: 10px;
