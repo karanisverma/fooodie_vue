@@ -28,6 +28,16 @@
           </p>
           <p class="cart-item-cost">{{item.cost * item.quantity}}</p>
         </div>
+        <div v-if="showDelviery" class="cart-item-row delivery-charge">
+          <p class="cart-item-name">Delivery Charge</p>
+          <p class="cart-item-cost">{{deliveryCharge}}</p>
+          <span class="delivery-text">Order ₹150 Plus for free delivery</span>
+        </div>
+        <div v-else class="cart-item-row delivery-charge">
+          <p class="cart-item-name">Delivery Charge</p>
+          <p class="cart-item-cost">0</p>
+          <span class="delivery-text">Enjoy Free Delivery</span>
+        </div>
       </div>
       <div class="footer-note">
         <div class="total-cost" v-if="totalCost>0" >

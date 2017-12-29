@@ -60,9 +60,24 @@
     .cart-item-row{
       display: flex;
       padding: 5%;
+      flex-wrap: wrap;
       align-items: center;
       background: rgba(0, 0, 0, 0.06);
-      
+      &.delivery-charge{
+        p{
+          margin-bottom: 0;
+          }
+        span{
+          width:100%;
+          display: flex;
+          width: 100%;
+          margin: 0;
+          color: #323a44;
+          font-size: .7em;
+          text-decoration: underline;
+          text-align: left;
+        }
+      }
       .quantity-button{
         font-weight: 200; 
         .quantity-buy{
@@ -76,7 +91,6 @@
         text-align: center;
         width:30%;
       }
-
     }
       p{
         width: 30%;

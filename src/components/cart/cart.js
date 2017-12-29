@@ -11,7 +11,9 @@ export default {
   },
   data () {
     return {
-
+      minimumOrder: 150,
+      deliveryCharge: 40,
+      showDelviery: false
     }
   },
   computed: {
@@ -24,6 +26,12 @@ export default {
       let {Products} = this.$store.state
       for (var i = 0; i < Products.allProducts.length; i++) {
         cost += parseInt(Products.allProducts[i].cost) * parseInt(Products.allProducts[i].quantity)
+      }
+      if (cost < this.minimumOrder) {
+        cost = cost + this.deliveryCharge
+        this.showDelviery = true
+      } else {
+        this.showDelviery = false
       }
       return cost
     }
@@ -59,7 +67,9 @@ export default {
           // console.log('Order Row-> ', orderRow)
         }
       })
-
+      if (this.showDelviery) {
+        order.push('_Delivery Charge_ -----> 40')
+      }
       order.push(totalCost)
       let orderString = order.join('\n')
       console.log('Order string-> ', orderString)
