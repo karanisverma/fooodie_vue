@@ -11,9 +11,10 @@ export default {
   },
   data () {
     return {
-      minimumOrder: 150,
+      minimumOrder: 200,
       deliveryCharge: 40,
-      showDelviery: false
+      showDelviery: false,
+      showMinimumOrderWarning: false
     }
   },
   computed: {
@@ -27,7 +28,14 @@ export default {
       for (var i = 0; i < Products.allProducts.length; i++) {
         cost += parseInt(Products.allProducts[i].cost) * parseInt(Products.allProducts[i].quantity)
       }
-      if (cost < this.minimumOrder) {
+      if (cost < 100) {
+        this.showMinimumOrderWarning = true
+      } else {
+        this.showMinimumOrderWarning = false
+      }
+      if (cost === 0) {
+        return cost
+      } else if (cost <= this.minimumOrder) {
         cost = cost + this.deliveryCharge
         this.showDelviery = true
       } else {
