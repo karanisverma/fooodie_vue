@@ -29,7 +29,7 @@
     // background: white;
     width: 100%;
     padding: 5% 0 5% 0;
-    background: #323a44;
+    background: rgba(0, 98, 111, 0.9);
     color: white;
     .category-header{
       display: none;
@@ -147,7 +147,7 @@ button{
 }
 }
 .cart-sidebar-wrapper{
-  display: block;
+  display: block !important;
 }
 
 // @media screen and (min-width: 1366px) {
@@ -199,7 +199,7 @@ button{
       height: 90%!important;
       padding-bottom: 4em!important;
       .menu-category{
-        padding-top:6em; 
+        padding-top:6em;
       }
     }
     nav{
@@ -211,15 +211,15 @@ button{
       background: #fafafa;
       min-height: 300px;
       .category-header{
-        padding: 17px;
+        padding: 10px 17px;
         font-size: 14px;
         font-weight: 500;
-        color: #fafafa;
+        color: #000000;
         text-align: center;
         justify-content: center;
         display: flex;
         flex: 1;
-        background: #323a44;
+        background: #efeb42;
         span{
           flex: 1;
           font-size: 1.4em;
@@ -237,6 +237,7 @@ button{
         justify-content: space-between;
         align-items: center;
         color: black;
+        font-weight: 300;
         i {
           color: #828282;
           display: block;
@@ -295,7 +296,6 @@ button{
               .quantity-button-component{
                 .add-to-cart-button{
                   padding: 0;
-                  background: #dada00cc;
                   button{
                     cursor: pointer;
                     outline: none;

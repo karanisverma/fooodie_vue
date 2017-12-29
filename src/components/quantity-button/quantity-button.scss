@@ -16,7 +16,7 @@
     padding-left: 1.85714286em;
 
     // line-height: 1.85714286em;
-    background: #dada00;
+    background: #efeb42;
     // background: linear-gradient(252deg, #53bf93, #cab75d, #f57d20);
     button {
       background: transparent;
@@ -31,7 +31,7 @@
   .quantity-button {
     display: flex;
     background-color: #fff;
-    border: 2px solid #f57d20;
+    border: 2px solid #28717c;
     color: #000;
     opacity: .87;
     font-size: 16px;
@@ -55,6 +55,7 @@
       left: 38%;
       // left: 43%;
       // cursor: pointer;
+      font-weight: 400;
       top: 5px;
       padding: .5em;
       top: 0;
@@ -74,7 +75,7 @@
 
 @media screen and (min-width: 1024px) {
   .quantity-button-component .quantity-button{
-    border: 1px solid #f57d20;
+    border: 1px solid #28717c;
 
   }
 }
