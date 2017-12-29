@@ -1,6 +1,7 @@
 .how-it-works-page {
   min-height: 100%;
   padding-top: 7%;
+  padding-bottom: 5%;
   background-color: #f1eddf;
   .web-wrapper {
     width: 750px !important;
@@ -92,7 +93,7 @@
     display: block;
     position: relative;
     z-index: 2;
-    // background: white;
+    padding-bottom: 4em;
     padding-top:0;
     .step-1 {
       width: 90%;

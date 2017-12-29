@@ -92,36 +92,79 @@
 
   .testimonial {
     overflow: -webkit-paged-y;
-    .images {
-      margin-top: 1em;
+    width: 75%;
+    margin: 5% auto;
+    .VueCarousel-inner {
+      // flex-basis: 500px ;
+      // transform: translateX(-550px);
+    }
+    .VueCarousel-slide {
       position: relative;
-      width: 500px;
-      margin: auto;
-      overflow: initial;
-      img {
-        width: 100px;
-        border-radius: 50%;
+      background: #f1f1f1;
+      // background: #42b983;
+      color: #fff;
+      font-family: Arial;
+      font-size: 16px;
+      color: #F6F6F6;
+      text-align: center;
+      min-height: 100px;
+      box-shadow: 0 0 20px 0 rgba(0,0,0,.06);
+      padding: 15px 0;
+      .label {
+
+        img {
+          width: 100px;
+          border-radius: 50%;
+        }
+        .review-desc {
+          width: 90%;
+          margin: auto;
+          margin-top: 2%;
+        }
+        .name {
+          font-size: 14px;
+          margin-bottom: 5px;
+        }
+        .designation {
+          margin-top: 5px;
+          font-size: 14px;
+        }
+        // position: absolute;
+        // top: 100%;
+        // left: 100%;
+        // transform: translate(-100%, -100%);
       }
     }
-    input[type="radio"] {
-      outline: none;
-    }
-    [class*="slide-"] {
-      opacity: 0.0;
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      transition: opacity linear 0.5s;
-      display: inline-table;
-    }
-    .to-one:checked ~ .images .slide-one,
-    .to-two:checked ~ .images .slide-two,
-    .to-three:checked ~ .images .slide-three,
-    .to-four:checked ~ .images .slide-four {
-        opacity: 1.0;
-    }
+    // .images {
+    //   margin-top: 1em;
+    //   position: relative;
+    //   width: 500px;
+    //   margin: auto;
+    //   overflow: initial;
+    //   img {
+    //     width: 100px;
+    //     border-radius: 50%;
+    //   }
+    // }
+    // input[type="radio"] {
+    //   outline: none;
+    // }
+    // [class*="slide-"] {
+    //   opacity: 0.0;
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   bottom: 0;
+    //   right: 0;
+    //   transition: opacity linear 0.5s;
+    //   display: inline-table;
+    // }
+    // .to-one:checked ~ .images .slide-one,
+    // .to-two:checked ~ .images .slide-two,
+    // .to-three:checked ~ .images .slide-three,
+    // .to-four:checked ~ .images .slide-four {
+    //     opacity: 1.0;
+    // }
   }
 
   .all-category {
@@ -214,7 +257,7 @@
 
 
 @media screen and (min-width: 1024px) {
-  .home-page{    
+  .home-page{
     display: block;
     position: relative;
     z-index: 2;
