@@ -50,7 +50,8 @@
     .quantity-buy {
       position: relative;
       width: 10px;
-      left: 43%;
+      left: 38%;
+      // left: 43%;
       // cursor: pointer;
       top: 5px;
       padding: .5em;
@@ -60,7 +61,7 @@
       position: absolute;
       right: 0px;
       cursor: pointer;
-      padding: .5em; 
+      padding: .5em;
       i{
         font-size: 18px;
       }
@@ -71,7 +72,7 @@
 @media screen and (min-width: 1024px) {
   .quantity-button-component .quantity-button{
     border: 1px solid #f57d20;
-    
+
   }
 }
 @media screen and (max-width: 48em) {

@@ -11,11 +11,13 @@ import Vuex from 'vuex'
 import App from './app.vue'
 import store from '~/store'
 import router from '~/router'
+import VueCarousel from 'vue-carousel'
 
 Vue.config.productionTip = false
 Vue.performance = true
 
 Vue.use(Vuex)
+Vue.use(VueCarousel)
 
 var VueTouch = require('vue-touch')
 Vue.use(VueTouch, { name: 'v-touch' })

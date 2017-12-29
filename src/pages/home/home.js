@@ -1,8 +1,11 @@
 import Toolbar from '~/components/toolbar'
+import { Carousel, Slide } from 'vue-carousel'
 export default {
   name: 'HomePage',
   components: {
-    Toolbar
+    Toolbar,
+    Carousel,
+    Slide
   },
   data () {
     return {
