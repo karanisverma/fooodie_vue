@@ -84,6 +84,8 @@ a {
   }
 
   footer {
+    z-index: 2;
+    position: relative;
     background: rgba(0, 98, 111, 0.94);
     .web-wrapper {
       padding: 20px 0;

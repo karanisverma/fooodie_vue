@@ -220,8 +220,17 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .cart-sidebar-wrapper .sidebar .footer-note .show-in-mobile{
-    display: none
+  .cart-sidebar-wrapper {
+    .sidebar {
+      .user {
+        i {
+          display: none;
+        }
+      }
+      .footer-note .show-in-mobile {
+        display: none;
+      }
+    }
   }
 }
 

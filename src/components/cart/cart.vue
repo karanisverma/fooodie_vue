@@ -7,7 +7,7 @@
     />
     <!-- slider animation effect -->
     <div class="sidebar of-a d-f fd-c jc-sb"
-      
+
     >
       <div class="user">
         <!-- <div class="user-icon"></div> -->
@@ -31,7 +31,7 @@
         <div v-if="showDelviery" class="cart-item-row delivery-charge">
           <p class="cart-item-name">Delivery Charge</p>
           <p class="cart-item-cost">{{deliveryCharge}}</p>
-          <span class="delivery-text">Order ₹150 Plus for free delivery</span>
+          <span class="delivery-text">Free delivery on order above ₹150</span>
         </div>
         <div v-else class="cart-item-row delivery-charge">
           <p class="cart-item-name">Delivery Charge</p>
