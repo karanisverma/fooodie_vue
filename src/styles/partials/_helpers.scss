@@ -1,0 +1,286 @@
+.small {
+  font-size: 80%;
+}
+
+.cur-p {
+  cursor: pointer;
+}
+
+.no-select {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.pe-n {
+  pointer-events: none;
+}
+.pe-a {
+  pointer-events: auto;
+}
+
+.ta-r {
+  text-align: right;
+}
+.ta-l {
+  text-align: left;
+}
+.ta-c {
+  text-align: center;
+}
+
+.tt-u {
+  text-transform: uppercase;
+}
+.td-u {
+  text-decoration: underline;
+}
+.td-n {
+  text-decoration: none;
+}
+.td-lt {
+  text-decoration: line-through;
+}
+
+.of-h {
+  overflow: hidden;
+}
+.of-a {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.w-100{
+  width:100%;
+}
+
+.f-l{
+  float:left;
+}
+.f-r{
+  float:right;
+}
+
+.pl-10{
+  padding-left:10px;
+}
+
+.h-100 {
+  height: 100%;
+}
+.mh-100 {
+  min-height: 100%;
+}
+.p-0 {
+  padding: 0;
+}
+
+.p-b-10 {
+  padding: 0 0 10px;
+}
+
+.m-10 {
+  margin: 10px;
+}
+
+.m-15 {
+  margin: 15px;
+}
+
+.fw-b {
+  font-weight: bold;
+}
+
+.fw-n{
+  font-weight: normal;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+.clr-blue {
+  color: #4a90e2;
+}
+.clr-gray {
+  color: rgba(#000, .38);
+}
+.rotate-180{
+  transform: rotate(180deg);
+}
+
+.ic-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .line {
+    border-bottom: 1px dashed #ccc;
+    height: 1px;
+    flex: 1;
+    margin: 0 5px;
+  }
+}
+
+.dummy-field {
+  background: #ff0;
+  height: 48px;
+  border-radius: 4px;
+  color: #000;
+  background-color: #ffffff;
+  border:1px solid #ccc;
+
+  .icon {
+    padding: 10px 16px;
+    font-size: 16px;
+  }
+
+  span {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-right: 32px;
+
+    &.placeholder {
+      opacity: .4;
+    }
+  }
+}
+
+.toolbar-field {
+  position: relative;
+  border-bottom: 1px solid #d8d8d8;
+
+  .icon {
+    position: absolute;
+    padding: 22px 15px;
+    font-size: 20px;
+  }
+
+  .text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+
+    input {
+      width: 100%;
+      outline: none;
+      border: none;
+      display: block;
+      border-radius: 0;
+      padding: 25px 20px 25px 50px;
+    }
+  }
+}
+
+.text-input-container {
+  margin-top: 20px;
+  border-bottom: solid 1px #979797;
+  input {
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.active-btn {
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+  margin: auto;
+  margin-top: 40px;
+  background-color: #70ad4d;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 16px 20px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animUp {
+  0% {
+    transform: translate(0, 10px);
+    opacity: 0
+  }
+  100% {
+    transform: translate(0, 0px);
+    opacity: 1
+  }
+}
+
+@for $i from 0 through 9 {
+  .anime-up-#{$i} {
+    opacity: 0;
+    animation: animUp .5s ease-out $i*100ms forwards;
+  }
+}
+
+@keyframes scaleDialog {
+  0% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: .6;
+  }
+}
+
+@keyframes sub-page {
+  0% {
+    transform: translate(0, 100px);
+    opacity: 0
+  }
+  100% {
+    transform: translate(0, 0px);
+    opacity: 1
+  }
+}
+
+
+@keyframes loading-placeholder{
+  0%{
+    background-position: -468px 0
+  }
+  100%{
+    background-position: 468px 0
+  }
+}
+
+.animated-background {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: loading-placeholder;
+  animation-timing-function: linear;
+  background: #f6f7f8;
+  background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  background-size: 800px 104px;
+  height: 96px;
+  position: relative;
+}

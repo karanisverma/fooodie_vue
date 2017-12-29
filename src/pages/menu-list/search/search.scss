@@ -1,0 +1,37 @@
+.search-box-component {
+  color: black;;
+  .search-box-wrapper {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+    input {
+      line-height: 20px;
+      padding-left: 8px;
+      outline: none;
+      height: 30px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-right: none;
+    }
+    span {
+      // display: flex;
+      cursor: pointer;
+      outline: none;
+      padding: 6px 0px;
+      background: #9B3ECB;
+      i {
+        color: white;
+        font-size: 18px;
+        position: relative;
+        top: 4px;
+        line-height: 30px;
+        padding: 2px 21px;
+      }
+    }
+  }
+  .home-search-box {
+    input {
+      width: 400px;
+    }
+  }
+}

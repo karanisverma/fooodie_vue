@@ -1,0 +1,117 @@
+.sidebar-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 120%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  .sidebar-overlay {
+    position: absolute;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    opacity: 0;
+    will-change: opacity;
+    width: 100%;
+    pointer-events: none;
+
+    &.visible {
+      pointer-events: auto;
+      opacity: 1;
+    }
+  }
+
+  .sidebar {
+    background: #fff;
+    position: fixed;
+    width: 85%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translate3d(-102%,0,0);
+    will-change: transform;
+    background-color: #323a44;
+    box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.24), 0 0 16px 0 rgba(0, 0, 0, 0.18);
+    color: #fff;
+
+    &.animate {
+      transition: transform .25s cubic-bezier(0.4, 0.0, 0.6, 1);
+    }
+
+    .user {
+      a{
+        display: flex;
+        align-items: center;
+      }
+      padding: 17px;
+      box-shadow: 0 0.5px 0 0 rgba(255, 255, 255, 0.16);
+      width: 100%;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.43;
+      text-align: left;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      .user-icon {
+        margin-right: 16px;
+        background: #fcfcfc;
+        width: 39px;
+        height: 39px;
+        border-radius: 50%;
+        img{
+          width: 80%;
+          display: block;
+          margin: auto;
+          position: relative;
+          top: 19%;
+        }
+      }
+      a{
+        text-decoration: none;
+        span{
+          font-size: 17px;
+          text-decoration: none;
+          color: #d1d2d5;
+        }
+      }
+      span {
+        flex: 1;
+      }
+    }
+
+    .all-list {
+      overflow-y: scroll;
+      .item {
+        padding: 14px 17px;
+        font-size: 14px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        .icon {
+          height: 20px;
+          width: 20px;
+          margin-right: 33px;
+          color: #a4a8ac;
+        }
+        .item-name {
+          // flex: 1;
+        }
+      }
+    }
+
+    .footer-note {
+      padding: 29px 17px;
+      color: rgba(255, 255, 255, 0.56);
+      font-size: 13px;
+      font-weight: 300;
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .sidebar-wrapper .sidebar{
+    width: 50%;
+  }
+  }

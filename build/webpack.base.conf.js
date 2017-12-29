@@ -10,11 +10,12 @@ function resolve (dir) {
 
 module.exports = {
   entry: {
-    app: './src/main.js'
+    app: './src/app/index.js'
   },
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',
+    chunkFilename: '[name]-[chunkhash].chunk.js',
     publicPath: process.env.NODE_ENV === 'production'
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
@@ -23,7 +24,7 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': resolve('src'),
+       '~': path.resolve(__dirname, 'src')
     }
   },
   module: {

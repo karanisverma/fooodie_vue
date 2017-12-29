@@ -1,0 +1,68 @@
+.component-toolbar {
+  display: none;
+  position: relative;
+  z-index: 999;
+  height: 30px;
+  padding: 15px 12px;
+  color: #fff;
+  background-color: #323a44;
+  display: flex;
+  align-items: center;
+  &.theme-light {
+    display: none;
+    background: #fff;
+    color: rgba(0,0,0,0.56);
+    box-shadow: 0 2px 7px rgba(0,0,0,0.14);
+  }
+
+  &.theme-dark {
+    display: none;
+    background-color: #323a44;
+    color: #fff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.24), 0 0 4px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    //
+
+    .item {
+      height: 24px;
+      width: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .left-action {
+      margin-right: 36px;
+    }
+
+    .title {
+      font-size: 18px;
+      font-weight: 500;
+      text-align: left;
+      color: #ffffff;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      flex: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .component-toolbar {
+    display: flex;
+    &.theme-light {
+      display: flex;
+    }
+    &.theme-dark {
+      display: flex;
+    }
+  }
+}

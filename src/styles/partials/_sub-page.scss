@@ -1,0 +1,23 @@
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.sub-page {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  background: #fff;
+  z-index: 999;
+  animation: 0.3s fadeInUp ease;
+}
