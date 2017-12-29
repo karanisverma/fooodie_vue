@@ -72,7 +72,6 @@ export default {
         if (product.quantity > 0) {
           let orderRow = '_' + product.name + '_(' + product.quantity + ') ----> ' + 'Rs.' + (product.quantity * product.cost)
           order.push(orderRow)
-          // console.log('Order Row-> ', orderRow)
         }
       })
       if (this.showDelviery) {

@@ -17,6 +17,13 @@
 
     // line-height: 1.85714286em;
     background: #efeb42;
+    &.out-of-stock {
+      background: #e7e7e7;
+      button{
+        padding: 10px 5px;
+        font-size: 9px;
+      }
+    }
     // background: linear-gradient(252deg, #53bf93, #cab75d, #f57d20);
     button {
       background: transparent;
