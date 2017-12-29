@@ -46,7 +46,7 @@
                             <p>&#8377;{{product.cost}}</p>
                         </div>
                         <div class="add-to-cart">
-                            <QuantityButtonComponent :product-id="product.product_id" :quantity="product.quantity"
+                            <QuantityButtonComponent :product-id="product.product_id" :status ="product.status" :quantity="product.quantity"
                             @UpdateProductsQuantity="updateQuantity"
                             ></QuantityButtonComponent>
                         </div>
@@ -69,7 +69,7 @@
                             <p>&#8377;{{product.cost}}</p>
                         </div>
                         <div class="add-to-cart">
-                            <QuantityButtonComponent :product-id="product.product_id" :quantity="product.quantity"
+                            <QuantityButtonComponent :product-id="product.product_id" :status ="product.status" :quantity="product.quantity"
                             @UpdateProductsQuantity="updateQuantity"
                             ></QuantityButtonComponent>
                         </div>
@@ -92,7 +92,7 @@
                             <p>&#8377;{{product.cost}}</p>
                         </div>
                         <div class="add-to-cart">
-                            <QuantityButtonComponent :product-id="product.product_id" :quantity="product.quantity"
+                            <QuantityButtonComponent :product-id="product.product_id" :status ="product.status" :quantity="product.quantity"
                             @UpdateProductsQuantity="updateQuantity"
                             ></QuantityButtonComponent>
                         </div>
@@ -115,7 +115,7 @@
                             <p>&#8377;{{product.cost}}</p>
                         </div>
                         <div class="add-to-cart">
-                            <QuantityButtonComponent :product-id="product.product_id" :quantity="product.quantity"
+                            <QuantityButtonComponent :product-id="product.product_id" :status ="product.status" :quantity="product.quantity"
                             @UpdateProductsQuantity="updateQuantity"
                             ></QuantityButtonComponent>
                         </div>
@@ -138,7 +138,7 @@
                             <p>&#8377;{{product.cost}}</p>
                         </div>
                         <div class="add-to-cart">
-                            <QuantityButtonComponent :product-id="product.product_id" :quantity="product.quantity"
+                            <QuantityButtonComponent :product-id="product.product_id" :status ="product.status" :quantity="product.quantity"
                             @UpdateProductsQuantity="updateQuantity"
                             ></QuantityButtonComponent>
                         </div>

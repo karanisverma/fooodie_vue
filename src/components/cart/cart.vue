@@ -45,7 +45,7 @@
           <span class="total-cost-amount">{{totalCost}}</span>
         </div>
         <button @click="placeOrder" v-if="totalCost>0 && !showMinimumOrderWarning">
-          Order Using Whatsapp</button>
+          Place Order</button>
         <button v-else style="background:#888888">
           Minimum Order of ₹100</button>
       </div>

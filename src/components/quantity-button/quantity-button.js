@@ -2,7 +2,7 @@
 // import {bus} from '~/app'
 export default {
   name: 'QuantityButtonComponent',
-  props: ['productId', 'quantity'],
+  props: ['productId', 'quantity', 'status'],
   data () {
     return {
       // mutableQuantity: this.quantity
