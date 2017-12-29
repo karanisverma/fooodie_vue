@@ -1,9 +1,16 @@
+
 .how-it-works-page {
   min-height: 100%;
   padding-top: 7%;
+  padding-bottom: 5%;
   background-color: #f1eddf;
+  z-index: 2;
+  position: relative;
   .web-wrapper {
     width: 750px !important;
+  }
+  .cart-sidebar-wrapper{
+    display: none;
   }
   .step-1 {
     text-align: left;
@@ -92,7 +99,7 @@
     display: block;
     position: relative;
     z-index: 2;
-    // background: white;
+    padding-bottom: 4em;
     padding-top:0;
     .step-1 {
       width: 90%;
@@ -112,3 +119,9 @@
     }
   }
   }
+
+  @media screen and (min-width: 1024px) {
+    .cart-sidebar-wrapper{
+      display: none;
+    }
+    }

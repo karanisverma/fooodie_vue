@@ -13,6 +13,16 @@
         <div class="product-price">
           ₹ {{allProductDesc.cost}}/-
         </div>
+        <div class="web-view">
+          <div class="desc-ingre-content">
+            <div id="item-description">
+              <p>{{allProductDesc.detail}}</p>
+            </div>
+            <!-- <div id="item-ingredient">
+              <p>{{allProductDesc.ingredients}}</p>
+            </div> -->
+          </div>
+        </div>
       </div>
     </div>
 
