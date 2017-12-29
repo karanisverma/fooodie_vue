@@ -30,7 +30,7 @@
     height: 100%;
     top: 0;
     left: 0%;
-    
+
     will-change: transform;
     background-color: #ffffff;
     box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.24), 0 0 16px 0 rgba(0, 0, 0, 0.18);
@@ -50,7 +50,7 @@
         flex-wrap: wrap;
         justify-content: center;
         .empty-cart-img{
-          width: 45%; 
+          width: 45%;
         }
     }
     }
@@ -62,9 +62,9 @@
       padding: 5%;
       align-items: center;
       background: rgba(0, 0, 0, 0.06);
-      
+
       .quantity-button{
-        font-weight: 200; 
+        font-weight: 200;
         .quantity-buy{
           left: 30%;
         }
@@ -108,12 +108,13 @@
       font-weight: 500;
       line-height: 1.43;
       text-align: left;
-      color: #ffffff;
+      color: #000000;
       text-align: center;
       display: flex;
       align-items: center;
       flex: 1;
-      background: #323a44;
+      // background: #323a44;
+      background: #efeb42;
       .user-icon {
         margin-right: 16px;
         background: #ccc;
@@ -178,11 +179,11 @@
         align-items: center;
         justify-content: space-around;
         display: inline-flex;
-        background: #dada00;
+        background: #3A1214;
         width: 100%;
         height: 3em;
-        color: black;
-        font-weight: 500;
+        color: white;
+        font-weight: 300;
         svg {
           margin-right: 10px;
         }

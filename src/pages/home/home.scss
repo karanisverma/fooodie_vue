@@ -41,7 +41,7 @@
       .menu-box {
         margin: auto;
         width: 400px;
-        background: white;
+        background: #FCE54E;
         border-radius: 5px;
         p {
           margin: 10px;
@@ -100,8 +100,6 @@
     }
     .VueCarousel-slide {
       position: relative;
-      background: #f1f1f1;
-      // background: #42b983;
       color: #fff;
       font-family: Arial;
       font-size: 16px;
@@ -110,8 +108,9 @@
       min-height: 100px;
       box-shadow: 0 0 20px 0 rgba(0,0,0,.06);
       padding: 15px 0;
+      background: #FCE54E;
       .label {
-
+        color: black;
         img {
           width: 100px;
           border-radius: 50%;
@@ -122,12 +121,12 @@
           margin-top: 2%;
         }
         .name {
-          font-size: 14px;
-          margin-bottom: 5px;
+          font-size: 12px;
+          margin-bottom: 0;
         }
         .designation {
-          margin-top: 5px;
-          font-size: 14px;
+          margin-top: 0;
+          font-size: 12px;
         }
         // position: absolute;
         // top: 100%;
@@ -202,8 +201,11 @@
           p{
           margin: auto;
           // width: 65%;
-          background: white;
+          background: #efeb42;
           border-radius: 5px;
+          i {
+            margin-right: 10px;
+          }
           }
         }
       }
@@ -266,4 +268,7 @@
   .cart-sidebar-wrapper{
     display: none;
   }
+  iframe {
+  width: 500px !important;
+}
   }
