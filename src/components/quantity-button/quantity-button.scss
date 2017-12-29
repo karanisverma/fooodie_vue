@@ -1,8 +1,10 @@
 .quantity-button-component {
+  user-select: none;
   .add-to-cart-button {
     box-sizing: border-box;
     color: white;
     border: transparent;
+    cursor: pointer;
     font-size: 12px;
     // padding: 10px 45px;
     font-weight: 700;
@@ -62,6 +64,7 @@
       right: 0px;
       cursor: pointer;
       padding: .5em;
+      cursor: pointer;
       i{
         font-size: 18px;
       }
