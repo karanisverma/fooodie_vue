@@ -146,9 +146,6 @@ button{
   height: 100%;
 }
 }
-.cart-sidebar-wrapper{
-  display: block !important;
-}
 
 // @media screen and (min-width: 1366px) {
 //     .page-menu-list {
@@ -177,6 +174,9 @@ button{
 // }
 // For dekstop
 @media screen and (min-width: 1024px) {
+  .cart-sidebar-wrapper{
+  display: block !important;
+}
   .pe-n{
     pointer-events: auto;
   }

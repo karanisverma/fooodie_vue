@@ -41,7 +41,7 @@
       .menu-box {
         margin: auto;
         width: 400px;
-        background: #883e2f;
+        background: #3A1214;
         border-radius: 5px;
         p {
           margin: 10px;
@@ -93,9 +93,8 @@
   .testimonial {
     overflow: -webkit-paged-y;
     width: 75%;
-    padding: 10%;
+    padding: 0 10% 3% 10%;
     margin-left: 2%;
-    padding-bottom: 13%;
     .VueCarousel-inner {
       // flex-basis: 500px ;
       // transform: translateX(-550px);
@@ -133,10 +132,6 @@
           margin-top: 0;
           font-size: 12px;
         }
-        // position: absolute;
-        // top: 100%;
-        // left: 100%;
-        // transform: translate(-100%, -100%);
       }
     }
     // .images {
@@ -169,6 +164,24 @@
     // .to-four:checked ~ .images .slide-four {
     //     opacity: 1.0;
     // }
+  }
+  .order-now-below {
+    padding-bottom: 10%;
+    a {
+      color: black;
+      border: 1px solid #ccc;
+      width: 35%;
+      margin: auto;
+      border-radius: 5px;
+      background: #3A1214;
+      color: white;
+      p {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 8px 18px;
+      }
+    }
   }
 
   .all-category {
@@ -206,7 +219,7 @@
           p{
           margin: auto;
           // width: 65%;
-          background: #883e2f;
+          background: #3A1214;
           border-radius: 5px;
           i {
             margin-right: 10px;
@@ -249,6 +262,9 @@
           }
         }
       }
+    }
+    .testimonial {
+      padding-bottom: 13%;
     }
 
     .all-category {
