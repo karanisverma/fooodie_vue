@@ -25,10 +25,13 @@
         </button>
     </nav>
     <v-touch
-    @panright="slideMenu"
-    @panleft="slideMenu"
+    @swiperight="slideMenu"
+    @swipeleft="slideMenu"
     class='touch-zone'
     >
+    <!-- <v-touch
+    class='touch-zone'
+    > -->
     <div class="menu-slider-wrapper">
         <div class="menu-slider">
             <section class="menu-category">
