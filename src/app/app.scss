@@ -117,6 +117,10 @@ a {
           justify-content: flex-start;
           margin-left: 6%;
           align-items: center;
+          a {
+            margin-left: 3px;
+            font-size: 12px
+          }
         }
         .social-links {
           flex: 2;

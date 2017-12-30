@@ -65,7 +65,8 @@
           </ul>
         </div>
         <div class="copyright-social">
-          <div class="copyright">© Copyright 2017 All Rights Reserved by Fooodie and powered by Googlewiki.in</div>
+          <div class="copyright">© Copyright 2017 All Rights Reserved by Fooodie and powered by
+            <a href="http://www.googlewiki.in" target="_blank"> Googlewiki.in</a></div>
           <div class="social-links">
             <div class="social">
               <a href="https://api.whatsapp.com/send?phone=919111351935&text=I%20would%20like%20to%20place%20my%20order%20%20" target="_blank">
