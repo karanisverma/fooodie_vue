@@ -1,6 +1,6 @@
 [
     {
-        "img":"https://fooodie.store/static/img/menu/pasta.jpeg",
+        "img":"https://fooodie.store/static/img/menu/pasta.jpg",
         "name":"Pasta",
         "cost":100,
         "status":"instock",
@@ -67,7 +67,7 @@
     {
        "img":"https://fooodie.store/static/img/menu/alloo_sandwich.jpg",
        "name":"Alloo Sandwich",
-       "cost":35,
+       "cost":40,
        "status":"instock",
        "fav":2,
        "type":"veg",
@@ -366,7 +366,7 @@
     {
        "img":"https://fooodie.store/static/img/menu/allu_gobhi_matar.jpg",
        "name":"Gobhi Matar Aloo",
-       "cost":90,
+       "cost":110,
        "status":"instock",
        "fav":5,
        "type":"veg",
@@ -379,7 +379,7 @@
     {
        "img":"https://fooodie.store/static/img/menu/allu_matar_masala.jpg",
        "name":"Matar Aloo Masala",
-       "cost":90,
+       "cost":110,
        "status":"instock",
        "fav":2,
        "type":"veg",
@@ -392,7 +392,7 @@
     {
        "img":"https://fooodie.store/static/img/menu/ghobhi_masala.jpg",
        "name":"Gobhi Masala",
-       "cost":70,
+       "cost":80,
        "status":"instock",
        "fav":6,
        "type":"veg",
@@ -431,7 +431,7 @@
     {
        "img":"https://fooodie.store/static/img/menu/paneer_do_pyaza.jpg",
        "name":"Paneer Do Pyaza",
-       "cost":120,
+       "cost":130,
        "status":"instock",
        "fav":8,
        "type":"veg",
@@ -444,7 +444,7 @@
     {
        "img":"https://fooodie.store/static/img/menu/panner_masala.jpg",
        "name":"Paneer Masala",
-       "cost":120,
+       "cost":130,
        "status":"instock",
        "fav":2,
        "type":"veg",
@@ -457,7 +457,7 @@
     {
        "img":"https://fooodie.store/static/img/menu/paneer_butter_masala.jpg",
        "name":"Paneer Butter Masala",
-       "cost":140,
+       "cost":130,
        "status":"instock",
        "fav":2,
        "type":"veg",
@@ -470,7 +470,7 @@
     {
        "img":"https://fooodie.store/static/img/menu/alloo_gobi.jpg",
        "name":"Allo Gobi",
-       "cost":90,
+       "cost":110,
        "status":"instock",
        "fav":2,
        "type":"veg",
@@ -587,7 +587,7 @@
     {
        "img":"https://fooodie.store/static/img/menu/alloo_pratha.jpg",
        "name":"Alloo Pratha",
-       "cost":25,
+       "cost":30,
        "status":"instock",
        "fav":2,
        "type":"veg",
@@ -679,7 +679,7 @@
        "img":"https://fooodie.store/static/img/menu/chicken_roll.jpg",
        "name":"Chicken Roll",
        "cost":80,
-       "status":"instock",
+       "status":"oos",
        "fav":2,
        "type":"veg",
        "category":"rolls_and_paratha",
