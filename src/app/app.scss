@@ -40,6 +40,7 @@ a {
     // background: transparent linear-gradient(180deg,#DD5F57 15%,#FCE54E);
     width: 100%;
     z-index: 10;
+    border-bottom: 2px dashed white;
     .circle{
       background: white;
       padding: .5em;
@@ -116,6 +117,10 @@ a {
           justify-content: flex-start;
           margin-left: 6%;
           align-items: center;
+          a {
+            margin-left: 3px;
+            font-size: 12px
+          }
         }
         .social-links {
           flex: 2;

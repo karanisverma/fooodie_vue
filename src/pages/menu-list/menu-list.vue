@@ -16,7 +16,7 @@
             <i class="material-icons">keyboard_arrow_right</i>
         </button>
         <button @click="goTo(3)" id='category-4'>
-            <span>Rolls & Prathas</span>
+            <span>Rolls & Parathas</span>
             <i class="material-icons">keyboard_arrow_right</i>
         </button>
         <button @click="goTo(4)" id='category-5'>

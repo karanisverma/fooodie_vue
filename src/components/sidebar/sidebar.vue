@@ -66,7 +66,8 @@
           </div>
         </div>
         <div class="footer-note">
-          © Copyright 2017 Food. All rights reserved.
+          © Copyright 2017 All Rights Reserved by Fooodie and powered by
+            <a href="http://www.googlewiki.in" target="_blank"> Googlewiki.in</a>
         </div>
       </div>
     </div>
