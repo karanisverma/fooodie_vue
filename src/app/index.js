@@ -20,6 +20,10 @@ Vue.use(Vuex)
 Vue.use(VueCarousel)
 
 var VueTouch = require('vue-touch')
+VueTouch.config.swipe = {
+  direction: 'horizontal'
+  // threshold: 150
+}
 Vue.use(VueTouch, { name: 'v-touch' })
 /* eslint-disable no-new */
 
