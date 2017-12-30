@@ -34,8 +34,14 @@
       justify-content: center;
       align-items: center;
       // height: 100%;
-      padding-top: 3em;
+      padding-bottom: 0.5em;
       font-weight: 100;
+      font-size: 20px;
+    }
+    h2 {
+      font-size: 40px;
+      font-weight: 300;
+      margin-bottom: 2px;
     }
     .menu-search {
       .menu-box {

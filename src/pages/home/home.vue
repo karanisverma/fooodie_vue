@@ -5,7 +5,8 @@
       v-bind="toolbarProps"
       @toggleSidebar="$emit('toggleSidebar');"/>
     <div class="home-banner">
-        <h1>Why sleep hungry?</h1>
+        <h2>Why sleep hungry?</h2>
+        <h1>Delicious food all night in Bhilai!</h1>
         <div class="menu-search">
            <router-link
               :to="{ name: 'MenuList', params: { categoryId: 0 }}">
@@ -19,7 +20,7 @@
     </div>
 
     <!-- Offer Section -->
-    <div class="web-wrapper">
+    <!-- <div class="web-wrapper">
       <h3>Offers</h3>
       <div class="offer-wrapper">
         <div class="offer"  v-for="item in allNewItems">
@@ -30,7 +31,7 @@
               </router-link>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- <img src="../../assets/logo.png"> -->
     <div class="web-wrapper">
       <div class="featured-products">
