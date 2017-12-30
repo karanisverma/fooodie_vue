@@ -8,6 +8,7 @@
             <div class="modal-body">
               <slot name="footer">
                 <!-- default footer -->
+                <i class="material-icons" @click="showModal = false">clear</i>
                 <button class="modal-default-button" @click="showModal = false">
                   Close
                 </button>

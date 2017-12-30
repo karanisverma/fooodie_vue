@@ -177,6 +177,15 @@ a {
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
+  i {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    padding-top: 6px;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+  }
 }
 
 .modal-default-button {
