@@ -3,7 +3,8 @@ export default {
   data () {
     return {
       showSidebar: false,
-      showCartSidebar: false
+      showCartSidebar: false,
+      showModal: true
     }
   },
   created () {
@@ -27,18 +28,6 @@ export default {
         })
       })
     }
-    // getAllProducts2 () {
-    //   let {Products} = this.$store.state
-    //   Products.getAllProduct2().then(res => {
-    //     let data = res.json()
-    //     return Promise.resolve(data)
-    //   })
-    //   .then(data => {
-    //     if (data) {
-    //       Products.allProducts = data
-    //     }
-    //   })
-    // }
   },
   components: {
     Sidebar: () => import(/* webpackChunkName: 'component-sidebar' */ '../components/sidebar'),

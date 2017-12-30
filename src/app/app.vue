@@ -1,5 +1,24 @@
 <template>
   <div id="app">
+
+    <transition name="modal" v-if="showModal">
+      <div class="modal-mask">
+        <div class="modal-wrapper">
+          <div class="modal-container">
+            <div class="modal-body">
+              <slot name="footer">
+                <!-- default footer -->
+                <button class="modal-default-button" @click="showModal = false">
+                  Close
+                </button>
+              </slot>
+            </div>
+          </div>
+        </div>
+      </div>
+    </transition>
+
+
     <div class="web-view">
       <div class="web-header">
         <div class="circle">
