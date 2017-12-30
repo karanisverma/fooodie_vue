@@ -1,6 +1,6 @@
 [    
     {
-        "img":"https://fooodie.store/static/img/menu/pasta.jpeg",
+        "img":"https://fooodie.store/static/img/menu/pasta.jpg",
         "name":"Pasta",
         "cost":100,
         "status":"instock",
@@ -39,19 +39,6 @@
         "quantity":0
      },
      {
-        "img":"https://fooodie.store/static/img/menu/chicken_roll.jpg",
-        "name":"Chicken Roll",
-        "cost":80,
-        "status":"instock",
-        "fav":2,
-        "type":"veg",
-        "category":"rolls_and_paratha",
-        "product_id":48,
-        "detail":"Crispy Pastries filled with chicken spicy filling.",
-        "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
-        "quantity":0
-     },
-     {
         "img":"https://fooodie.store/static/img/menu/egg_roll.jpg",
         "name":"Egg Roll",
         "cost":50,
@@ -65,7 +52,7 @@
         "quantity":0
      },
      {
-        "img":"https://fooodie.store/static/img/menu/veg_biriyani.jpg",
+        "img":"https://fooodie.store/static/img/menu/schezwan_rice_small.jpg",
         "name":"Schezwan Rice",
         "cost":120,
         "status":"instock",
