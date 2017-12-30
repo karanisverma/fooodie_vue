@@ -13,13 +13,13 @@
           <img src="../../assets/how-it-works/how-it-works-1.png">
         </div>
         <div class="content">
-          <p>User enters your website/mobile app</p>
+          <p>You visit fooodie.store or call us on 9111351935.</p>
         </div>
       </div>
       <div class="step-1 step-2">Step 2</div>
       <div class="how-it-works-3">
         <div class="content">
-          <p>select favourite dish</p>
+          <p>Select favourite dish</p>
         </div>
         <div class="image">
           <img src="../../assets/how-it-works/how-it-works-2.png">
@@ -31,13 +31,13 @@
           <img src="../../assets/how-it-works/how-it-works-3.png">
         </div>
         <div class="content">
-           <p>Add Items to cart</p>
+           <p>Add items to cart</p>
         </div>
       </div>
       <div class="step-1 step-4">Step 4</div>
       <div class="how-it-works-3">
         <div class="content">
-           <p>Order Online</p>
+           <p>Order online & can pay by Paytm or COD</p>
         </div>
         <div class="image">
           <img src="../../assets/how-it-works/how-it-works-4.png">
@@ -49,7 +49,7 @@
           <img src="../../assets/how-it-works/how-it-works-5.png">
         </div>
         <div class="content">
-           <p>Food Preparation and Delivery</p>
+           <p>Food preparation and deliverd in under an hour.</p>
         </div>
       </div>
 

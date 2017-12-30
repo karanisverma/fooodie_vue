@@ -16,7 +16,7 @@
             <i class="material-icons">keyboard_arrow_right</i>
         </button>
         <button @click="goTo(3)" id='category-4'>
-            <span>Rolls & Prathas</span>
+            <span>Rolls & Parathas</span>
             <i class="material-icons">keyboard_arrow_right</i>
         </button>
         <button @click="goTo(4)" id='category-5'>
@@ -25,10 +25,13 @@
         </button>
     </nav>
     <v-touch
-    @panright="slideMenu"
-    @panleft="slideMenu"
+    @swiperight="slideMenu"
+    @swipeleft="slideMenu"
     class='touch-zone'
     >
+    <!-- <v-touch
+    class='touch-zone'
+    > -->
     <div class="menu-slider-wrapper">
         <div class="menu-slider">
             <section class="menu-category">
@@ -46,7 +49,7 @@
                             <p>&#8377;{{product.cost}}</p>
                         </div>
                         <div class="add-to-cart">
-                            <QuantityButtonComponent :product-id="product.product_id" :quantity="product.quantity"
+                            <QuantityButtonComponent :product-id="product.product_id" :status ="product.status" :quantity="product.quantity"
                             @UpdateProductsQuantity="updateQuantity"
                             ></QuantityButtonComponent>
                         </div>
@@ -69,7 +72,7 @@
                             <p>&#8377;{{product.cost}}</p>
                         </div>
                         <div class="add-to-cart">
-                            <QuantityButtonComponent :product-id="product.product_id" :quantity="product.quantity"
+                            <QuantityButtonComponent :product-id="product.product_id" :status ="product.status" :quantity="product.quantity"
                             @UpdateProductsQuantity="updateQuantity"
                             ></QuantityButtonComponent>
                         </div>
@@ -92,7 +95,7 @@
                             <p>&#8377;{{product.cost}}</p>
                         </div>
                         <div class="add-to-cart">
-                            <QuantityButtonComponent :product-id="product.product_id" :quantity="product.quantity"
+                            <QuantityButtonComponent :product-id="product.product_id" :status ="product.status" :quantity="product.quantity"
                             @UpdateProductsQuantity="updateQuantity"
                             ></QuantityButtonComponent>
                         </div>
@@ -115,7 +118,7 @@
                             <p>&#8377;{{product.cost}}</p>
                         </div>
                         <div class="add-to-cart">
-                            <QuantityButtonComponent :product-id="product.product_id" :quantity="product.quantity"
+                            <QuantityButtonComponent :product-id="product.product_id" :status ="product.status" :quantity="product.quantity"
                             @UpdateProductsQuantity="updateQuantity"
                             ></QuantityButtonComponent>
                         </div>
@@ -138,7 +141,7 @@
                             <p>&#8377;{{product.cost}}</p>
                         </div>
                         <div class="add-to-cart">
-                            <QuantityButtonComponent :product-id="product.product_id" :quantity="product.quantity"
+                            <QuantityButtonComponent :product-id="product.product_id" :status ="product.status" :quantity="product.quantity"
                             @UpdateProductsQuantity="updateQuantity"
                             ></QuantityButtonComponent>
                         </div>

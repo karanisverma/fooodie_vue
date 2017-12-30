@@ -7,7 +7,7 @@
     />
     <!-- slider animation effect -->
     <div class="sidebar of-a d-f fd-c jc-sb"
-      
+
     >
       <div class="user">
         <!-- <div class="user-icon"></div> -->
@@ -28,16 +28,26 @@
           </p>
           <p class="cart-item-cost">{{item.cost * item.quantity}}</p>
         </div>
+        <div v-if="showDelviery" class="cart-item-row delivery-charge">
+          <p class="cart-item-name">Delivery Charge</p>
+          <p class="cart-item-cost">{{deliveryCharge}}</p>
+          <span class="delivery-text">Free delivery on order above ₹200</span>
+        </div>
+        <div v-else class="cart-item-row delivery-charge">
+          <p class="cart-item-name">Delivery Charge</p>
+          <p class="cart-item-cost">0</p>
+          <span class="delivery-text">Enjoy Free Delivery</span>
+        </div>
       </div>
       <div class="footer-note">
         <div class="total-cost" v-if="totalCost>0" >
           <span id="total-cost-lable">Total</span>
           <span class="total-cost-amount">{{totalCost}}</span>
         </div>
-        <button @click="placeOrder" v-if="totalCost>0">
-          Order Using Whatsapp</button>
-        <button @click="toggleSidebar" v-if="totalCost===0" class="">
-          Go back to menu</button>
+        <button @click="placeOrder" v-if="totalCost>0 && !showMinimumOrderWarning">
+          Place Order</button>
+        <button v-else style="background:#888888">
+          Minimum Order of ₹100</button>
       </div>
     </div>
   </div>

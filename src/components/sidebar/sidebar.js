@@ -26,11 +26,13 @@ export default {
       this.$router.push({
         name: 'TermsAndConditions'
       })
+      this.$emit('update:show', !this.show)
     },
     openHowItWorks () {
       this.$router.push({
         name: 'HowItWorksPage'
       })
+      this.$emit('update:show', !this.show)
     }
     // termsAndConditions() {
     //   this.$router.push({

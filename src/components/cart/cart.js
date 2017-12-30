@@ -11,7 +11,10 @@ export default {
   },
   data () {
     return {
-
+      minimumOrder: 200,
+      deliveryCharge: 40,
+      showDelviery: false,
+      showMinimumOrderWarning: false
     }
   },
   computed: {
@@ -24,6 +27,19 @@ export default {
       let {Products} = this.$store.state
       for (var i = 0; i < Products.allProducts.length; i++) {
         cost += parseInt(Products.allProducts[i].cost) * parseInt(Products.allProducts[i].quantity)
+      }
+      if (cost < 100) {
+        this.showMinimumOrderWarning = true
+      } else {
+        this.showMinimumOrderWarning = false
+      }
+      if (cost === 0) {
+        return cost
+      } else if (cost <= this.minimumOrder) {
+        cost = cost + this.deliveryCharge
+        this.showDelviery = true
+      } else {
+        this.showDelviery = false
       }
       return cost
     }
@@ -56,10 +72,11 @@ export default {
         if (product.quantity > 0) {
           let orderRow = '_' + product.name + '_(' + product.quantity + ') ----> ' + 'Rs.' + (product.quantity * product.cost)
           order.push(orderRow)
-          // console.log('Order Row-> ', orderRow)
         }
       })
-
+      if (this.showDelviery) {
+        order.push('_Delivery Charge_ -----> 40')
+      }
       order.push(totalCost)
       let orderString = order.join('\n')
       console.log('Order string-> ', orderString)
