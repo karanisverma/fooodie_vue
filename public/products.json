@@ -1,5 +1,44 @@
 [
     {
+        "img":"https://fooodie.store/static/img/menu/pasta.jpeg",
+        "name":"Pasta",
+        "cost":100,
+        "status":"instock",
+        "fav":2,
+        "type":"veg",
+        "category":"snacks",
+        "product_id":60,
+        "detail":"...",
+        "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+        "quantity":0
+     },
+    {
+        "img":"https://fooodie.store/static/img/menu/french_fries.jpg",
+        "name":"French Fries",
+        "cost":80,
+        "status":"instock",
+        "fav":5,
+        "type":"veg",
+        "category":"snacks",
+        "product_id":56,
+        "detail":"French fries or simply fries or chips, are pieces of potato that have been deep-fried.",
+        "ingredients":"2 1/2 pounds russet potatoes Vegetable or peanut oil, for frying Sea salt, for sprinkling",
+        "quantity":0
+     },
+     {
+        "img":"https://fooodie.store/static/img/menu/veg_sandwich.jpg",
+        "name":"Cheese Sandwich",
+        "cost":60,
+        "status":"instock",
+        "fav":5,
+        "type":"veg",
+        "category":"snacks",
+        "product_id":57,
+        "detail":"...",
+        "ingredients":"2 1/2 pounds russet potatoes Vegetable or peanut oil, for frying Sea salt, for sprinkling",
+        "quantity":0
+     },
+    {
        "img":"https://fooodie.store/static/img/menu/veg_sandwich.jpg",
        "name":"Veg Sandwich",
        "cost":35,
@@ -12,19 +51,6 @@
        "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
        "quantity":0
     },
-    {
-        "img":"https://fooodie.store/static/img/menu/french_fries.jpg",
-        "name":"French Fries",
-        "cost":40,
-        "status":"instock",
-        "fav":5,
-        "type":"veg",
-        "category":"snacks",
-        "product_id":56,
-        "detail":"French fries or simply fries or chips, are pieces of potato that have been deep-fried.",
-        "ingredients":"2 1/2 pounds russet potatoes Vegetable or peanut oil, for frying Sea salt, for sprinkling",
-        "quantity":0
-     },
     {
        "img":"https://fooodie.store/static/img/menu/paneer_sandwich.jpg",
        "name":"Paneer Sandwich",
@@ -54,7 +80,7 @@
     {
        "img":"https://fooodie.store/static/img/menu/maggi.jpg",
        "name":"Maggi",
-       "cost":35,
+       "cost":40,
        "status":"instock",
        "fav":2,
        "type":"veg",
@@ -67,7 +93,7 @@
     {
        "img":"https://fooodie.store/static/img/menu/top_ramen.jpg",
        "name":"Top Ramen",
-       "cost":35,
+       "cost":40,
        "status":"instock",
        "fav":2,
        "type":"veg",
@@ -80,7 +106,7 @@
     {
        "img":"https://fooodie.store/static/img/menu/chowmein.jpg",
        "name":"Chowmein",
-       "cost":60,
+       "cost":70,
        "status":"instock",
        "fav":2,
        "type":"veg",
@@ -130,6 +156,19 @@
        "quantity":0
     },
     {
+        "img":"https://fooodie.store/static/img/menu/schezwan_rice_small.jpg",
+        "name":"Schezwan Rice",
+        "cost":120,
+        "status":"instock",
+        "fav":2,
+        "type":"veg",
+        "category":"rice_and_biriyani",
+        "product_id":59,
+        "detail":"...",
+        "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+        "quantity":0
+     },
+    {
        "img":"https://fooodie.store/static/img/menu/veg_pulaw.jpg",
        "name":"Veg Pulao",
        "cost":140,
@@ -171,7 +210,7 @@
     {
        "img":"https://fooodie.store/static/img/menu/jira_rice.jpg",
        "name":"Jeera Rice",
-       "cost":70,
+       "cost":80,
        "status":"instock",
        "fav":2,
        "type":"veg",
@@ -184,7 +223,7 @@
     {
        "img":"https://fooodie.store/static/img/menu/plain_rice.jpg",
        "name":"Plain Rice",
-       "cost":60,
+       "cost":70,
        "status":"instock",
        "fav":2,
        "type":"veg",
@@ -226,7 +265,7 @@
        "cost":180,
        "status":"instock",
        "fav":2,
-       "type":"veg",
+       "type":"non_veg",
        "category":"rice_and_biriyani",
        "product_id":17,
        "detail":"Choice of chicken cooked with fine quality basmati rice and spices.",
@@ -239,7 +278,7 @@
        "cost":150,
        "status":"instock",
        "fav":2,
-       "type":"veg",
+       "type":"non_veg",
        "category":"rice_and_biriyani",
        "product_id":18,
        "detail":"Choice of egg cooked with fine quality basmati rice and spices.",
@@ -262,7 +301,7 @@
     {
        "img":"https://fooodie.store/static/img/menu/chilli_paneer.jpg",
        "name":"Paneer Chilli",
-       "cost":100,
+       "cost":140,
        "status":"instock",
        "fav":2,
        "type":"veg",
@@ -301,7 +340,7 @@
     {
        "img":"https://fooodie.store/static/img/menu/aalu_jirra.jpg",
        "name":"Aloo Jeera",
-       "cost":130,
+       "cost":90,
        "status":"instock",
        "fav":3,
        "type":"veg",
@@ -314,7 +353,7 @@
     {
        "img":"https://fooodie.store/static/img/menu/aalu_lehsaniya.jpg",
        "name":"Aloo Lahsuniya",
-       "cost":130,
+       "cost":90,
        "status":"instock",
        "fav":2,
        "type":"veg",
@@ -327,7 +366,7 @@
     {
        "img":"https://fooodie.store/static/img/menu/allu_gobhi_matar.jpg",
        "name":"Gobhi Matar Aloo",
-       "cost":120,
+       "cost":90,
        "status":"instock",
        "fav":5,
        "type":"veg",
@@ -340,7 +379,7 @@
     {
        "img":"https://fooodie.store/static/img/menu/allu_matar_masala.jpg",
        "name":"Matar Aloo Masala",
-       "cost":130,
+       "cost":90,
        "status":"instock",
        "fav":2,
        "type":"veg",
@@ -405,7 +444,7 @@
     {
        "img":"https://fooodie.store/static/img/menu/panner_masala.jpg",
        "name":"Paneer Masala",
-       "cost":100,
+       "cost":120,
        "status":"instock",
        "fav":2,
        "type":"veg",
@@ -418,7 +457,7 @@
     {
        "img":"https://fooodie.store/static/img/menu/paneer_butter_masala.jpg",
        "name":"Paneer Butter Masala",
-       "cost":130,
+       "cost":140,
        "status":"instock",
        "fav":2,
        "type":"veg",
@@ -431,7 +470,7 @@
     {
        "img":"https://fooodie.store/static/img/menu/alloo_gobi.jpg",
        "name":"Allo Gobi",
-       "cost":88,
+       "cost":90,
        "status":"instock",
        "fav":2,
        "type":"veg",
@@ -496,7 +535,7 @@
     {
        "img":"https://fooodie.store/static/img/menu/chicken_butter_masala.jpg",
        "name":"Chicken Butter Masala(Half)",
-       "cost":20,
+       "cost":220,
        "status":"instock",
        "fav":2,
        "type":"veg",
@@ -508,8 +547,8 @@
     },
     {
        "img":"https://fooodie.store/static/img/menu/chicken_butter_masala.jpg",
-       "name":"Chicken Butter Masala",
-       "cost":300,
+       "name":"Chicken Butter Masala(Full)",
+       "cost":340,
        "status":"instock",
        "fav":2,
        "type":"veg",
@@ -600,7 +639,7 @@
     {
        "img":"https://fooodie.store/static/img/menu/veg_roll.jpg",
        "name":"Veg Roll",
-       "cost":30,
+       "cost":40,
        "status":"instock",
        "fav":2,
        "type":"veg",
@@ -624,6 +663,19 @@
        "quantity":0
     },
     {
+        "img":"https://fooodie.store/static/img/menu/paneer_cheese_roll.jpg",
+        "name":"Paneer Chilli Roll",
+        "cost":70,
+        "status":"instock",
+        "fav":2,
+        "type":"veg",
+        "category":"rolls_and_paratha",
+        "product_id":58,
+        "detail":"Paneer cheese cubes marinated delicious creamy sauces and pared with sour onions.",
+        "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+        "quantity":0
+     },
+    {
        "img":"https://fooodie.store/static/img/menu/chicken_roll.jpg",
        "name":"Chicken Roll",
        "cost":80,
@@ -639,7 +691,7 @@
     {
        "img":"https://fooodie.store/static/img/menu/egg_roll.jpg",
        "name":"Egg Roll",
-       "cost":70,
+       "cost":50,
        "status":"instock",
        "fav":2,
        "type":"veg",
@@ -652,7 +704,7 @@
     {
        "img":"https://fooodie.store/static/img/menu/coco_cola.jpg",
        "name":"Coco - cola",
-       "cost":20,
+       "cost":50,
        "status":"instock",
        "fav":2,
        "type":"veg",
@@ -665,7 +717,7 @@
     {
        "img":"https://fooodie.store/static/img/menu/thumbs_up.jpg",
        "name":"Thumbs Up",
-       "cost":35,
+       "cost":50,
        "status":"instock",
        "fav":2,
        "type":"veg",
@@ -678,7 +730,7 @@
     {
        "img":"https://fooodie.store/static/img/menu/sprite.jpg",
        "name":"Sprite",
-       "cost":35,
+       "cost":50,
        "status":"instock",
        "fav":2,
        "type":"veg",
