@@ -1,4 +1,4 @@
-[    
+[
     {
         "img":"https://fooodie.store/assets/img/menu/pasta.jpg",
         "name":"Pasta",
@@ -44,7 +44,7 @@
         "cost":50,
         "status":"instock",
         "fav":2,
-        "type":"veg",
+        "type":"non_veg",
         "category":"rolls_and_paratha",
         "product_id":49,
         "detail":"Egg coated, freshly made parantha, rolled with crunchy and lemony lacha onion.",
