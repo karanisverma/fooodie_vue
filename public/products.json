@@ -1,6 +1,6 @@
 [
     {
-        "img":"https://fooodie.store/static/img/menu/pasta.jpg",
+        "img":"https://fooodie.store/assets/img/menu/pasta.jpg",
         "name":"Pasta",
         "cost":100,
         "status":"instock",
@@ -13,7 +13,7 @@
         "quantity":0
      },
     {
-        "img":"https://fooodie.store/static/img/menu/french_fries.jpg",
+        "img":"https://fooodie.store/assets/img/menu/french_fries.jpg",
         "name":"French Fries",
         "cost":80,
         "status":"instock",
@@ -26,7 +26,7 @@
         "quantity":0
      },
      {
-        "img":"https://fooodie.store/static/img/menu/veg_sandwich.jpg",
+        "img":"https://fooodie.store/assets/img/menu/veg_sandwich.jpg",
         "name":"Cheese Sandwich",
         "cost":60,
         "status":"instock",
@@ -39,7 +39,7 @@
         "quantity":0
      },
     {
-       "img":"https://fooodie.store/static/img/menu/veg_sandwich.jpg",
+       "img":"https://fooodie.store/assets/img/menu/veg_sandwich.jpg",
        "name":"Veg Sandwich",
        "cost":35,
        "status":"instock",
@@ -52,7 +52,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/paneer_sandwich.jpg",
+       "img":"https://fooodie.store/assets/img/menu/paneer_sandwich.jpg",
        "name":"Paneer Sandwich",
        "cost":45,
        "status":"instock",
@@ -65,7 +65,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/alloo_sandwich.jpg",
+       "img":"https://fooodie.store/assets/img/menu/alloo_sandwich.jpg",
        "name":"Alloo Sandwich",
        "cost":40,
        "status":"instock",
@@ -78,7 +78,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/maggi.jpg",
+       "img":"https://fooodie.store/assets/img/menu/maggi.jpg",
        "name":"Maggi",
        "cost":40,
        "status":"instock",
@@ -91,7 +91,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/top_ramen.jpg",
+       "img":"https://fooodie.store/assets/img/menu/top_ramen.jpg",
        "name":"Top Ramen",
        "cost":40,
        "status":"instock",
@@ -104,7 +104,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/chowmein.jpg",
+       "img":"https://fooodie.store/assets/img/menu/chowmein.jpg",
        "name":"Chowmein",
        "cost":70,
        "status":"instock",
@@ -117,7 +117,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/egg_sandwich.jpg",
+       "img":"https://fooodie.store/assets/img/menu/egg_sandwich.jpg",
        "name":"Egg Sandwich",
        "cost":50,
        "status":"instock",
@@ -130,7 +130,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/egg_chowmein.jpg",
+       "img":"https://fooodie.store/assets/img/menu/egg_chowmein.jpg",
        "name":"Egg Chowmein",
        "cost":100,
        "status":"instock",
@@ -143,7 +143,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/veg_biriyani.jpg",
+       "img":"https://fooodie.store/assets/img/menu/veg_biriyani.jpg",
        "name":"Veg Biriyani",
        "cost":140,
        "status":"instock",
@@ -156,7 +156,7 @@
        "quantity":0
     },
     {
-        "img":"https://fooodie.store/static/img/menu/schezwan_rice_small.jpg",
+        "img":"https://fooodie.store/assets/img/menu/schezwan_rice_small.jpg",
         "name":"Schezwan Rice",
         "cost":120,
         "status":"instock",
@@ -169,7 +169,7 @@
         "quantity":0
      },
     {
-       "img":"https://fooodie.store/static/img/menu/veg_pulaw.jpg",
+       "img":"https://fooodie.store/assets/img/menu/veg_pulaw.jpg",
        "name":"Veg Pulao",
        "cost":140,
        "status":"instock",
@@ -182,7 +182,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/paneer_biriyani.jpg",
+       "img":"https://fooodie.store/assets/img/menu/paneer_biriyani.jpg",
        "name":"Panner Biriyani",
        "cost":160,
        "status":"instock",
@@ -195,7 +195,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/veg_fried_rice.jpg",
+       "img":"https://fooodie.store/assets/img/menu/veg_fried_rice.jpg",
        "name":"Veg Fried Rice",
        "cost":100,
        "status":"instock",
@@ -208,7 +208,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/jira_rice.jpg",
+       "img":"https://fooodie.store/assets/img/menu/jira_rice.jpg",
        "name":"Jeera Rice",
        "cost":80,
        "status":"instock",
@@ -221,7 +221,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/plain_rice.jpg",
+       "img":"https://fooodie.store/assets/img/menu/plain_rice.jpg",
        "name":"Plain Rice",
        "cost":70,
        "status":"instock",
@@ -234,7 +234,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/chicken_dum_biriyani.jpg",
+       "img":"https://fooodie.store/assets/img/menu/chicken_dum_biriyani.jpg",
        "name":"Chicken Dum Biriyani",
        "cost":180,
        "status":"instock",
@@ -247,7 +247,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/chicken_fried_rice.jpg",
+       "img":"https://fooodie.store/assets/img/menu/chicken_fried_rice.jpg",
        "name":"Chicken Fried Rice",
        "cost":120,
        "status":"instock",
@@ -260,7 +260,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/chicken_biriyani.jpg",
+       "img":"https://fooodie.store/assets/img/menu/chicken_biriyani.jpg",
        "name":"Chicken Biriyani",
        "cost":180,
        "status":"instock",
@@ -273,7 +273,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/egg_biriyani.jpg",
+       "img":"https://fooodie.store/assets/img/menu/egg_biriyani.jpg",
        "name":"Egg Biriyani",
        "cost":150,
        "status":"instock",
@@ -286,7 +286,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/egg_fried_rice.jpg",
+       "img":"https://fooodie.store/assets/img/menu/egg_fried_rice.jpg",
        "name":"Egg Fried Rice",
        "cost":100,
        "status":"instock",
@@ -299,7 +299,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/chilli_paneer.jpg",
+       "img":"https://fooodie.store/assets/img/menu/chilli_paneer.jpg",
        "name":"Paneer Chilli",
        "cost":140,
        "status":"instock",
@@ -312,7 +312,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/gobi_manchurian.jpg",
+       "img":"https://fooodie.store/assets/img/menu/gobi_manchurian.jpg",
        "name":"Gobhi Chilli",
        "cost":100,
        "status":"instock",
@@ -325,7 +325,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/kadaiPaneer.jpg",
+       "img":"https://fooodie.store/assets/img/menu/kadaiPaneer.jpg",
        "name":"Paneer Kadai",
        "cost":130,
        "status":"instock",
@@ -338,7 +338,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/aalu_jirra.jpg",
+       "img":"https://fooodie.store/assets/img/menu/aalu_jirra.jpg",
        "name":"Aloo Jeera",
        "cost":90,
        "status":"instock",
@@ -351,7 +351,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/aalu_lehsaniya.jpg",
+       "img":"https://fooodie.store/assets/img/menu/aalu_lehsaniya.jpg",
        "name":"Aloo Lahsuniya",
        "cost":90,
        "status":"instock",
@@ -364,7 +364,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/allu_gobhi_matar.jpg",
+       "img":"https://fooodie.store/assets/img/menu/allu_gobhi_matar.jpg",
        "name":"Gobhi Matar Aloo",
        "cost":110,
        "status":"instock",
@@ -377,7 +377,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/allu_matar_masala.jpg",
+       "img":"https://fooodie.store/assets/img/menu/allu_matar_masala.jpg",
        "name":"Matar Aloo Masala",
        "cost":110,
        "status":"instock",
@@ -390,7 +390,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/ghobhi_masala.jpg",
+       "img":"https://fooodie.store/assets/img/menu/ghobhi_masala.jpg",
        "name":"Gobhi Masala",
        "cost":80,
        "status":"instock",
@@ -403,7 +403,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/ghobi_matar.jpg",
+       "img":"https://fooodie.store/assets/img/menu/ghobi_matar.jpg",
        "name":"Gobhi Matar",
        "cost":80,
        "status":"instock",
@@ -416,7 +416,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/mix_veg.jpg",
+       "img":"https://fooodie.store/assets/img/menu/mix_veg.jpg",
        "name":"Mix Veg",
        "cost":110,
        "status":"instock",
@@ -429,7 +429,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/paneer_do_pyaza.jpg",
+       "img":"https://fooodie.store/assets/img/menu/paneer_do_pyaza.jpg",
        "name":"Paneer Do Pyaza",
        "cost":130,
        "status":"instock",
@@ -442,7 +442,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/panner_masala.jpg",
+       "img":"https://fooodie.store/assets/img/menu/panner_masala.jpg",
        "name":"Paneer Masala",
        "cost":130,
        "status":"instock",
@@ -455,7 +455,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/paneer_butter_masala.jpg",
+       "img":"https://fooodie.store/assets/img/menu/paneer_butter_masala.jpg",
        "name":"Paneer Butter Masala",
        "cost":130,
        "status":"instock",
@@ -468,7 +468,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/alloo_gobi.jpg",
+       "img":"https://fooodie.store/assets/img/menu/alloo_gobi.jpg",
        "name":"Allo Gobi",
        "cost":110,
        "status":"instock",
@@ -481,7 +481,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/dal_fry.jpg",
+       "img":"https://fooodie.store/assets/img/menu/dal_fry.jpg",
        "name":"Dal Fry",
        "cost":100,
        "status":"instock",
@@ -494,7 +494,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/kadaichicken.JPG",
+       "img":"https://fooodie.store/assets/img/menu/kadaichicken.JPG",
        "name":"Chicken Kadai(Half)",
        "cost":200,
        "status":"instock",
@@ -507,7 +507,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/kadaichicken.JPG",
+       "img":"https://fooodie.store/assets/img/menu/kadaichicken.JPG",
        "name":"Chicken Kadai",
        "cost":300,
        "status":"instock",
@@ -520,7 +520,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/chicken_roast.jpg",
+       "img":"https://fooodie.store/assets/img/menu/chicken_roast.jpg",
        "name":"Chicken Roast",
        "cost":180,
        "status":"instock",
@@ -533,7 +533,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/chicken_butter_masala.jpg",
+       "img":"https://fooodie.store/assets/img/menu/chicken_butter_masala.jpg",
        "name":"Chicken Butter Masala(Half)",
        "cost":220,
        "status":"instock",
@@ -546,7 +546,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/chicken_butter_masala.jpg",
+       "img":"https://fooodie.store/assets/img/menu/chicken_butter_masala.jpg",
        "name":"Chicken Butter Masala(Full)",
        "cost":340,
        "status":"instock",
@@ -559,7 +559,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/egg_curry.jpg",
+       "img":"https://fooodie.store/assets/img/menu/egg_curry.jpg",
        "name":"Egg Curry",
        "cost":80,
        "status":"instock",
@@ -572,7 +572,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/chicken_chilli.jpg",
+       "img":"https://fooodie.store/assets/img/menu/chicken_chilli.jpg",
        "name":"Chicken Chilly",
        "cost":160,
        "status":"instock",
@@ -585,7 +585,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/alloo_pratha.jpg",
+       "img":"https://fooodie.store/assets/img/menu/alloo_pratha.jpg",
        "name":"Alloo Pratha",
        "cost":30,
        "status":"instock",
@@ -598,7 +598,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/tandoori_roti.jpg",
+       "img":"https://fooodie.store/assets/img/menu/tandoori_roti.jpg",
        "name":"Tandoori Roti(1Piece)",
        "cost":10,
        "status":"instock",
@@ -611,7 +611,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/tandoori_butter_roti.jpg",
+       "img":"https://fooodie.store/assets/img/menu/tandoori_butter_roti.jpg",
        "name":"Butter Tandoori Roti(1Piece)",
        "cost":10,
        "status":"instock",
@@ -624,7 +624,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/paneer_roll.jpg",
+       "img":"https://fooodie.store/assets/img/menu/paneer_roll.jpg",
        "name":"Paneer Roll",
        "cost":50,
        "status":"instock",
@@ -637,7 +637,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/veg_roll.jpg",
+       "img":"https://fooodie.store/assets/img/menu/veg_roll.jpg",
        "name":"Veg Roll",
        "cost":40,
        "status":"instock",
@@ -650,7 +650,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/paneer_cheese_roll.jpg",
+       "img":"https://fooodie.store/assets/img/menu/paneer_cheese_roll.jpg",
        "name":"Paneer Cheese Roll",
        "cost":70,
        "status":"instock",
@@ -663,7 +663,7 @@
        "quantity":0
     },
     {
-        "img":"https://fooodie.store/static/img/menu/paneer_cheese_roll.jpg",
+        "img":"https://fooodie.store/assets/img/menu/paneer_cheese_roll.jpg",
         "name":"Paneer Chilli Roll",
         "cost":70,
         "status":"instock",
@@ -676,7 +676,7 @@
         "quantity":0
      },
     {
-       "img":"https://fooodie.store/static/img/menu/chicken_roll.jpg",
+       "img":"https://fooodie.store/assets/img/menu/chicken_roll.jpg",
        "name":"Chicken Roll",
        "cost":80,
        "status":"oos",
@@ -689,7 +689,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/egg_roll.jpg",
+       "img":"https://fooodie.store/assets/img/menu/egg_roll.jpg",
        "name":"Egg Roll",
        "cost":50,
        "status":"instock",
@@ -702,7 +702,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/coco_cola.jpg",
+       "img":"https://fooodie.store/assets/img/menu/coco_cola.jpg",
        "name":"Coco - cola",
        "cost":50,
        "status":"instock",
@@ -715,7 +715,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/thumbs_up.jpg",
+       "img":"https://fooodie.store/assets/img/menu/thumbs_up.jpg",
        "name":"Thumbs Up",
        "cost":50,
        "status":"instock",
@@ -728,7 +728,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/sprite.jpg",
+       "img":"https://fooodie.store/assets/img/menu/sprite.jpg",
        "name":"Sprite",
        "cost":50,
        "status":"instock",
@@ -741,7 +741,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/choclate_icecream.jpg",
+       "img":"https://fooodie.store/assets/img/menu/choclate_icecream.jpg",
        "name":"Choclate Ice-Cream",
        "cost":40,
        "status":"instock",
@@ -754,7 +754,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/vanilla_icecream.jpg",
+       "img":"https://fooodie.store/assets/img/menu/vanilla_icecream.jpg",
        "name":"Vanilla Ice-Cream",
        "cost":40,
        "status":"instock",
@@ -767,7 +767,7 @@
        "quantity":0
     },
     {
-       "img":"https://fooodie.store/static/img/menu/straberry_icecream.jpg",
+       "img":"https://fooodie.store/assets/img/menu/straberry_icecream.jpg",
        "name":"Strawberry Ice-cream",
        "cost":40,
        "status":"instock",

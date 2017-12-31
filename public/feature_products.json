@@ -1,6 +1,6 @@
 [    
     {
-        "img":"https://fooodie.store/static/img/menu/pasta.jpg",
+        "img":"https://fooodie.store/assets/img/menu/pasta.jpg",
         "name":"Pasta",
         "cost":100,
         "status":"instock",
@@ -13,7 +13,7 @@
         "quantity":0
      },
     {
-        "img":"https://fooodie.store/static/img/menu/french_fries.jpg",
+        "img":"https://fooodie.store/assets/img/menu/french_fries.jpg",
         "name":"French Fries",
         "cost":80,
         "status":"instock",
@@ -26,7 +26,7 @@
         "quantity":0
      },
      {
-        "img":"https://fooodie.store/static/img/menu/paneer_roll.jpg",
+        "img":"https://fooodie.store/assets/img/menu/paneer_roll.jpg",
         "name":"Paneer Roll",
         "cost":50,
         "status":"instock",
@@ -39,7 +39,7 @@
         "quantity":0
      },
      {
-        "img":"https://fooodie.store/static/img/menu/egg_roll.jpg",
+        "img":"https://fooodie.store/assets/img/menu/egg_roll.jpg",
         "name":"Egg Roll",
         "cost":50,
         "status":"instock",
@@ -52,7 +52,7 @@
         "quantity":0
      },
      {
-        "img":"https://fooodie.store/static/img/menu/schezwan_rice_small.jpg",
+        "img":"https://fooodie.store/assets/img/menu/schezwan_rice_small.jpg",
         "name":"Schezwan Rice",
         "cost":120,
         "status":"instock",

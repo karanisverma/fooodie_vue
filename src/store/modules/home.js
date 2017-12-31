@@ -10,13 +10,13 @@ class HomeState {
   }
   // Fetching data for new category
   getFeaturedProducts () {
-    return fetch('https://fooodie.store/static/js/feature_products.json', {
+    return fetch('https://fooodie.store/assets/js/feature_products.json', {
       method: 'GET'
     })
   }
 
   productDescription () {
-    return fetch(`https://fooodie.store/static/js/product-description.json`, {
+    return fetch(`https://fooodie.store/assets/js/product-description.json`, {
       method: 'GET'
     })
   }
