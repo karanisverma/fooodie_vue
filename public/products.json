@@ -41,7 +41,7 @@
     {
        "img":"https://fooodie.store/assets/img/menu/veg_sandwich.jpg",
        "name":"Veg Sandwich",
-       "cost":35,
+       "cost":40,
        "status":"instock",
        "fav":2,
        "type":"veg",
@@ -54,7 +54,7 @@
     {
        "img":"https://fooodie.store/assets/img/menu/paneer_sandwich.jpg",
        "name":"Paneer Sandwich",
-       "cost":45,
+       "cost":50,
        "status":"instock",
        "fav":2,
        "type":"veg",
