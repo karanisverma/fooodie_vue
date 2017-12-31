@@ -12,7 +12,7 @@ class ProductState {
   getAllProduct () {
     // https://fooodie.store/static/js/category.json
     return new Promise((resolve, reject) => {
-      fetch(this.APIHOST + '/static/js/products.json', {
+      fetch(this.APIHOST + '/assets/js/products.json', {
         method: 'GET'
       }).then(res => res.json())
         .then((response) => {
