@@ -139,41 +139,47 @@ button{
     width: 40%;
     height: 100%;
     overflow: hidden;
+    position: relative;
+    .veg {
+      color: green;
+      position: absolute;
+      right: 6px;
+      background: white;
+      line-height: 13px;
+      width: 12px;
+      font-size: 20px;
+      top: 6px;
+      &::before {
+        content: "\E940";
+        left: -1px;
+        position: absolute;
+      }
+    }
+    .non-veg {
+      color: #ad4728;
+      position: absolute;
+      right: 6px;
+      background: white;
+      line-height: 13px;
+      width: 12px;
+      font-size: 20px;
+      top: 6px;
+      &::before {
+        content: "\E940";
+        left: -1px;
+        position: absolute;
+      }
+    }
+    img {
+      width: 110%;
+      height: 100%;
+    }
 }
 
-.crop img {
-  width: 110%;
-  height: 100%;
-}
 }
 
-// @media screen and (min-width: 1366px) {
-//     .page-menu-list {
-//   .cart-sidebar-wrapper .sidebar{
-//     transform: translate3d(0%, 0px, 0px) !important;
-//     width: 20%;
-//     left: 70%;
-//     min-height: 55%;
-//     height: 50%;
-//     position: fixed;
-//     top: 8.2em;
-//     box-shadow: none;
-//   }
-//   nav {
-//     width: 20%;
-//     text-align: left;
-//     margin-top: 8em;
-//     margin-left: 8em;
-//     background: #fafafa;
-//     min-height: 300px;
-//   }
-//     .touch-zone {
-//       width: 35%;
-//     }
-//   }
-// }
 // For dekstop
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
   .cart-sidebar-wrapper{
   display: block !important;
 }

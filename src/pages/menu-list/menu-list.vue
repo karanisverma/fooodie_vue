@@ -37,6 +37,8 @@
             <section class="menu-category">
                 <div class="product" v-for="(product, i) in allProducts" v-if="product.category=='snacks'">
                     <div class="crop">
+                        <span class="veg" v-if="product.type === 'veg'">&#8226;</span>
+                        <span class="non-veg" v-if="product.type === 'non_veg'">&#8226;</span>
                         <router-link
                         :to="{ name: 'ProductDescription',
                         params: {productId: product.product_id} } ">
@@ -60,6 +62,8 @@
             <section class="menu-category">
                 <div class="product" v-for="(product, i) in allProducts" v-if="product.category=='rice_and_biriyani'">
                     <div class="crop">
+                        <span class="veg" v-if="product.type === 'veg'">&#8226;</span>
+                        <span class="non-veg" v-if="product.type === 'non_veg'">&#8226;</span>
                         <router-link
                         :to="{ name: 'ProductDescription',
                         params: {productId: product.product_id} } ">
@@ -83,6 +87,8 @@
             <section class="menu-category">
                 <div class="product" v-for="(product, i) in allProducts" v-if="product.category=='curry'">
                     <div class="crop">
+                        <span class="veg" v-if="product.type === 'veg'">&#8226;</span>
+                        <span class="non-veg" v-if="product.type === 'non_veg'">&#8226;</span>
                         <router-link
                         :to="{ name: 'ProductDescription',
                         params: {productId: product.product_id} } ">
@@ -106,6 +112,8 @@
             <section class="menu-category">
                 <div class="product" v-for="(product, i) in allProducts" v-if="product.category=='rolls_and_paratha'">
                     <div class="crop">
+                        <span class="veg" v-if="product.type === 'veg'">&#8226;</span>
+                        <span class="non-veg" v-if="product.type === 'non_veg'">&#8226;</span>
                         <router-link
                         :to="{ name: 'ProductDescription',
                         params: {productId: product.product_id} } ">
@@ -129,6 +137,8 @@
             <section class="menu-category">
                 <div class="product" v-for="(product, i) in allProducts" v-if="product.category=='drink_and_dessert'">
                     <div class="crop">
+                        <span class="veg" v-if="product.type === 'veg'">&#8226;</span>
+                        <span class="non-veg" v-if="product.type === 'non_veg'">&#8226;</span>
                         <router-link
                         :to="{ name: 'ProductDescription',
                         params: {productId: product.product_id} } ">
