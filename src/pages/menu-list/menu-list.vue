@@ -42,7 +42,7 @@
                         <router-link
                         :to="{ name: 'ProductDescription',
                         params: {productId: product.product_id} } ">
-                        <img :src="product.img">
+                        <img v-lazy="product.img">
                         </router-link>
                     </div>
                     <div class="product-info">
@@ -67,7 +67,7 @@
                         <router-link
                         :to="{ name: 'ProductDescription',
                         params: {productId: product.product_id} } ">
-                        <img :src="product.img">
+                        <img v-lazy="product.img">
                         </router-link>
                     </div>
                     <div class="product-info">
@@ -92,7 +92,7 @@
                         <router-link
                         :to="{ name: 'ProductDescription',
                         params: {productId: product.product_id} } ">
-                        <img :src="product.img">
+                        <img v-lazy="product.img">
                         </router-link>
                     </div>
                     <div class="product-info">
@@ -117,7 +117,7 @@
                         <router-link
                         :to="{ name: 'ProductDescription',
                         params: {productId: product.product_id} } ">
-                        <img :src="product.img">
+                        <img v-lazy="product.img">
                         </router-link>
                     </div>
                     <div class="product-info">
@@ -142,7 +142,7 @@
                         <router-link
                         :to="{ name: 'ProductDescription',
                         params: {productId: product.product_id} } ">
-                        <img :src="product.img">
+                        <img v-lazy="product.img">
                         </router-link>
                     </div>
                     <div class="product-info">
