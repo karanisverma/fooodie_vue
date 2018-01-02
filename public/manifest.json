@@ -1,0 +1,16 @@
+{
+  "short_name": "Fooodie",
+  "name": "Fooodie PWA App",
+  "icons": [
+    {
+      "src": "https://s3-eu-west-1.amazonaws.com/fooodie-image/favicon-32x32.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "theme_color": "#323a44",
+  "background_color": "#ccc",
+  "orientation": "portrait",
+  "display": "standalone"
+}
