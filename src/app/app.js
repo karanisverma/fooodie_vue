@@ -4,7 +4,7 @@ export default {
     return {
       showSidebar: false,
       showCartSidebar: false,
-      showModal: true
+      showModal: false
     }
   },
   created () {
