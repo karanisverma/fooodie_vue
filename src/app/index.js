@@ -12,6 +12,7 @@ import App from './app.vue'
 import store from '~/store'
 import router from '~/router'
 import VueCarousel from 'vue-carousel'
+import VueLazyload from 'vue-lazyload'
 
 Vue.config.productionTip = false
 Vue.performance = true
@@ -26,6 +27,13 @@ VueTouch.config.swipe = {
 }
 Vue.use(VueTouch, { name: 'v-touch' })
 /* eslint-disable no-new */
+
+Vue.use(VueLazyload, {
+  preLoad: 1.3,
+  error: 'https://fooodie.store/assets/img/fooodie_loading_5.gif',
+  loading: 'https://fooodie.store/assets/img/fooodie_loading_5.gif',
+  attempt: 1
+})
 
 Promise.resolve(window.fetch).then(() => {
   new Vue({
