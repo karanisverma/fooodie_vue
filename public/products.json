@@ -183,7 +183,7 @@
     },
     {
        "img":"https://fooodie.store/assets/img/menu/paneer_biriyani.jpg",
-       "name":"Panner Biriyani",
+       "name":"Paneer Biriyani",
        "cost":160,
        "status":"instock",
        "fav":2,
@@ -457,7 +457,7 @@
     {
        "img":"https://fooodie.store/assets/img/menu/paneer_butter_masala.jpg",
        "name":"Paneer Butter Masala",
-       "cost":130,
+       "cost":140,
        "status":"instock",
        "fav":2,
        "type":"veg",
@@ -613,7 +613,7 @@
     {
        "img":"https://fooodie.store/assets/img/menu/tandoori_butter_roti.jpg",
        "name":"Butter Tandoori Roti(1Piece)",
-       "cost":10,
+       "cost":15,
        "status":"instock",
        "fav":2,
        "type":"veg",
