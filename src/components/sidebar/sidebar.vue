@@ -13,7 +13,7 @@
       <div class="user" @click="toggleSidebar">
       <router-link
         :to="{ name: 'HomePage' } ">
-        <div class="user-icon"> <img src="https://s3.amazonaws.com/aws-website-fooodiestore-s7bs1/static/img/fooodie_dark_logo.png"></div>
+        <div class="user-icon"> <img v-lazy="https://s3.amazonaws.com/aws-website-fooodiestore-s7bs1/static/img/fooodie_dark_logo.png"></div>
         <!-- <i class="material-icons">account_circle</i> -->
         <span>Fooodie</span>
         </router-link>
