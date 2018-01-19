@@ -16,8 +16,9 @@
     "start": "npm run dev",
     "build": "node build/build.js",
     "lint": "eslint --ext .js,.vue src test/unit/specs",
-    "precommit": "npm-run-all test:flow test:lint",
-    "commitmsg": "validate-commit-msg"
+    "precommit": "npm-run-all format test:flow test:lint",
+    "commitmsg": "validate-commit-msg",
+    "format": "prettier-standard './src/**/*.js'"
   },
   "dependencies": {
     "babel-plugin-dynamic-import-node": "^1.1.0",
@@ -85,6 +86,7 @@
     "ora": "^1.2.0",
     "phantomjs-prebuilt": "^2.1.14",
     "portfinder": "^1.0.13",
+    "prettier-standard": "^8.0.0",
     "rimraf": "^2.6.0",
     "sass-loader": "^6.0.6",
     "semver": "^5.3.0",

@@ -43,7 +43,7 @@
 
     </div>
     <div class="desc-add-to-cart">
-      <QuantityButtonComponent :product-id="allProductDesc.product_id" :quantity="allProductDesc.quantity"
+      <QuantityButtonComponent :product-id="allProductDesc.product_id" :status ="allProductDesc.status" :quantity="allProductDesc.quantity"
         @UpdateProductsQuantity="updateQuantity"
         ></QuantityButtonComponent>
     </div>

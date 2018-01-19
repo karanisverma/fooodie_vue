@@ -7,15 +7,16 @@ class ProductState {
     this.allProducts = {}
     this.quantity = 0
     this.APIHOST = 'https://fooodie.store'
-    this.header = {'Content-Type': 'application/json'}
+    this.header = { 'Content-Type': 'application/json' }
   }
   getAllProduct () {
     // https://fooodie.store/static/js/category.json
     return new Promise((resolve, reject) => {
       fetch(this.APIHOST + '/assets/js/products.json', {
         method: 'GET'
-      }).then(res => res.json())
-        .then((response) => {
+      })
+        .then(res => res.json())
+        .then(response => {
           resolve(response)
         })
         .catch(error => {

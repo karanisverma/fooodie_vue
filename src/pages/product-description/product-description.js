@@ -29,7 +29,7 @@ export default {
   },
   computed: {
     allProductDesc () {
-      const {Products} = this.$store.state
+      const { Products } = this.$store.state
       var urlId = window.location.pathname.split('/')[3]
       if (Products.allProducts.length > 0) {
         var result = Products.allProducts.filter(function (obj) {
@@ -44,23 +44,26 @@ export default {
   },
   methods: {
     allProductsDesc () {
-      const {Home} = this.$store.state
-      Home.productDescription().then(res => {
-        let data = res.json()
-        return Promise.resolve(data)
-      })
-      .then(data => {
-        if (data) {
-          Home.allProductDescription = data
-          console.log('data==>', data)
-        }
-      })
+      const { Home } = this.$store.state
+      Home.productDescription()
+        .then(res => {
+          let data = res.json()
+          return Promise.resolve(data)
+        })
+        .then(data => {
+          if (data) {
+            Home.allProductDescription = data
+            console.log('data==>', data)
+          }
+        })
     },
     updateQuantity (updatedProductInfo) {
-      const {Products} = this.$store.state
-      const {Cart} = this.$store.state
+      const { Products } = this.$store.state
+      const { Cart } = this.$store.state
       for (let i = 0; i < Products.allProducts.length; i++) {
-        if (Products.allProducts[i].product_id === updatedProductInfo.productId) {
+        if (
+          Products.allProducts[i].product_id === updatedProductInfo.productId
+        ) {
           Products.allProducts[i].quantity = updatedProductInfo.quantity
           Cart.items[updatedProductInfo.productId] = updatedProductInfo.quantity
           localStorage.setItem('Cart', JSON.stringify(Cart.items))

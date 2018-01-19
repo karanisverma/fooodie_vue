@@ -10,7 +10,6 @@ Vue.use(Vuex)
 export class AppStoreState {
   // online: boolean
   // routeBack: Object
-
   // constructor() {
   //   this.online = true
   //   this.routeBack = null

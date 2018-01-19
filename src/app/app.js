@@ -12,8 +12,8 @@ export default {
   },
   methods: {
     getAllProducts () {
-      let {Products} = this.$store.state
-      let {Cart} = this.$store.state
+      let { Products } = this.$store.state
+      let { Cart } = this.$store.state
       console.log('Products-->', Products)
       Cart.items = JSON.parse(localStorage.getItem('Cart')) || {}
       Products.getAllProduct().then(res => {
@@ -30,11 +30,13 @@ export default {
     }
   },
   components: {
-    Sidebar: () => import(/* webpackChunkName: 'component-sidebar' */ '../components/sidebar'),
-    Cart: () => import(/* webpackChunkName: 'component-sidebar' */ '../components/cart')
+    Sidebar: () =>
+      import(/* webpackChunkName: 'component-sidebar' */ '../components/sidebar'),
+    Cart: () =>
+      import(/* webpackChunkName: 'component-sidebar' */ '../components/cart')
   },
   watch: {
-    '$route' () {
+    $route () {
       this.showSidebar = false
     }
   }
