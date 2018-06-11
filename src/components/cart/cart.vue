@@ -44,7 +44,7 @@
           <span id="total-cost-lable">Total</span>
           <span class="total-cost-amount">{{totalCost}}</span>
         </div>
-        <button @click="placeOrder" v-if="totalCost>0 && !showMinimumOrderWarning">
+        <button @click="placeOrder" v-if="totalCost>0 && !showMinimumOrderWarning" id="checkOut">
           Place Order</button>
         <button v-else style="background:#888888">
           Minimum Order of ₹100</button>

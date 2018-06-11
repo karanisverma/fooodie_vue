@@ -171,7 +171,7 @@ a {
 
 .modal-body {
   // margin: 20px 0;
-  background-image: url('../assets/img/new_year_website.jpg');
+  padding-top: 2em;
   height: 400px;
   width: 100%;
   position: relative;
@@ -186,12 +186,30 @@ a {
     color: #ffffff;
     cursor: pointer;
   }
+  &.promotion{
+
+      background-image: url('../assets/img/new_year_website.jpg');
+      width:50%;
+  }
+  &.information{
+    .info-icon{
+    background-image: url('../assets/img/sleeping.svg');
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 30%;
+    background-repeat: no-repeat;
+    }
+    .info-message{
+      color:#00626f;
+      padding: 1em 2em;
+    }
+  }
 }
 
 .modal-default-button {
-  position: absolute;
   bottom: 11px;
-  width: 75px;
+  width: 100px;
   background: #efeb42;
   border-color: #efeb42;
   line-height: 20px;
@@ -245,9 +263,10 @@ a {
         height: 283px;
         .modal-default-button {
           bottom: 2px;
-          width: 67px;
+          width: 100px;
           font-size: 10px;
           line-height: 16px;
+          padding: 5px;
         }
       }
     }
