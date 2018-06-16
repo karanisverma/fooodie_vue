@@ -5,8 +5,7 @@ export default {
       showSidebar: false,
       showCartSidebar: false,
       showModal: true,
-      infoMessage:
-        'We will be back on Monday! (18 June 2018)'
+      infoMessage: 'We will be back on Monday! (18 June 2018)'
     }
   },
   created () {
