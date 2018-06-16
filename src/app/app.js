@@ -4,8 +4,9 @@ export default {
     return {
       showSidebar: false,
       showCartSidebar: false,
-      showModal: false,
-      infoMessage: "As you know we have been working 7 days a week & that's why we are taking a 'Day Off' Today. We will be back with 7 days a week routine from tomorrow :)"
+      showModal: true,
+      infoMessage:
+        'We will be back on Monday! (18 June 2018)'
     }
   },
   created () {
