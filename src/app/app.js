@@ -4,7 +4,9 @@ export default {
     return {
       showSidebar: false,
       showCartSidebar: false,
-      showModal: false
+      showModal: true,
+      infoMessage:
+        'We will be back on Monday! (18 June 2018)'
     }
   },
   created () {
@@ -27,6 +29,12 @@ export default {
           })
         })
       })
+    },
+    sendGetWellSoon () {
+      window.open(
+        'https://api.whatsapp.com/send?phone=919111351935&text=get%20will%20soon%20Tikesh',
+        '_blank' // <- This is what makes it open in a new window.
+      )
     }
   },
   components: {

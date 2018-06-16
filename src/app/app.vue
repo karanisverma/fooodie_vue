@@ -5,12 +5,14 @@
       <div class="modal-mask">
         <div class="modal-wrapper">
           <div class="modal-container">
-            <div class="modal-body">
+            <div class="modal-body information">
+              <div class='info-icon'></div>
+              <div class="info-message">{{infoMessage}}</div>
               <slot name="footer">
                 <!-- default footer -->
                 <i class="material-icons" @click="showModal = false">clear</i>
                 <button class="modal-default-button" @click="showModal = false">
-                  Close
+                  Cool! 
                 </button>
               </slot>
             </div>

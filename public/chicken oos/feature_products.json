@@ -1,0 +1,80 @@
+[
+    {
+       "img":"https://fooodie.store/assets/img/menu/paneer_maggi.jpg",
+       "name":"Paneer Maggi",
+       "cost":80,
+       "status":"instock",
+       "fav":2,
+       "type":"veg",
+       "category":"snacks",
+       "product_id":62,
+       "detail":"Best late night hunger saver Maggi made yummilicious with paneer  and when served with extra ingredients like tomato, onion and cheese.",
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
+    },
+    {
+       "img":"https://fooodie.store/assets/img/menu/chees_maggi.jpg",
+       "name":"Cheese Maggi",
+       "cost":60,
+       "status":"instock",
+       "fav":2,
+       "type":"veg",
+       "category":"snacks",
+       "product_id":61,
+       "detail":"Best late night hunger saver Maggi made yummilicious with cheese and when served with extra ingredients like tomato, onion and cheese.",
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
+    },
+   {
+       "img":"https://fooodie.store/assets/img/menu/pasta.jpg",
+       "name":"Pasta",
+       "cost":100,
+       "status":"instock",
+       "fav":2,
+       "type":"veg",
+       "category":"snacks",
+       "product_id":60,
+       "detail":"...",
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
+    },
+   {
+       "img":"https://fooodie.store/assets/img/menu/french_fries.jpg",
+       "name":"French Fries",
+       "cost":80,
+       "status":"instock",
+       "fav":5,
+       "type":"veg",
+       "category":"snacks",
+       "product_id":56,
+       "detail":"French fries or simply fries or chips, are pieces of potato that have been deep-fried.",
+       "ingredients":"2 1/2 pounds russet potatoes Vegetable or peanut oil, for frying Sea salt, for sprinkling",
+       "quantity":0
+    },
+    {
+       "img":"https://fooodie.store/assets/img/menu/paneer_roll.jpg",
+       "name":"Paneer Roll",
+       "cost":50,
+       "status":"instock",
+       "fav":2,
+       "type":"veg",
+       "category":"rolls_and_paratha",
+       "product_id":45,
+       "detail":"Homemade fresh cottage cheese, served wrapped in kathi parantha.",
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
+    },
+    {
+       "img":"https://fooodie.store/assets/img/menu/schezwan_rice_small.jpg",
+       "name":"Schezwan Rice",
+       "cost":120,
+       "status":"instock",
+       "fav":2,
+       "type":"veg",
+       "category":"rice_and_biriyani",
+       "product_id":59,
+       "detail":"...",
+       "ingredients":"1.sdflkfj|2.dsfsadf|3.sdafsdf|4.dasfdsaf|",
+       "quantity":0
+    }
+]
