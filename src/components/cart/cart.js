@@ -11,8 +11,8 @@ export default {
   },
   data () {
     return {
-      minimumOrder: 200,
-      deliveryCharge: 40,
+      minimumOrder: 399,
+      deliveryCharge: 49,
       showDelviery: false,
       showMinimumOrderWarning: false
     }
@@ -30,7 +30,7 @@ export default {
           parseInt(Products.allProducts[i].cost) *
           parseInt(Products.allProducts[i].quantity)
       }
-      if (cost < 100) {
+      if (cost < 199) {
         this.showMinimumOrderWarning = true
       } else {
         this.showMinimumOrderWarning = false
@@ -96,7 +96,7 @@ export default {
         }
       })
       if (this.showDelviery) {
-        order.push('_Delivery Charge_ -----> 40')
+        order.push('_Delivery Charge_ -----> 49')
       }
       order.push(totalCost)
       let orderString = order.join('\n')

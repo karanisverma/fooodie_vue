@@ -54,6 +54,22 @@
       <div class="testimonial">
         <carousel :perPage = "1" :autoplay = "true" :minSwipeDistance = "3" :autoplayTimeout = "5000" :autoplayHoverPause = "true"
         :navigationEnabled = "true">
+
+          <slide>
+            <div class="label">
+              <div class="slide-two">
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftushar.sahu.399%2Fposts%2F1527883627322256%3A0&width=500" width="500" height="409" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+              </div>
+            </div>
+          </slide>
+
+          <slide>
+            <div class="label">
+              <div class="slide-two">
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fhrg281196%2Fposts%2F1611919082248736%3A0&width=500" width="500" height="390" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+              </div>
+            </div>
+          </slide>
           <slide>
             <div class="label">
               <div class="slide-one">
@@ -68,7 +84,7 @@
           <slide>
             <div class="label">
               <div class="slide-two">
-                 <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fshubhi.singh.52%2Fposts%2F1480571191996128%3A0&width=500" width="250" height="430" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmayank.verma.77%2Fposts%2F1813211222054414%3A0&width=500" width="500" height="334" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
               </div>
             </div>
           </slide>

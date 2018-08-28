@@ -4,7 +4,7 @@ export default {
     return {
       showSidebar: false,
       showCartSidebar: false,
-      showModal: true,
+      showModal: false,
       infoMessage: 'We will be back on Monday! (18 June 2018)'
     }
   },
