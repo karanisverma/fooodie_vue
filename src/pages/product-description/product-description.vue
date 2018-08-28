@@ -3,8 +3,9 @@
     <Toolbar v-bind="toolbarProps"/>
     <div class="web-wrapper">
     <div class="product-img">
+
       <!-- <img src="../../assets/img/img1.jpg"> -->
-      <img :src="allProductDesc.img">
+      <img :src="'https://api.fooodie.store/'+allProductDesc.image">
 
       <div class="product-info-overlay">
         <div class="product-name">

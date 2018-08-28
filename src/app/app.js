@@ -21,7 +21,7 @@ export default {
         Products.allProducts = res
         // console.log('Object.keys(Cart.items)', Object.keys(Cart.items))
         Object.keys(Cart.items).forEach(function (cartProduct) {
-          Products.allProducts.forEach(function (product) {
+          Products.allProducts.objects.forEach(function (product) {
             if (product.product_id === parseInt(cartProduct)) {
               product.quantity = Cart.items[cartProduct]
             }
