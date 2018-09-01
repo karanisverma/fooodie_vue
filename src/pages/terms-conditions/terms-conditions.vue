@@ -50,13 +50,13 @@
         </div>
       </div>
 
-      <div class="t-n-c">
+     <!--  <div class="t-n-c">
         <input id="tab-seven" type="checkbox" name="tabs">
         <label for="tab-seven">What if I don't have whatsapp account?</label>
         <div class="tab-content">
           <p>You can directly call us on +91 9111351935.</p>
         </div>
-      </div>
+      </div> -->
 
       <div class="t-n-c">
         <input id="tab-eight" type="checkbox" name="tabs">

@@ -26,7 +26,7 @@
               @UpdateProductsQuantity="updateQuantity"
             ></QuantityButtonComponent>
           </p>
-          <p class="cart-item-cost">{{item.cost * item.quantity}}</p>
+          <p class="cart-item-cost">{{item.price * item.quantity}}</p>
         </div>
         <div v-if="showDelviery" class="cart-item-row delivery-charge">
           <p class="cart-item-name">Delivery Charge</p>
@@ -49,7 +49,7 @@
         <button v-else style="background:#888888; display: flex; flex-direction: column; padding: 10px 0;">
           Minimum Order of ₹199
           <br/>
-          <p style="width: 100%; font-size: 14px; margin: 0;">(Except delivery charge)</p>
+          <p style="width: 100%; font-size: 14px; margin: 0;">(Excluding delivery charge)</p>
         </button>
       </div>
     </div>

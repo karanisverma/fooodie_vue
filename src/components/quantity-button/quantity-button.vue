@@ -1,12 +1,12 @@
 <template>
 <div class="quantity-button-component">
-  <div class="add-to-cart-button out-of-stock" v-if="status=='oos'">
+  <div class="add-to-cart-button out-of-stock" v-if="status=='outofstock'">
     <button>Out of Stock</button>
   </div>
-  <div class="add-to-cart-button" v-if="mutableQuantity==0 && status!='oos'">
+  <div class="add-to-cart-button" v-if="mutableQuantity==0 && status!='outofstock'">
     <button @click="addToCart(1, 'add')">Add</button>
   </div>
-  <div v-if="mutableQuantity>0 && status!='oos'" class="quantity-button">
+  <div v-if="mutableQuantity>0 && status!='outofstock'" class="quantity-button">
     <p href="" class="minus-sign" @click="addToCart(mutableQuantity-1, 'remove')"><i class="material-icons">remove</i></p>
     <p class="quantity-buy">{{mutableQuantity}}</p>
     <!-- <p href="" class="add-sign" @click="addToCart(mutableQuantity+1, 'add')">+</p> -->

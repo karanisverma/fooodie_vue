@@ -23,27 +23,28 @@ export default {
   },
   computed: {
     allNewItems () {
-      const { Home } = this.$store.state
-      return Home.allNewCategory
+      // const { Home } = this.$store.state
+      // return Home.allNewCategory
+      let { Products } = this.$store.state
+      return Products.allProducts
     }
   },
   created () {
-    this.getAllNewItems()
+    // this.getAllNewItems()
   },
   methods: {
-    getAllNewItems () {
-      const { Home } = this.$store.state
-      Home.getFeaturedProducts()
-        .then(res => {
-          let data = res.json()
-          return Promise.resolve(data)
-        })
-        .then(data => {
-          if (data) {
-            Home.allNewCategory = data
-            // console.log('data==>', data);
-          }
-        })
-    }
+    // getAllNewItems () {
+    //   const { Home } = this.$store.state
+    //   Home.getFeaturedProducts()
+    //     .then(res => {
+    //       let data = res.json()
+    //       return Promise.resolve(data)
+    //     })
+    //     .then(data => {
+    //       if (data) {
+    //         Home.allNewCategory = data
+    //       }
+    //     })
+    // }
   }
 }

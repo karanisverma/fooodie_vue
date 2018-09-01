@@ -21,7 +21,6 @@ export default {
   },
   methods: {
     addToCart (q, type = '') {
-      console.log('added to cart', q)
       this.mutableQuantity = q
       var productInfo = {
         productId: this.productId,

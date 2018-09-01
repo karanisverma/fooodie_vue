@@ -19,9 +19,7 @@ export default {
   },
 
   created: function () {
-    this.$store.dispatch('getProducts2').then(() => {
-      console.log('This would be printed after dispatch!!', this.$store.state.products)
-    })
+    this.$store.dispatch('getProducts2')
   }
 }
 </script>
