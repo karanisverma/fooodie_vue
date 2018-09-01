@@ -11,9 +11,7 @@ class ProductState {
     this.header = { 'Content-Type': 'application/json' }
   }
   getAllProduct () {
-    // https://fooodie.store/static/js/category.json
     return new Promise((resolve, reject) => {
-      // fetch(this.APIHOST + '/assets/js/products.json', {
       fetch(this.APIHOST + '/api/v1/products/', {
         method: 'GET'
       })
@@ -22,7 +20,6 @@ class ProductState {
           let fullProductItem = response.objects.map(product =>
             Object.assign({}, product, { quantity: 0 })
           )
-          // console.log('fullProductItem====>', fullProductItem)
           resolve(fullProductItem)
         })
         .catch(error => {

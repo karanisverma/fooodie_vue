@@ -43,7 +43,6 @@ export default {
     //     .then(data => {
     //       if (data) {
     //         Home.allNewCategory = data
-    //         // console.log('data==>', data);
     //       }
     //     })
     // }

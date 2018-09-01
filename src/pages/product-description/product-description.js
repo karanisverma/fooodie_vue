@@ -30,15 +30,11 @@ export default {
   computed: {
     allProductDesc () {
       const { Products } = this.$store.state
-      console.log('products-------iiii-->>>', Products)
       var urlId = window.location.pathname.split('/')[3]
-      console.log('urlId==>', urlId)
       if (Products.allProducts && Products.allProducts.length > 0) {
         var result = Products.allProducts.filter(function (obj) {
           return obj.product_id === urlId
-          // return parseInt(obj.product_id) === parseInt(urlId)
         })
-        console.log('result===>>', result)
         return result[0]
       }
     }
@@ -57,7 +53,6 @@ export default {
         .then(data => {
           if (data) {
             Home.allProductDescription = data
-            console.log('data==>', data)
           }
         })
     },
