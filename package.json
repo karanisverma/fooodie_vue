@@ -1,7 +1,7 @@
 {
-  "name": "fooodie2",
-  "version": "1.0.0",
-  "description": "A Vue.js project",
+  "name": "fooodie",
+  "version": "1.0.1",
+  "description": "Fooodie web frontend.",
   "author": "supi",
   "private": true,
   "config": {
