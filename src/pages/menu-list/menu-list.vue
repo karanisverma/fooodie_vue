@@ -36,7 +36,6 @@
         <div class="menu-slider">
             <section class="menu-category">
                 <div class="product" v-for="(product, i) in allProducts" v-if="product.category=='snacks'">
-                    <!-- <p>Plist==> {{product}}</p> -->
                     <div class="crop">
                         <span class="veg" v-if="product.type === 'veg'">&#8226;</span>
                         <span class="non-veg" v-if="product.type === 'non-veg'">&#8226;</span>

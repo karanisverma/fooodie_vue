@@ -27,7 +27,7 @@ export default {
       let { Products } = this.$store.state
       for (var i = 0; i < Products.allProducts.length; i++) {
         cost +=
-          parseInt(Products.allProducts[i].cost) *
+          parseInt(Products.allProducts[i].price) *
           parseInt(Products.allProducts[i].quantity)
       }
       if (cost < 199) {

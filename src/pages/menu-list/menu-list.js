@@ -6,7 +6,7 @@ export default {
   computed: {
     allProducts () {
       let { Products } = this.$store.state
-      return Products.allProducts.objects
+      return Products.allProducts
     }
   },
   data () {

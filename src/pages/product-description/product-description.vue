@@ -12,7 +12,7 @@
           {{allProductDesc.name}}
         </div>
         <div class="product-price">
-          ₹ {{allProductDesc.cost}}/-
+          ₹ {{allProductDesc.price}}/-
         </div>
         <div class="web-view">
           <div class="desc-ingre-content">
@@ -30,8 +30,6 @@
     <div class="product-desc-ingredients">
       <input id="description" type="radio" name="tabs" checked>
       <label for="description">Description</label>
-      <!-- <input id="ingredients" type="radio" name="tabs"> -->
-      <!-- <label for="ingredients">Ingredients</label> -->
 
       <div class="desc-ingre-content">
         <div id="item-description">

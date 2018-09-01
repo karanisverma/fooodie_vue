@@ -33,8 +33,8 @@ export default {
       console.log('products-------iiii-->>>', Products)
       var urlId = window.location.pathname.split('/')[3]
       console.log('urlId==>', urlId)
-      if (Products.allProducts.objects && Products.allProducts.objects.length > 0) {
-        var result = Products.allProducts.objects.filter(function (obj) {
+      if (Products.allProducts && Products.allProducts.length > 0) {
+        var result = Products.allProducts.filter(function (obj) {
           return parseInt(obj.product_id) === parseInt(urlId)
         })
         console.log('result===>>', result)
@@ -63,11 +63,11 @@ export default {
     updateQuantity (updatedProductInfo) {
       const { Products } = this.$store.state
       const { Cart } = this.$store.state
-      for (let i = 0; i < Products.allProducts.objects.length; i++) {
+      for (let i = 0; i < Products.allProducts.length; i++) {
         if (
-          Products.allProducts.objects[i].product_id === updatedProductInfo.productId
+          Products.allProducts[i].product_id === updatedProductInfo.productId
         ) {
-          Products.allProducts.objects[i].quantity = updatedProductInfo.quantity
+          Products.allProducts[i].quantity = updatedProductInfo.quantity
           Cart.items[updatedProductInfo.productId] = updatedProductInfo.quantity
           localStorage.setItem('Cart', JSON.stringify(Cart.items))
         }

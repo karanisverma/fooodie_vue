@@ -26,7 +26,7 @@
               @UpdateProductsQuantity="updateQuantity"
             ></QuantityButtonComponent>
           </p>
-          <p class="cart-item-cost">{{item.cost * item.quantity}}</p>
+          <p class="cart-item-cost">{{item.price * item.quantity}}</p>
         </div>
         <div v-if="showDelviery" class="cart-item-row delivery-charge">
           <p class="cart-item-name">Delivery Charge</p>
