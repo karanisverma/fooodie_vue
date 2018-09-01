@@ -37,12 +37,12 @@
       <div class="featured-products">
           <h3>Featured Product</h3>
           <div class="new-products">
-          	<div class="product" v-for="item in allNewItems">
+          	<div class="product" v-for="item in allNewItems" v-if="item.is_featured">
               <!-- <img :src="item.image"> -->
               <router-link
                 :to="{ name: 'ProductDescription',
                 params: {productId: item.product_id} } ">
-                <img v-lazy="item.img">
+                <img v-lazy="'https://api.fooodie.store/'+item.image">
               </router-link>
           	</div>
           </div>

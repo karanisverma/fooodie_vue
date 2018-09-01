@@ -27,7 +27,7 @@ export default {
       let { Products } = this.$store.state
       for (var i = 0; i < Products.allProducts.length; i++) {
         cost +=
-          parseInt(Products.allProducts[i].cost) *
+          parseInt(Products.allProducts[i].price) *
           parseInt(Products.allProducts[i].quantity)
       }
       if (cost < 199) {
@@ -62,12 +62,6 @@ export default {
       }
     },
     setPosition (position) {
-      console.log(
-        'http://www.google.com/maps/dir/?api=1&destination=' +
-          position.coords.latitude +
-          ',' +
-          position.coords.longitude
-      )
       return (
         'http://www.google.com/maps/dir/?api=1&destination=' +
         position.coords.latitude +
@@ -76,8 +70,6 @@ export default {
       )
     },
     placeOrder () {
-      // let userLocation = this.getLocation()
-      // console.log('placeOrder is clicked and user location -> ', userLocation)
       const { Products } = this.$store.state
       let order = []
       let totalCost = '*Total ----> ' + this.totalCost + '*'
@@ -91,7 +83,7 @@ export default {
             product.quantity +
             ') ----> ' +
             'Rs.' +
-            product.quantity * product.cost
+            product.quantity * product.price
           order.push(orderRow)
         }
       })
@@ -100,7 +92,6 @@ export default {
       }
       order.push(totalCost)
       let orderString = order.join('\n')
-      console.log('Order string-> ', orderString)
       let whatsappOrderUri = encodeURIComponent(orderString)
       window.open(
         'https://api.whatsapp.com/send?phone=919111351935&text=' +

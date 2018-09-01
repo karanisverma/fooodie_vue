@@ -6,30 +6,27 @@ class ProductState {
     this.name = 'Products'
     this.allProducts = {}
     this.quantity = 0
-    this.APIHOST = 'https://fooodie.store'
+    this.APIHOST = 'https://api.fooodie.store'
+    // this.APIHOST = 'http://35.154.40.23'
     this.header = { 'Content-Type': 'application/json' }
   }
   getAllProduct () {
-    // https://fooodie.store/static/js/category.json
     return new Promise((resolve, reject) => {
-      fetch(this.APIHOST + '/assets/js/products.json', {
+      fetch(this.APIHOST + '/api/v1/products/', {
         method: 'GET'
       })
         .then(res => res.json())
         .then(response => {
-          resolve(response)
+          let fullProductItem = response.objects.map(product =>
+            Object.assign({}, product, { quantity: 0 })
+          )
+          resolve(fullProductItem)
         })
         .catch(error => {
           console.log(error)
         })
     })
   }
-  // getAllProduct2 () {
-  //   return fetch(`https://s3.amazonaws.com/aws-website-fooodiestore-s7bs1/static/js/products.json`, {
-  //     method: 'GET',
-  //     mode: 'cors'
-  //   })
-  // }
 }
 
 export default new Vuex.Store({
