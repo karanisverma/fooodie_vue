@@ -131,7 +131,7 @@ export default {
           Products.allProducts[i].product_id === updatedProductInfo.productId
         ) {
           Products.allProducts[i].quantity = updatedProductInfo.quantity
-          console.log('{Cart--->', Cart)
+          console.log('Cart--->', Cart)
           Cart.items[updatedProductInfo.productId] = updatedProductInfo.quantity
           localStorage.setItem('Cart', JSON.stringify(Cart.items))
         }

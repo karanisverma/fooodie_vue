@@ -23,8 +23,10 @@
   .product-img {
     position: relative;
     img {
-      width: 100%;
-      min-height: 200px;
+      // width: 100%;
+      // min-height: 200px;
+      width: 40%;
+      height: 100%;
     }
     .product-info-overlay {
       background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(83, 83, 83, 0.13));
@@ -133,7 +135,7 @@
         .desc-ingre-content {
           text-align: left;
           p {
-            margin-top: 5px;
+            margin-top: 20px;
           }
         }
       }

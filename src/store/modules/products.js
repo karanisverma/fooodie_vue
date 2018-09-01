@@ -19,8 +19,9 @@ class ProductState {
       })
         .then(res => res.json())
         .then(response => {
-          let fullProductItem = response.objects.map(product => (Object.assign({}, product, { 'quantity': 0 })))
-
+          let fullProductItem = response.objects.map(product =>
+            Object.assign({}, product, { quantity: 0 })
+          )
           // console.log('fullProductItem====>', fullProductItem)
           resolve(fullProductItem)
         })

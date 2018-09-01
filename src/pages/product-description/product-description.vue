@@ -2,9 +2,8 @@
   <div class="product-description" v-if="allProductDesc">
     <Toolbar v-bind="toolbarProps"/>
     <div class="web-wrapper">
-    <div class="product-img">
 
-      <!-- <img src="../../assets/img/img1.jpg"> -->
+    <div class="product-img">
       <img :src="'https://api.fooodie.store/'+allProductDesc.image">
 
       <div class="product-info-overlay">
@@ -19,10 +18,13 @@
             <div id="item-description">
               <p>{{allProductDesc.detail}}</p>
             </div>
-            <!-- <div id="item-ingredient">
-              <p>{{allProductDesc.ingredients}}</p>
-            </div> -->
           </div>
+        </div>
+
+        <div class="desc-add-to-cart web-view" style="position: relative; right: 0;">
+          <QuantityButtonComponent :product-id="allProductDesc.product_id" :status ="allProductDesc.status" :quantity="allProductDesc.quantity"
+            @UpdateProductsQuantity="updateQuantity"
+            ></QuantityButtonComponent>
         </div>
       </div>
     </div>
@@ -35,17 +37,20 @@
         <div id="item-description">
           <p>{{allProductDesc.detail}}</p>
         </div>
-        <div id="item-ingredient">
+
+       <!--  <div id="item-ingredient">
           <p>{{allProductDesc.ingredients}}</p>
-        </div>
+        </div> -->
       </div>
 
-    </div>
-    <div class="desc-add-to-cart">
+      <div class="desc-add-to-cart">
       <QuantityButtonComponent :product-id="allProductDesc.product_id" :status ="allProductDesc.status" :quantity="allProductDesc.quantity"
         @UpdateProductsQuantity="updateQuantity"
         ></QuantityButtonComponent>
     </div>
+
+    </div>
+
   </div>
   </div>
 </template>
