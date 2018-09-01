@@ -30,7 +30,7 @@ export default {
     }
   },
   created () {
-    this.getAllNewItems()
+    // this.getAllNewItems()
   },
   methods: {
     // getAllNewItems () {
