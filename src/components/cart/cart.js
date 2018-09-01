@@ -82,7 +82,7 @@ export default {
       let order = []
       let totalCost = '*Total ----> ' + this.totalCost + '*'
       order.push('*Order:*')
-      Products.allProducts.objects.forEach(function (product) {
+      Products.allProducts.forEach(function (product) {
         if (product.quantity > 0) {
           let orderRow =
             '_' +
@@ -91,7 +91,7 @@ export default {
             product.quantity +
             ') ----> ' +
             'Rs.' +
-            product.quantity * product.cost
+            product.quantity * product.price
           order.push(orderRow)
         }
       })
