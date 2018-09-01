@@ -1,7 +1,7 @@
 <template>
 <div class="quantity-button-component">
   <div class="add-to-cart-button out-of-stock" v-if="status=='outofstock'">
-    <button>Out of Stock</button>
+    <button>SOLD OUT</button>
   </div>
   <div class="add-to-cart-button" v-if="mutableQuantity==0 && status!='outofstock'">
     <button @click="addToCart(1, 'add')">Add</button>
