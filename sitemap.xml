@@ -1,0 +1,31 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>https://fooodie.store</loc>
+  </url>
+  <url>
+    <loc>https://fooodie.store/help-and-support</loc>
+  </url>
+  <url>
+    <loc>https://fooodie.store/how-it-works</loc>
+  </url>
+  <url>
+    <loc>https://fooodie.store/menu-list/0</loc>
+  </url>
+  <url>
+    <loc>https://fooodie.store/menu-list/1</loc>
+  </url>
+  <url>
+    <loc>https://fooodie.store/menu-list/2</loc>
+  </url>
+  <url>
+    <loc>https://fooodie.store/menu-list/3</loc>
+  </url>
+   <url>
+    <loc>https://fooodie.store/menu-list/4</loc>
+  </url>
+   <url>
+    <loc>https://fooodie.store/product-description-page</loc>
+  </url>
+</urlset>
