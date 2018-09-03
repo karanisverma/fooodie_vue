@@ -1,6 +1,7 @@
 {
   "manifest_version": 2,
   "version": "0.1",
+  "short_name": "Fooodie",
   "lang": "en",
   "short_name": "Fooodie",
   "name": "Fooodie",

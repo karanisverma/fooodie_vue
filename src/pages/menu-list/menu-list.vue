@@ -42,8 +42,7 @@
                         <router-link
                         :to="{ name: 'ProductDescription',
                         params: {productId: product.product_id} } ">
-                        <img v-lazy="'https://api.fooodie.store/'+product.image">
-                        <!-- <img v-lazy="product.image"> -->
+                        <img v-lazy="'https://api.fooodie.store/'+product.image" :alt="product.name">
                         </router-link>
                     </div>
                     <div class="product-info">
@@ -68,7 +67,7 @@
                         <router-link
                         :to="{ name: 'ProductDescription',
                         params: {productId: product.product_id} } ">
-                        <img v-lazy="'https://api.fooodie.store/'+product.image">
+                        <img v-lazy="'https://api.fooodie.store/'+product.image" :alt="product.name">
                         </router-link>
                     </div>
                     <div class="product-info">
@@ -93,7 +92,7 @@
                         <router-link
                         :to="{ name: 'ProductDescription',
                         params: {productId: product.product_id} } ">
-                        <img v-lazy="'https://api.fooodie.store/'+product.image">
+                        <img v-lazy="'https://api.fooodie.store/'+product.image" :alt="product.name">
                         </router-link>
                     </div>
                     <div class="product-info">
@@ -118,7 +117,7 @@
                         <router-link
                         :to="{ name: 'ProductDescription',
                         params: {productId: product.product_id} } ">
-                        <img v-lazy="'https://api.fooodie.store/'+product.image">
+                        <img v-lazy="'https://api.fooodie.store/'+product.image" :alt="product.name">
                         </router-link>
                     </div>
                     <div class="product-info">
@@ -143,7 +142,7 @@
                         <router-link
                         :to="{ name: 'ProductDescription',
                         params: {productId: product.product_id} } ">
-                        <img v-lazy="'https://api.fooodie.store/'+product.image">
+                        <img v-lazy="'https://api.fooodie.store/'+product.image" :alt="product.name">
                         </router-link>
                     </div>
                     <div class="product-info">

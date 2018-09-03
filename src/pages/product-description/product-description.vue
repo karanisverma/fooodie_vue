@@ -4,7 +4,7 @@
     <div class="web-wrapper">
 
     <div class="product-img">
-      <img :src="'https://api.fooodie.store/'+allProductDesc.image">
+      <img :src="'https://api.fooodie.store/'+allProductDesc.image" :alt="allProductDesc.name">
 
       <div class="product-info-overlay">
         <div class="product-name">
