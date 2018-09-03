@@ -98,6 +98,8 @@ export default {
           whatsappOrderUri,
         '_blank' // <- This is what makes it open in a new window.
       )
+      localStorage.clear()
+      location.reload()
     },
     toggleSidebar () {
       this.$emit('update:show', !this.show)
