@@ -3,9 +3,8 @@
   "version": "0.1",
   "short_name": "Fooodie",
   "lang": "en",
-  "short_name": "Fooodie",
-  "name": "Fooodie",
-  "description": "Fooodie Web App.",
+  "name": "Fooodie - late night food delivery Bhilai",
+  "description": "We serve all type of cuisine including Veg, Non-veg, Chinese, Sandwich, Cold-drink and Ice-cream. We deliver great food at your doorstep @midnight.",
   "icons": [
     {
       "src": "https://s3-eu-west-1.amazonaws.com/fooodie-image/favicon-32x32.png",
