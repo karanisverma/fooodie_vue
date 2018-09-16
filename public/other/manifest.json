@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "version": "0.1",
+  "lang": "en",
+  "short_name": "Fooodie",
+  "name": "Fooodie",
+  "description": "Fooodie Web App.",
+  "icons": [
+    {
+      "src": "https://s3-eu-west-1.amazonaws.com/fooodie-image/favicon-32x32.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/?utm_source=from_launch_icon",
+  "theme_color": "#323a44",
+  "background_color": "#ccc",
+  "orientation": "portrait",
+  "display": "standalone",
+  "homepage_url": "https://fooodie.store",
+  "commands": {
+  "toggle-feature": {
+    "suggested_key": {
+      "default": "Ctrl+Shift+Y",
+      "linux": "Ctrl+Shift+U"
+    },
+    "description": "Send a 'toggle-feature' event"
+  }
+}
+}

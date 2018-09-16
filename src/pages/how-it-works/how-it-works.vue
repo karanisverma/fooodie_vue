@@ -1,5 +1,6 @@
 <template>
   <div class="how-it-works-page">
+    <download-banner v-bind="bannerProps" />
     <Toolbar
       v-bind="toolbarProps"
       @toggleSidebar="$emit('toggleSidebar');"/>
@@ -13,7 +14,7 @@
           <img src="../../assets/how-it-works/how-it-works-1.png">
         </div>
         <div class="content">
-          <p>You visit fooodie.store or call us on 9111351935.</p>
+          <p>You visit fooodie.store.</p>
         </div>
       </div>
       <div class="step-1 step-2">Step 2</div>

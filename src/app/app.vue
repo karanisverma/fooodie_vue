@@ -1,16 +1,17 @@
 <template>
   <div id="app">
-
     <transition name="modal" v-if="showModal">
       <div class="modal-mask">
         <div class="modal-wrapper">
           <div class="modal-container">
-            <div class="modal-body">
+            <div class="modal-body information">
+              <div class='info-icon'></div>
+              <div class="info-message">{{infoMessage}}</div>
               <slot name="footer">
                 <!-- default footer -->
                 <i class="material-icons" @click="showModal = false">clear</i>
                 <button class="modal-default-button" @click="showModal = false">
-                  Close
+                  Cool!
                 </button>
               </slot>
             </div>
@@ -29,6 +30,11 @@
         </router-link>
         </div>
         <ul>
+          <li>
+            <a href="https://play.google.com/store/apps/details?id=store.fooodie&referrer=utm_source%3DHomepage%26utm_medium%3DMenu" target="_blank">
+              Download App
+            </a>
+          </li>
           <li>
             <router-link
               :to="{ name: 'MenuList', params: { categoryId: 0 }}">

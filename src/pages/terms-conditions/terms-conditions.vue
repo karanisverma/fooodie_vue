@@ -46,17 +46,17 @@
         <input id="tab-six" type="checkbox" name="tabs">
         <label for="tab-six">What if I want to cancel my order?</label>
         <div class="tab-content">
-          <p>You can cancel your order within 15 minutes after placing order.</p>
+          <p>You can cancel your order within 1 minutes after placing order.</p>
         </div>
       </div>
 
-      <div class="t-n-c">
+     <!--  <div class="t-n-c">
         <input id="tab-seven" type="checkbox" name="tabs">
         <label for="tab-seven">What if I don't have whatsapp account?</label>
         <div class="tab-content">
           <p>You can directly call us on +91 9111351935.</p>
         </div>
-      </div>
+      </div> -->
 
       <div class="t-n-c">
         <input id="tab-eight" type="checkbox" name="tabs">

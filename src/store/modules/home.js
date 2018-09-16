@@ -9,11 +9,11 @@ class HomeState {
     this.allProductDescription = []
   }
   // Fetching data for new category
-  getFeaturedProducts () {
-    return fetch('https://fooodie.store/assets/js/feature_products.json', {
-      method: 'GET'
-    })
-  }
+  // getFeaturedProducts () {
+  //   return fetch('https://fooodie.store/assets/js/feature_products.json', {
+  //     method: 'GET'
+  //   })
+  // }
 
   productDescription () {
     return fetch(`https://fooodie.store/assets/js/product-description.json`, {

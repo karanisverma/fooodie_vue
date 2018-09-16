@@ -26,12 +26,12 @@
               @UpdateProductsQuantity="updateQuantity"
             ></QuantityButtonComponent>
           </p>
-          <p class="cart-item-cost">{{item.cost * item.quantity}}</p>
+          <p class="cart-item-cost">{{item.price * item.quantity}}</p>
         </div>
         <div v-if="showDelviery" class="cart-item-row delivery-charge">
           <p class="cart-item-name">Delivery Charge</p>
           <p class="cart-item-cost">{{deliveryCharge}}</p>
-          <span class="delivery-text">Free delivery on order above ₹200</span>
+          <span class="delivery-text">Free delivery on order above ₹399</span>
         </div>
         <div v-else class="cart-item-row delivery-charge">
           <p class="cart-item-name">Delivery Charge</p>
@@ -44,10 +44,13 @@
           <span id="total-cost-lable">Total</span>
           <span class="total-cost-amount">{{totalCost}}</span>
         </div>
-        <button @click="placeOrder" v-if="totalCost>0 && !showMinimumOrderWarning">
+        <button @click="placeOrder" v-if="totalCost>0 && !showMinimumOrderWarning" id="checkOut">
           Place Order</button>
-        <button v-else style="background:#888888">
-          Minimum Order of ₹100</button>
+        <button v-else style="background:#888888; display: flex; flex-direction: column; padding: 10px 0;">
+          Minimum Order of ₹199
+          <br/>
+          <p style="width: 100%; font-size: 14px; margin: 0;">(Excluding delivery charge)</p>
+        </button>
       </div>
     </div>
   </div>

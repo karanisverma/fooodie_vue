@@ -11,32 +11,38 @@ export default new Router({
       path: '/',
       name: 'HomePage',
       // component: HomePage
-      component: () => import(/* webpackChunkName: "page-home" */ '../pages/home')
+      component: () =>
+        import(/* webpackChunkName: "page-home" */ '../pages/home')
     },
     {
       path: '/menu-list/:categoryId',
       name: 'MenuList',
-      component: () => import(/* webpackChunkName: "page-menu-list" */ '../pages/menu-list')
+      component: () =>
+        import(/* webpackChunkName: "page-menu-list" */ '../pages/menu-list')
     },
     {
       path: '/menu-list/product/:productId',
       name: 'ProductDescription',
-      component: () => import(/* webpackChunkName: "page-product-description" */ '../pages/product-description')
+      component: () =>
+        import(/* webpackChunkName: "page-product-description" */ '../pages/product-description')
     },
     {
       path: '/help-and-support',
       name: 'TermsAndConditions',
-      component: () => import(/* webpackChunkName: "page-terms-conditions" */ '../pages/terms-conditions')
+      component: () =>
+        import(/* webpackChunkName: "page-terms-conditions" */ '../pages/terms-conditions')
     },
     {
       path: '/how-it-works',
       name: 'HowItWorksPage',
-      component: () => import(/* webpackChunkName: "page-how-it-works" */ '../pages/how-it-works')
+      component: () =>
+        import(/* webpackChunkName: "page-how-it-works" */ '../pages/how-it-works')
     },
     {
       path: '*',
       name: 'PageNotFound',
-      component: () => import(/* webpackChunkName: "page-404" */ '../pages/no-found')
+      component: () =>
+        import(/* webpackChunkName: "page-404" */ '../pages/no-found')
     }
   ],
   scrollBehavior (to, from, savedPosition) {

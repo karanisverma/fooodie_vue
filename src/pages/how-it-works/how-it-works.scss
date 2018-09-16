@@ -92,6 +92,14 @@
     }
     }
   }
+  .component-download-banner {
+    position: fixed;
+    bottom: 0px;
+    background: #f2f2f2;
+    width: 100%;
+    z-index: 1;
+    color: black;
+  }
 }
 
 @media screen and (max-width: 48em) {

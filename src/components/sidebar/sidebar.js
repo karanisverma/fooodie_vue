@@ -18,7 +18,7 @@ export default {
     openMenuList () {
       this.$router.push({
         name: 'MenuList',
-        params: {categoryId: 0}
+        params: { categoryId: 0 }
       })
       this.$emit('update:show', !this.show)
     },

@@ -21,6 +21,14 @@
 
       <nav class="all-list f-1">
         <!-- <div class="item d-f ai-c" @click="openMyTrips"> -->
+        <a href="https://play.google.com/store/apps/details?id=store.fooodie&referrer=utm_source%3Dwebsite%26utm_medium%3Dsidebar%26anid%3Dadmob">
+          <div class="item">
+            <div class="icon">
+              <i class="material-icons">get_app</i>
+            </div>
+            <div class="item-name">Download App</div>
+          </div>
+        </a>
         <div class="item" @click="openMenuList">
           <div class="icon">
             <i class="material-icons">restaurant_menu</i>

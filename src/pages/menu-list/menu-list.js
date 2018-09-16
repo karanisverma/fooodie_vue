@@ -1,11 +1,12 @@
 import Toolbar from '~/components/toolbar'
 import QuantityButtonComponent from '~/components/quantity-button'
 import Cart from '~/components/cart'
+import DownloadBanner from '~/components/download-banner'
 export default {
   name: 'MenuList',
   computed: {
     allProducts () {
-      let {Products} = this.$store.state
+      let { Products } = this.$store.state
       return Products.allProducts
     }
   },
@@ -32,13 +33,18 @@ export default {
             method: () => this.$emit('toggleCartSidebar')
           }
         ]
+      },
+      bannerProps: {
+        bannerTitle: 'Download the Fooodie App',
+        bannerInfo: 'Order food online!'
       }
     }
   },
   components: {
     Toolbar,
     QuantityButtonComponent,
-    Cart
+    Cart,
+    DownloadBanner
   },
   mounted () {
     this.slider_init('.menu-slider')
@@ -68,7 +74,9 @@ export default {
       }
 
       // 5b. Apply transformation & smoothly animate via .is-animating CSS
-      var s = document.getElementById('category-' + (this.slider.activeSlide + 1))
+      var s = document.getElementById(
+        'category-' + (this.slider.activeSlide + 1)
+      )
       s.classList.add('active-category')
       this.slider.sliderEl.classList.add('is-animating')
       var percentage = -(100 / this.slider.slideCount) * this.slider.activeSlide
@@ -76,22 +84,27 @@ export default {
       clearTimeout(this.slider.timer)
       this.$router.push({
         name: 'MenuList',
-        params: {categoryId: number}
+        params: { categoryId: number }
       })
     },
     slider_init (selector) {
       this.slider.sliderEl = document.querySelector(selector)
-      this.slider.slideCount = this.slider.sliderEl.querySelectorAll(this.slider.sliderPanelSelector).length
+      this.slider.slideCount = this.slider.sliderEl.querySelectorAll(
+        this.slider.sliderPanelSelector
+      ).length
     },
     slideMenu (e) {
       // 4e. Calculate pixel movements into 1:1 screen percents so gestures track with motion
-      var percentage = 100 / this.slider.slideCount * e.deltaX / window.innerWidth
+      var percentage =
+        100 / this.slider.slideCount * e.deltaX / window.innerWidth
 
       // 4f. Multiply percent by # of slide we’re on
-      var percentageCalculated = percentage - 100 / this.slider.slideCount * this.slider.activeSlide
+      var percentageCalculated =
+        percentage - 100 / this.slider.slideCount * this.slider.activeSlide
 
       // 4g. Apply transformation
-      this.slider.sliderEl.style.transform = 'translateX( ' + percentageCalculated + '% )'
+      this.slider.sliderEl.style.transform =
+        'translateX( ' + percentageCalculated + '% )'
 
       // 4h. Snap to slide when done
       if (e.isFinal) {
@@ -100,9 +113,14 @@ export default {
         } else if (e.velocityX < -1) {
           this.goTo(this.slider.activeSlide + 1)
         } else {
-          if (percentage <= -(this.slider.sensitivity / this.slider.slideCount)) {
+          if (
+            percentage <= -(this.slider.sensitivity / this.slider.slideCount)
+          ) {
             this.goTo(this.slider.activeSlide + 1)
-          } else if (percentage >= (this.slider.sensitivity / this.slider.slideCount)) {
+          } else if (
+            percentage >=
+            this.slider.sensitivity / this.slider.slideCount
+          ) {
             this.goTo(this.slider.activeSlide - 1)
           } else {
             this.goTo(this.slider.activeSlide)
@@ -111,13 +129,13 @@ export default {
       }
     },
     updateQuantity (updatedProductInfo) {
-      console.log('doing emitttt.....', updatedProductInfo)
-      const {Products} = this.$store.state
-      const {Cart} = this.$store.state
+      const { Products } = this.$store.state
+      const { Cart } = this.$store.state
       for (let i = 0; i < Products.allProducts.length; i++) {
-        if (Products.allProducts[i].product_id === updatedProductInfo.productId) {
+        if (
+          Products.allProducts[i].product_id === updatedProductInfo.productId
+        ) {
           Products.allProducts[i].quantity = updatedProductInfo.quantity
-          console.log('{Cart--->', Cart)
           Cart.items[updatedProductInfo.productId] = updatedProductInfo.quantity
           localStorage.setItem('Cart', JSON.stringify(Cart.items))
         }

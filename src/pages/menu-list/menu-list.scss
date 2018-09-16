@@ -171,11 +171,18 @@ button{
       }
     }
     img {
-      width: 110%;
+      width: 105%;
       height: 100%;
     }
 }
-
+.component-download-banner {
+    position: fixed;
+    bottom: 0px;
+    background: #f2f2f2;
+    width: 100%;
+    z-index: 1;
+    color: black;
+  }
 }
 
 // For dekstop
