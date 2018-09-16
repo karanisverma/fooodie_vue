@@ -1,4 +1,5 @@
 .home-page {
+  position: relative;
   .component-toolbar{
     position: fixed;
     width:100%;
@@ -26,8 +27,6 @@
     flex-direction: column;
     justify-content: center;
     background-position-y: -90px;
-    // height: 10em;
-    // background-color: #ccffcc;
     h1 {
       margin: 0;
       // display: flex;
@@ -47,10 +46,12 @@
       .menu-box {
         margin: auto;
         width: 400px;
-        background: #3A1214;
+        background: #fff;
+        color: #3A1214;
         border-radius: 5px;
+        border: 1px solid #3A1214;
         p {
-          margin: 10px;
+          margin: 0px;
           line-height: 45px;
           font-size: 1.5em;
           i {
@@ -60,13 +61,23 @@
         }
       }
     }
+    .google_play {
+      margin: 20px;
+      img {
+        width: 125px;
+      }
+    }
+    .download-app-text {
+      margin-bottom: 0;
+      position: relative;
+      font-weight: 500;
+      top: 10px;
+    }
   }
 
   .offer-wrapper {
     display: flex;
     overflow: auto;
-    // justify-content: space-around;
-    // flex-wrap: wrap;
     .offer {
       margin: 20px auto;
       padding: 0px 12px;
@@ -84,6 +95,7 @@
       // flex-wrap: wrap;
       overflow: auto;
       margin: 1em 0;
+      margin-bottom: 10%;
       .product {
         display: flex;
         font-size: 1em;
@@ -139,36 +151,6 @@
         }
       }
     }
-    // .images {
-    //   margin-top: 1em;
-    //   position: relative;
-    //   width: 500px;
-    //   margin: auto;
-    //   overflow: initial;
-    //   img {
-    //     width: 100px;
-    //     border-radius: 50%;
-    //   }
-    // }
-    // input[type="radio"] {
-    //   outline: none;
-    // }
-    // [class*="slide-"] {
-    //   opacity: 0.0;
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    //   bottom: 0;
-    //   right: 0;
-    //   transition: opacity linear 0.5s;
-    //   display: inline-table;
-    // }
-    // .to-one:checked ~ .images .slide-one,
-    // .to-two:checked ~ .images .slide-two,
-    // .to-three:checked ~ .images .slide-three,
-    // .to-four:checked ~ .images .slide-four {
-    //     opacity: 1.0;
-    // }
   }
   .order-now-below {
     padding-bottom: 10%;
@@ -204,6 +186,12 @@
       }
     }
   }
+  .component-download-banner {
+    position: fixed;
+    bottom: 0px;
+    background: #f2f2f2;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 48em) {
@@ -224,7 +212,7 @@
           p{
           margin: auto;
           // width: 65%;
-          background: #3A1214;
+          background: #fff;
           border-radius: 5px;
           i {
             margin-right: 10px;
@@ -270,15 +258,6 @@
     }
     .testimonial {
       padding-bottom: 13%;
-    }
-
-    .all-category {
-      .new-products {
-        .product {
-
-         }
-      }
-
     }
   }
 }

@@ -1,5 +1,6 @@
 <template>
   <div class="how-it-works-page">
+    <download-banner v-bind="bannerProps" />
     <Toolbar
       v-bind="toolbarProps"
       @toggleSidebar="$emit('toggleSidebar');"/>
