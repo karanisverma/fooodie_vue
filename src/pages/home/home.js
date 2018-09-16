@@ -1,11 +1,13 @@
 import Toolbar from '~/components/toolbar'
+import DownloadBanner from '~/components/download-banner'
 import { Carousel, Slide } from 'vue-carousel'
 export default {
   name: 'HomePage',
   components: {
     Toolbar,
     Carousel,
-    Slide
+    Slide,
+    DownloadBanner
   },
   data () {
     return {
@@ -18,33 +20,17 @@ export default {
           icon: 'menu',
           method: () => this.$emit('toggleSidebar')
         }
+      },
+      bannerProps: {
+        bannerTitle: 'Download the Fooodie App',
+        bannerInfo: 'Order food online!'
       }
     }
   },
   computed: {
     allNewItems () {
-      // const { Home } = this.$store.state
-      // return Home.allNewCategory
       let { Products } = this.$store.state
       return Products.allProducts
     }
-  },
-  created () {
-    // this.getAllNewItems()
-  },
-  methods: {
-    // getAllNewItems () {
-    //   const { Home } = this.$store.state
-    //   Home.getFeaturedProducts()
-    //     .then(res => {
-    //       let data = res.json()
-    //       return Promise.resolve(data)
-    //     })
-    //     .then(data => {
-    //       if (data) {
-    //         Home.allNewCategory = data
-    //       }
-    //     })
-    // }
   }
 }

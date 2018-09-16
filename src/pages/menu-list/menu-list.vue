@@ -1,5 +1,6 @@
 <template>
   <div class="page-menu-list">
+    <download-banner v-bind="bannerProps" />
     <Toolbar v-bind="toolbarProps"/>
     <nav>
         <div class="category-header" style=""><span>Category</span></div>

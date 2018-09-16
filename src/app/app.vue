@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-
     <transition name="modal" v-if="showModal">
       <div class="modal-mask">
         <div class="modal-wrapper">
@@ -12,7 +11,7 @@
                 <!-- default footer -->
                 <i class="material-icons" @click="showModal = false">clear</i>
                 <button class="modal-default-button" @click="showModal = false">
-                  Cool! 
+                  Cool!
                 </button>
               </slot>
             </div>
