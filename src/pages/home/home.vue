@@ -17,6 +17,10 @@
               </div>
             </router-link>
         </div>
+        <p class="download-app-text" >Download the App for special offer and order tracking! </p>
+        <a href="https://play.google.com/store/apps/details?id=store.fooodie&referrer=utm_source%3DHomepage%26utm_medium%3Dplaystore" target="_blank" class="google_play">
+          <img src="../../assets/google_play_black.png">
+        </a>
     </div>
 
     <!-- Offer Section -->

@@ -12,7 +12,7 @@
   			<p class="info">{{bannerInfo}}</p>
   		</div>
   		<div>
-  			<a href="https://play.google.com/store/apps/details?id=store.fooodie" class="get-app" target="_blank">GET</a>
+  			<a href="https://play.google.com/store/apps/details?id=store.fooodie&referrer=utm_source%3DWebsite%26utm_medium%3Dmweb-download-banner" class="get-app" target="_blank">GET</a>
   		</div>
   	</div>
   </div>

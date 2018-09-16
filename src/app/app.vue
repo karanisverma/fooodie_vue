@@ -31,6 +31,11 @@
         </div>
         <ul>
           <li>
+            <a href="https://play.google.com/store/apps/details?id=store.fooodie&referrer=utm_source%3DHomepage%26utm_medium%3DMenu" target="_blank">
+              Download App
+            </a>
+          </li>
+          <li>
             <router-link
               :to="{ name: 'MenuList', params: { categoryId: 0 }}">
                 Menu
