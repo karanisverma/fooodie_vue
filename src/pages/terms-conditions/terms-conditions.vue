@@ -46,7 +46,7 @@
         <input id="tab-six" type="checkbox" name="tabs">
         <label for="tab-six">What if I want to cancel my order?</label>
         <div class="tab-content">
-          <p>You can cancel your order within 15 minutes after placing order.</p>
+          <p>You can cancel your order within 1 minutes after placing order.</p>
         </div>
       </div>
 

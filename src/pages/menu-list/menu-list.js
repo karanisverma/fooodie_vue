@@ -1,6 +1,7 @@
 import Toolbar from '~/components/toolbar'
 import QuantityButtonComponent from '~/components/quantity-button'
 import Cart from '~/components/cart'
+import DownloadBanner from '~/components/download-banner'
 export default {
   name: 'MenuList',
   computed: {
@@ -32,13 +33,18 @@ export default {
             method: () => this.$emit('toggleCartSidebar')
           }
         ]
+      },
+      bannerProps: {
+        bannerTitle: 'Download the Fooodie App',
+        bannerInfo: 'Order food online!'
       }
     }
   },
   components: {
     Toolbar,
     QuantityButtonComponent,
-    Cart
+    Cart,
+    DownloadBanner
   },
   mounted () {
     this.slider_init('.menu-slider')

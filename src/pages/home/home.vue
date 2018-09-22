@@ -1,6 +1,6 @@
 <template>
   <div class="home-page">
-
+    <download-banner v-bind="bannerProps" />
     <Toolbar
       v-bind="toolbarProps"
       @toggleSidebar="$emit('toggleSidebar');"/>
@@ -17,6 +17,10 @@
               </div>
             </router-link>
         </div>
+        <p class="download-app-text" >Download the App for special offer and order tracking! </p>
+        <a href="https://play.google.com/store/apps/details?id=store.fooodie&referrer=utm_source%3DHomepage%26utm_medium%3Dplaystore" target="_blank" class="google_play">
+          <img src="../../assets/google_play_black.png">
+        </a>
     </div>
 
     <!-- Offer Section -->
@@ -49,7 +53,7 @@
       </div>
     </div>
     <!-- Testimonial -->
-    <div class="web-wrapper">
+    <!-- <div class="web-wrapper">
       <h3>Our Reviews</h3>
       <div class="testimonial">
         <carousel :perPage = "1" :autoplay = "true" :minSwipeDistance = "3" :autoplayTimeout = "5000" :autoplayHoverPause = "true"
@@ -73,10 +77,6 @@
           <slide>
             <div class="label">
               <div class="slide-one">
-                <!-- <img src="../../assets/reviewer/akanksha.jpg">
-                <p class="review-desc">It's good to have such kind of service in our home town, delicious food, punctual delivery, thanks foodie, even my parents liked the food. Keep growing .</p>
-                <p class="name">- Akansha Shrivastava</p>
-                <p class="designation">Student</p> -->
                  <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FAgrawal07mudit%2Fposts%2F1588895457868122%3A0&width=500" width="250" height="373" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
               </div>
             </div>
@@ -112,8 +112,9 @@
 
         </carousel>
       </div>
-    </div>
-    <div class="order-now-below">
+    </div> -->
+
+    <!-- <div class="order-now-below">
       <h3>Order Now</h3>
        <router-link
           :to="{ name: 'MenuList', params: { categoryId: 0 }}">
@@ -123,7 +124,7 @@
             </p>
           </div>
         </router-link>
-    </div>
+    </div> -->
   </div>
 </template>
 

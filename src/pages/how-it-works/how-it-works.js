@@ -1,8 +1,10 @@
 import Toolbar from '~/components/toolbar'
+import DownloadBanner from '~/components/download-banner'
 export default {
   name: 'HowItWorksPage',
   components: {
-    Toolbar
+    Toolbar,
+    DownloadBanner
   },
   data () {
     return {
@@ -15,6 +17,10 @@ export default {
           icon: 'menu',
           method: () => this.$emit('toggleSidebar')
         }
+      },
+      bannerProps: {
+        bannerTitle: 'Download the Fooodie App',
+        bannerInfo: 'Order food online!'
       }
     }
   }
