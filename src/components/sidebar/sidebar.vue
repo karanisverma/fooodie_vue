@@ -48,6 +48,12 @@
           </div>
           <div class="item-name">Help And Support</div>
         </div>
+        <div class="item" @click="openPrivacyPolicy">
+          <div class="icon">
+            <i class="material-icons">lock</i>
+          </div>
+          <div class="item-name">Privacy policy</div>
+        </div>
       </nav>
       <div class="sidebar-footer">
         <div class="social-link">

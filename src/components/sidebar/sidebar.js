@@ -28,6 +28,12 @@ export default {
       })
       this.$emit('update:show', !this.show)
     },
+    openPrivacyPolicy () {
+      this.$router.push({
+        name: 'PrivacyPolicyPage'
+      })
+      this.$emit('update:show', !this.show)
+    },
     openHowItWorks () {
       this.$router.push({
         name: 'HowItWorksPage'

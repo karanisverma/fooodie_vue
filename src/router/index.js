@@ -39,6 +39,12 @@ export default new Router({
         import(/* webpackChunkName: "page-how-it-works" */ '../pages/how-it-works')
     },
     {
+      path: '/privacy-policy',
+      name: 'PrivacyPolicyPage',
+      component: () =>
+        import(/* webpackChunkName: "page-how-it-works" */ '../pages/privacy-policy')
+    },
+    {
       path: '*',
       name: 'PageNotFound',
       component: () =>

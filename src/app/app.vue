@@ -83,11 +83,17 @@
               </router-link>
             </li>
             <li>
-            <router-link
-              :to="{ name: 'TermsAndConditions'}">
-              Help and Support
-            </router-link>
-          </li>
+              <router-link
+                :to="{ name: 'TermsAndConditions'}">
+                Help and Support
+              </router-link>
+            </li>
+            <li>
+              <router-link
+                :to="{ name: 'PrivacyPolicyPage'}">
+                Privacy Policy
+              </router-link>
+            </li>
           </ul>
         </div>
         <div class="copyright-social">
