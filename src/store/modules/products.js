@@ -6,8 +6,8 @@ class ProductState {
     this.name = 'Products'
     this.allProducts = {}
     this.quantity = 0
-    this.APIHOST = 'https://api.fooodie.store'
-    // this.APIHOST = 'http://35.154.40.23'
+    // this.APIHOST = 'https://api.fooodie.store'
+    this.APIHOST = 'http://35.154.40.23'
     this.header = { 'Content-Type': 'application/json' }
   }
   getAllProduct () {

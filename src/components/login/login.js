@@ -6,7 +6,10 @@ export default {
   data () {
     return {
       // mutableQuantity: this.quantity
-      userIntension: this.mode
+      userIntension: this.mode,
+      phone: null,
+      email: null,
+      password: null
     }
   },
   computed: {
@@ -22,24 +25,30 @@ export default {
   },
   methods: {
     handleModeChange () {
-      this.userIntension === 'login' ? this.userIntension = 'signup' : this.userIntension = 'login'
+      this.userIntension === 'login'
+        ? (this.userIntension = 'signup')
+        : (this.userIntension = 'login')
     },
-    doLogin (phoneNumber, password) {
-      const userCredentials = { phoneNumber, password }
-      this.$emit('loginUser', userCredentials)
-    },
-    doSignUp (email, phoneNumber, password) {
-      const userInfo = { email, phoneNumber, password }
-      this.$emit('signupUser', userInfo)
-    },
-    addToCart (q, type = '') {
-      this.mutableQuantity = q
-      var productInfo = {
-        productId: this.productId,
-        quantity: this.mutableQuantity,
-        type: type
+    doLogin () {
+      let { User } = this.$store.state
+      const userCredentials = {
+        phone: this.phone,
+        password: this.password
       }
-      this.$emit('UpdateProductsQuantity', productInfo)
+      User.loginUser(userCredentials).then((res) => {
+        this.$emit('loginSuccess', userCredentials)
+      })
+    },
+    doSignUp () {
+      let { User } = this.$store.state
+      const userInfo = {
+        email: this.email,
+        phone: this.phone,
+        password: this.password
+      }
+      User.signupUser(userInfo).then((res) => {
+        this.$emit('signupSuccess', userInfo)
+      })
     }
   }
 }
