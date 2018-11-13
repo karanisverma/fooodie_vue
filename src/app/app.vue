@@ -53,6 +53,12 @@
               Help And Support
             </router-link>
           </li>
+          <li>
+            <router-link
+              :to="{ name: 'TermsAndConditions'}">
+              Login
+            </router-link>
+          </li>
         </ul>
       </div>
     </div>
@@ -92,6 +98,12 @@
               <router-link
                 :to="{ name: 'PrivacyPolicyPage'}">
                 Privacy Policy
+              </router-link>
+            </li>
+            <li>
+              <router-link
+                :to="{ name: 'PrivacyPolicyPage'}">
+                Login
               </router-link>
             </li>
           </ul>

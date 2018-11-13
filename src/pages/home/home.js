@@ -1,4 +1,5 @@
 import Toolbar from '~/components/toolbar'
+import Login from '~/components/login'
 import DownloadBanner from '~/components/download-banner'
 import { Carousel, Slide } from 'vue-carousel'
 export default {
@@ -7,6 +8,7 @@ export default {
     Toolbar,
     Carousel,
     Slide,
+    Login,
     DownloadBanner
   },
   data () {

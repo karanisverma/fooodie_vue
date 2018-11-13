@@ -50,9 +50,15 @@
         </div>
         <div class="item" @click="openPrivacyPolicy">
           <div class="icon">
-            <i class="material-icons">lock</i>
+            <i class="material-icons">notes</i>
           </div>
           <div class="item-name">Privacy policy</div>
+        </div>
+                <div class="item" @click="openTermsConditions">
+          <div class="icon">
+            <i class="material-icons">lock</i>
+          </div>
+          <div class="item-name">Signup/Login</div>
         </div>
       </nav>
       <div class="sidebar-footer">

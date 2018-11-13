@@ -1,6 +1,7 @@
 <template>
   <div class="home-page">
     <download-banner v-bind="bannerProps" />
+    <Login/>
     <Toolbar
       v-bind="toolbarProps"
       @toggleSidebar="$emit('toggleSidebar');"/>
