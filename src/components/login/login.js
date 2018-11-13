@@ -6,6 +6,7 @@ export default {
   data () {
     return {
       // mutableQuantity: this.quantity
+      userIntension: this.mode
     }
   },
   computed: {
@@ -20,12 +21,15 @@ export default {
     }
   },
   methods: {
+    handleModeChange () {
+      this.userIntension === 'login' ? this.userIntension = 'signup' : this.userIntension = 'login'
+    },
     doLogin (phoneNumber, password) {
-      const userCredentials = {phoneNumber, password}
+      const userCredentials = { phoneNumber, password }
       this.$emit('loginUser', userCredentials)
     },
     doSignUp (email, phoneNumber, password) {
-      const userInfo = {email, phoneNumber, password}
+      const userInfo = { email, phoneNumber, password }
       this.$emit('signupUser', userInfo)
     },
     addToCart (q, type = '') {

@@ -13,12 +13,18 @@
     
     <div class="input-wrapper">
       <input placeholder="Phone number" type="phone" />
-      <input placeholder="Email" type="email" />
+      <input  v-if="userIntension=='signup'" placeholder="Email" type="email" />
       <input placeholder="Password" type="password" />
-      <button class="cta">
+      <button class="cta" v-if="userIntension=='login'">
         Login
       </button>
-      <p>dont't have an account? <span class='switch-mode'>Singup here</span></p>
+      <button class="cta" v-if="userIntension=='signup'">
+        Signup
+      </button>
+      <p v-if="userIntension=='login'">dont't have an account? <span class='switch-mode' @click="handleModeChange">Singup here</span></p>
+      <p v-if="userIntension=='login'">forgot password</span></p>
+      <p v-if="userIntension=='signup'">already a user? <span class='switch-mode' @click="handleModeChange">Login here</span></p>
+      
     </div>
   </div>
 </div>
