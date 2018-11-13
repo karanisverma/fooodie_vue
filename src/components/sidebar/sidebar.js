@@ -11,6 +11,12 @@ export default {
   data () {
     return {}
   },
+  computed: {
+    isLogin () {
+      const { User } = this.$store.state
+      return User.isLogin
+    }
+  },
   methods: {
     toggleSidebar () {
       this.$emit('update:show', !this.show)

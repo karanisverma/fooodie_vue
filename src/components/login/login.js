@@ -9,7 +9,8 @@ export default {
       userIntension: this.mode,
       phone: null,
       email: null,
-      password: null
+      password: null,
+      isLoading: false
     }
   },
   computed: {
@@ -30,23 +31,37 @@ export default {
         : (this.userIntension = 'login')
     },
     doLogin () {
+      if (this.isLoading) {
+        return {}
+      }
       let { User } = this.$store.state
+      this.isLoading = true
       const userCredentials = {
         phone: this.phone,
         password: this.password
       }
-      User.loginUser(userCredentials).then((res) => {
+      User.loginUser(userCredentials).then(res => {
+        User.info = res.user
+        User.isLogin = true
+        this.isLoading = false
         this.$emit('loginSuccess', userCredentials)
       })
     },
     doSignUp () {
+      if (this.isLoading) {
+        return {}
+      }
+      this.isLoading = true
       let { User } = this.$store.state
       const userInfo = {
         email: this.email,
         phone: this.phone,
         password: this.password
       }
-      User.signupUser(userInfo).then((res) => {
+      User.signupUser(userInfo).then(res => {
+        User.info = res
+        this.isLoading = false
+        this.userIntension = 'login'
         this.$emit('signupSuccess', userInfo)
       })
     }

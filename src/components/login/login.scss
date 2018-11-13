@@ -12,7 +12,7 @@
   }
   .switch-mode {
     margin-top:.5em;
-    color:#888888;
+    color:#303030;
     text-decoration: underline;
     font-weight: bold;
     cursor: pointer;
@@ -85,6 +85,7 @@
     button{
       box-sizing: border-box;
       color: black;
+      position: relative;
       border: transparent;
       cursor: pointer;
       font-size: 12px;
@@ -96,6 +97,7 @@
       letter-spacing: .1em;
       text-transform: uppercase;
       border-radius: 3px;
+      min-height: 35px;
     }
   }
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */

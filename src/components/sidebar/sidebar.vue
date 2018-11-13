@@ -58,7 +58,12 @@
           <div class="icon">
             <i class="material-icons">lock</i>
           </div>
-          <div class="item-name">Signup/Login</div>
+          <div class="item-name" v-if="!isLogin" @click="$emit('showLogin')" href="#">
+                Login/Signup
+          </div>
+          <div class="item-name" v-if="isLogin"  @click="$emit('showLogin')" href="#">
+                Logout
+          </div>
         </div>
       </nav>
       <div class="sidebar-footer">

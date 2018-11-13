@@ -3,6 +3,7 @@ export default {
   data () {
     return {
       showSidebar: false,
+      loginModel: false,
       showCartSidebar: false,
       showModal: false,
       infoMessage: 'We will be back on Monday! (18 June 2018)'
@@ -10,6 +11,12 @@ export default {
   },
   created () {
     this.getAllProducts()
+  },
+  computed: {
+    isLogin () {
+      const { User } = this.$store.state
+      return User.isLogin
+    }
   },
   methods: {
     getAllProducts () {
@@ -38,7 +45,9 @@ export default {
     Sidebar: () =>
       import(/* webpackChunkName: 'component-sidebar' */ '../components/sidebar'),
     Cart: () =>
-      import(/* webpackChunkName: 'component-sidebar' */ '../components/cart')
+      import(/* webpackChunkName: 'component-sidebar' */ '../components/cart'),
+    Login: () =>
+      import(/* webpackChunkName: 'component-sidebar' */ '../components/login')
   },
   watch: {
     $route () {
