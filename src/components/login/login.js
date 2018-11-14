@@ -40,12 +40,14 @@ export default {
         phone: this.phone,
         password: this.password
       }
-      User.loginUser(userCredentials).then((res) => res.json()).then(res => {
-        User.info = res.user
-        User.isLogin = true
-        this.isLoading = false
-        this.$emit('loginSuccess', res)
-      })
+      User.loginUser(userCredentials)
+        .then(res => res.json())
+        .then(res => {
+          User.info = res.user
+          User.isLogin = true
+          this.isLoading = false
+          this.$emit('loginSuccess', res)
+        })
     },
     doSignUp () {
       if (this.isLoading) {

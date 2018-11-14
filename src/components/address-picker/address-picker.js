@@ -19,7 +19,5 @@ export default {
       this.$emit('addressChange')
     }
   },
-  mounted () {
-
-  }
+  mounted () {}
 }

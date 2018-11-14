@@ -28,7 +28,7 @@
           </p>
           <p class="cart-item-cost">{{item.price * item.quantity}}</p>
         </div>
-        <div v-if="showDelviery" class="cart-item-row delivery-charge">
+        <div v-if="showDelviery && totalCost !== 0" class="cart-item-row delivery-charge">
           <p class="cart-item-name">Delivery Charge</p>
           <p class="cart-item-cost">{{deliveryCharge}}</p>
           <span class="delivery-text">Free delivery on order above ₹399</span>
