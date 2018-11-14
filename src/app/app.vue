@@ -57,14 +57,14 @@
               <a v-if="!isLogin" @click.prevent="loginModel = true" href="#">
                 Login/Signup
               </a>
-              <a v-if="isLogin" @click.prevent="loginModel = true" href="#">
+              <a v-if="isLogin" @click.prevent="handelUserLogOut" href="#">
                 Logout
               </a>
             </li>
         </ul>
       </div>
     </div>
-    <Login mode="login" v-if="loginModel" @hideLogin='loginModel = false' @loginSuccess='loginModel = false'/>
+    <Login mode="login" v-if="loginModel" @hideLogin='loginModel = false' @loginSuccess='handelUserLogin'/>
     <router-view @toggleSidebar="showSidebar = !showSidebar" @toggleCartSidebar ="showCartSidebar = !showCartSidebar"></router-view>
     <sidebar :show.sync="showSidebar" @showLogin='loginModel = true'/>
     <cart :show.sync="showCartSidebar"/>

@@ -45,7 +45,7 @@
           <span class="total-cost-amount">{{totalCost}}</span>
         </div>
         <button @click="placeOrder" v-if="totalCost>0 && !showMinimumOrderWarning" id="checkOut">
-          Place Order</button>
+          Check Out</button>
         <button v-else style="background:#888888; display: flex; flex-direction: column; padding: 10px 0;">
           Minimum Order of ₹199
           <br/>

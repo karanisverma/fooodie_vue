@@ -6,6 +6,7 @@ class CartState {
   constructor () {
     this.name = 'Cart'
     this.items = {}
+    this.deliveryAddress = {}
   }
 }
 

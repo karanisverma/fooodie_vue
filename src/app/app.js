@@ -12,6 +12,14 @@ export default {
   created () {
     this.getAllProducts()
   },
+  mounted () {
+    const { User } = this.$store.state
+    let userInfo = localStorage.getItem('user')
+    if (userInfo) {
+      User.info = JSON.parse(userInfo)
+      User.isLogin = true
+    }
+  },
   computed: {
     isLogin () {
       const { User } = this.$store.state
@@ -19,6 +27,16 @@ export default {
     }
   },
   methods: {
+    handelUserLogOut () {
+      localStorage.removeItem('user')
+      const { User } = this.$store.state
+      User.userInfo = {}
+      User.isLogin = false
+    },
+    handelUserLogin (res) {
+      localStorage.setItem('user', JSON.stringify(res.user))
+      this.loginModel = false
+    },
     getAllProducts () {
       let { Products } = this.$store.state
       let { Cart } = this.$store.state

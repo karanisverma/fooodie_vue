@@ -98,7 +98,7 @@ export default {
           whatsappOrderUri,
         '_blank' // <- This is what makes it open in a new window.
       )
-      localStorage.clear()
+      localStorage.removeItem('Cart')
       location.reload()
     },
     toggleSidebar () {

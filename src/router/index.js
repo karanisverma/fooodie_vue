@@ -33,6 +33,12 @@ export default new Router({
         import(/* webpackChunkName: "page-terms-conditions" */ '../pages/terms-conditions')
     },
     {
+      path: '/checkout',
+      name: 'CheckOut',
+      component: () =>
+        import(/* webpackChunkName: "check-out" */ '../pages/checkout')
+    },
+    {
       path: '/how-it-works',
       name: 'HowItWorksPage',
       component: () =>
