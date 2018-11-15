@@ -61,7 +61,7 @@
           <span id="total-cost-lable">Total</span>
           <span class="total-cost-amount">{{totalCost}}</span>
         </div>
-				<button class="place-order"> Place Order By COD (₹ {{totalCost}})</button>
+				<button class="place-order" @click="placeOrder"> Place Order By COD (₹ {{totalCost}})</button>
       </div>
 			</aside>
 		</div>

@@ -26,12 +26,13 @@
   font-weight: 100;
 }
 .item-wrapper{
-  min-height: 300px;
+  min-height: 250px;
   color: black;
   overflow: auto;
   .empty-cart{
     height: 100%;
     display: flex;
+    padding: 3em;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;

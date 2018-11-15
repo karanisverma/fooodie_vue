@@ -11,7 +11,7 @@ export default {
     handleAddressSelection (address) {
       this.selectedAddress = address
       this.isAddressSelected = true
-      this.$emit('addressSelection')
+      this.$emit('addressSelection', address)
     },
     handleAddressChange () {
       this.isAddressSelected = false
@@ -19,5 +19,11 @@ export default {
       this.$emit('addressChange')
     }
   },
-  mounted () {}
+  mounted () {
+    let selectedAddress = localStorage.getItem('selectedAddress')
+    if (selectedAddress) {
+      this.selectedAddress = JSON.parse(selectedAddress)
+      this.isAddressSelected = true
+    }
+  }
 }

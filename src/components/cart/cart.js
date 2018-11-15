@@ -4,10 +4,6 @@ import QuantityButtonComponent from '~/components/quantity-button'
 export default {
   name: 'Cart',
   props: {
-    show: {
-      required: true,
-      type: Boolean
-    }
   },
   data () {
     return {
@@ -103,9 +99,6 @@ export default {
         name: 'CheckOut'
       })
       // location.reload()
-    },
-    toggleSidebar () {
-      this.$emit('update:show', !this.show)
     },
     updateQuantity (updatedProductInfo) {
       const { Products } = this.$store.state
