@@ -91,15 +91,18 @@ export default {
         order.push('_Delivery Charge_ -----> 49')
       }
       order.push(totalCost)
-      let orderString = order.join('\n')
-      let whatsappOrderUri = encodeURIComponent(orderString)
-      window.open(
-        'https://api.whatsapp.com/send?phone=919111351935&text=' +
-          whatsappOrderUri,
-        '_blank' // <- This is what makes it open in a new window.
-      )
-      localStorage.removeItem('Cart')
-      location.reload()
+      // let orderString = order.join('\n')
+      // let whatsappOrderUri = encodeURIComponent(orderString)
+      // window.open(
+      //   'https://api.whatsapp.com/send?phone=919111351935&text=' +
+      //     whatsappOrderUri,
+      //   '_blank' // <- This is what makes it open in a new window.
+      // )
+      // localStorage.removeItem('Cart')
+      this.$router.push({
+        name: 'CheckOut'
+      })
+      // location.reload()
     },
     toggleSidebar () {
       this.$emit('update:show', !this.show)

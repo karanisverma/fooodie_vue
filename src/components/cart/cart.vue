@@ -1,19 +1,5 @@
 <template>
-  <div class="cart-sidebar-wrapper no-select animate"  v-if="totalCost>0" :style="{transform: `translate3d(0,${this.show ? 0:91}%,0)`}">
-    <!-- slider background overlay -->
-    <div class="cart-sidebar-overlay"
-      @click.prevent="toggleSidebar"
-      :class="{visible: show}"
-    />
-    <!-- slider animation effect -->
-    <div class="sidebar of-a d-f fd-c jc-sb"
-
-    >
-      <div class="user">
-        <!-- <div class="user-icon"></div> -->
-        <i class="material-icons" v-if="this.show" @click="toggleSidebar">arrow_back</i>
-        <span @click="toggleSidebar">Checkout(₹{{totalCost}})</span>
-      </div>
+  <div class="cart-sidebar-wrapper no-select animate"  v-if="totalCost>0">
       <div class="item-wrapper">
         <div class="empty-cart" v-if="totalCost===0">
         <img class="empty-cart-img" src="../../assets/empty_cart/010-dishes.svg">
@@ -46,14 +32,13 @@
         </div>
         <button @click="placeOrder" v-if="totalCost>0 && !showMinimumOrderWarning" id="checkOut">
           Check Out</button>
-        <button v-else style="background:#888888; display: flex; flex-direction: column; padding: 10px 0;">
+        <button v-else id="disabledcheckOut">
           Minimum Order of ₹199
           <br/>
           <p style="width: 100%; font-size: 14px; margin: 0;">(Excluding delivery charge)</p>
         </button>
       </div>
     </div>
-  </div>
 </template>
 
 <script>

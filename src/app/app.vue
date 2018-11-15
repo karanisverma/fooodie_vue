@@ -67,7 +67,7 @@
     <Login mode="login" v-if="loginModel" @hideLogin='loginModel = false' @loginSuccess='handelUserLogin'/>
     <router-view @toggleSidebar="showSidebar = !showSidebar" @toggleCartSidebar ="showCartSidebar = !showCartSidebar"></router-view>
     <sidebar :show.sync="showSidebar" @showLogin='loginModel = true'/>
-    <cart :show.sync="showCartSidebar"/>
+    <!-- <cart :show.sync="showCartSidebar"/> -->
 
     <footer class="web-view">
       <div class="web-wrapper">

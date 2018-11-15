@@ -11,7 +11,8 @@ export default {
     return {
       contactNumber: '',
       addressTitle: 'Choose a delivery address',
-      addressSubTitle: 'Select the location where you want this order to be delivered',
+      addressSubTitle:
+        'Select the location where you want this order to be delivered',
       minimumOrder: 399,
       deliveryCharge: 49,
       showDelviery: false,

@@ -163,6 +163,7 @@
         </div>
     </div>
     </v-touch>
+     <cart :show.sync="showCartSidebar"/>
   </div>
 </template>
 
