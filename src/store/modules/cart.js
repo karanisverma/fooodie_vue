@@ -15,7 +15,7 @@ class CartState {
       body: JSON.stringify(order),
       headers: {
         'Content-Type': 'application/json; charset=utf-8',
-        'Authorization': authToken
+        Authorization: authToken
       }
     })
   }

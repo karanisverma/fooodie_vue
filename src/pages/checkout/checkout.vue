@@ -1,5 +1,28 @@
 <template>
   <div class="checkout">
+			<div class="modal-wrapper" v-if="showModal">
+				<div class="modal">
+					<div class="overlay"></div>
+					<div class="loader" v-if="isLoading">
+						<div class="lds-ring" v-if="isLoading"><div></div><div></div><div></div><div></div></div>
+						<h2>Placing your order</h2>
+						<p>Please wait, Kyu ki sabar kaa fal spicy hota hain 😂. This may take few seconds</p>
+					</div>
+					<div class="order-placement-message">
+						<div class="success" v-if="isOrderPlaced && !isLoading">
+							<h2>Your order has been placed successfully! 👍🏼</h2>
+							<p>Please make sure that you have your contact number: {{contactNumber}} reachable, 
+								we will call you for order confirmation. If it's not reachable we will not be able to accept your order.</p>
+							<button>Track Your Order</button>
+						</div>
+						<div class="fail" v-if="!isOrderPlaced && !isLoading">
+							<h2>Oh! Something went wrong 🙄</h2>
+							<p>Your order is not placed due to some technical issue 🙄, we are sorry that you have to see this 😔. Please try again.</p>
+							<button @click="placeOrder">Try Again</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		<div class="wrapper">
 			<section class="address-and-payment">
 				<section>
@@ -16,7 +39,7 @@
 					<!-- phone number -->
 					<h2>Contact number</h2>
 					<p>We will contact you on this number at the time of order confirmation and delivery</p>
-					<input type="phone" class="contact-number" v-model="contactNumber"  max="10" @keyup="handleNumberChange">
+					<input type="phone" class="contact-number" v-model="contactNumber"  max="10">
 					
 				</section>
 				<section class="payment-wrapper">

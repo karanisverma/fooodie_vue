@@ -9,6 +9,9 @@ export default {
   },
   data () {
     return {
+      isLoading: false,
+      showModal: false,
+      isOrderPlaced: false,
       contactNumber: '',
       addressTitle: 'Choose a delivery address',
       addressSubTitle:
@@ -55,6 +58,8 @@ export default {
   },
   methods: {
     placeOrder () {
+      this.isLoading = true
+      this.showModal = true
       const { Cart, User } = this.$store.state
       const authToken = `ApiKey ${User.info.phone}:${User.info.key}`
       if (!this.selectedAddress) {
@@ -64,18 +69,19 @@ export default {
 
       const data = {
         orderDetails: Cart.items,
+        contactNumber: this.contactNumber,
         orderAddress: {
           locationID: this.selectedAddress.id
         }
       }
-      Cart.placeOrder(data, authToken).then(res => res.json()).then(res => {
-        console.log('order placement success!------->', res)
-      })
+      Cart.placeOrder(data, authToken)
+        .then(res => res.json())
+        .then(res => {
+          console.log('order placement success!------->', res)
+          this.isLoading = false
+          this.isOrderPlaced = true
+        })
       console.log('data --->', JSON.stringify(data))
-    },
-    handleNumberChange () {
-      const { User } = this.$store.state
-      User.info.phone = this.contactNumber
     },
     handleAddressSelection (address) {
       localStorage.setItem('selectedAddress', JSON.stringify(address))

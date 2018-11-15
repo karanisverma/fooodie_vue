@@ -3,8 +3,7 @@
 import QuantityButtonComponent from '~/components/quantity-button'
 export default {
   name: 'Cart',
-  props: {
-  },
+  props: {},
   data () {
     return {
       minimumOrder: 399,

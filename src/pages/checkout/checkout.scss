@@ -176,3 +176,78 @@
     flex: 2;
   }
 }
+.modal-wrapper{
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.51);
+  padding: 0;
+  margin: 0;
+  z-index: 11;
+  .overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: #ffffff87;
+    z-index: 11;
+  }
+  .loader{
+    position: relative;
+    margin: auto;
+    width: auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 11;
+    h2,p{
+      margin: 0
+    }
+    p{
+      margin-bottom: 2em;
+    }
+    .lds-ring{
+      display: inline-block;
+      position: relative;
+      width: 50px;
+      height: 50px;
+      top: -10px;
+      left: -10px;
+    }
+  }
+  .order-placement-message{
+    z-index: 11;
+  }
+  .modal{
+    background: white;
+    color: black;
+    text-align: left;
+    padding: 2em;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    z-index: 12;
+    position: relative;
+    align-items: center;
+    min-height: 250px;
+    button{
+      box-sizing: border-box;
+      color: #575757;
+      position: relative;
+      border: transparent;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 700;
+      background: #efeb42;
+      padding: .7em;
+      margin-top: 1em;
+      width: 100%;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-radius: 3px;
+      min-height: 35px;
+    }
+  }
+}
