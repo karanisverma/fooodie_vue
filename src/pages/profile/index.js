@@ -1,2 +1,2 @@
-import PrivacyPolicy from './privacy-policy.vue'
-module.exports = PrivacyPolicy
+import Profile from './profile.vue'
+module.exports = Profile

@@ -51,6 +51,12 @@ export default new Router({
         import(/* webpackChunkName: "page-how-it-works" */ '../pages/privacy-policy')
     },
     {
+      path: '/profile',
+      name: 'Profile',
+      component: () =>
+        import(/* webpackChunkName: "page-404" */ '../pages/profile')
+    },
+    {
       path: '*',
       name: 'PageNotFound',
       component: () =>
