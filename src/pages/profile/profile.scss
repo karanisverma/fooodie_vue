@@ -3,6 +3,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    .current-tab{
+          background: #2e7983;
+          color: white;
+    }
     .wrapper{
       background: gray;
       padding: 0em;

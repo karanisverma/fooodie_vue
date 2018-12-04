@@ -15,14 +15,20 @@
         </div>
         <div class="profile-menu">
             <ul>
-                <li>Upcoming Order</li>
-                <li>Previous Order</li>
-                <li>Saved Address</li>
+                <li @click= "switchTab('upcomingOrder')" :class="{'current-tab' : activeTab == 'upcomingOrder'}">Upcoming Order</li>
+                <li @click= "switchTab('prevOrder')" :class="{'current-tab' : activeTab == 'prevOrder'}">Previous Order</li>
+                <li @click= "switchTab('savedAddress')" :class="{'current-tab' : activeTab == 'savedAddress'}">Saved Address</li>
             </ul>
         </div>
     </section>
     <section class="detail">
-        <div class="address" v-for="address, i in addresses">
+        <div v-if="activeTab == 'upcomingOrder'">
+            upcoming orders will be displayed here
+        </div>
+        <div v-if="activeTab == 'prevOrder'">
+            past order will be displayed here
+        </div>
+        <div class="address" v-if="activeTab == 'savedAddress'" v-for="address, i in addresses">
             <h3>{{address.flat_number}}</h3>
             <p id="full-address"></p>{{address.google_map_formatted_address}}
         </div>
