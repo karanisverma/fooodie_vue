@@ -6,6 +6,7 @@ class UserState {
   constructor () {
     this.name = 'User'
     this.info = {}
+    this.orders = []
     this.isLogin = false
     this.APIHOST = 'http://35.154.40.23'
   }
@@ -32,7 +33,7 @@ class UserState {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json; charset=utf-8',
-        'Authorization': `ApiKey ${phoneNumber}:${key}`
+        Authorization: `ApiKey ${phoneNumber}:${key}`
       }
     })
   }

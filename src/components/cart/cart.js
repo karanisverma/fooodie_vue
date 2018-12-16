@@ -97,9 +97,7 @@ export default {
 
       // check if user is login?
       // route it to the login flow
-      const {
-        User
-      } = this.$store.state
+      const { User } = this.$store.state
       if (User.isLogin) {
         this.$router.push({
           name: 'CheckOut'

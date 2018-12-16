@@ -8,12 +8,47 @@
           color: white;
     }
     .wrapper{
-      background: gray;
-      padding: 0em;
-      border-radius: 3px;
-      display: flex;
-      width: 70%;
-      text-align: center;
+    background: gray;
+    padding: 0em;
+    border-radius: 3px;
+    display: flex;
+    width: 70%;
+    text-align: center;
+    margin-top: 10em;
+    margin-bottom: 5em;
+    }
+    .tag{
+        border-radius: 16px;
+        font-weight: 200;
+        font-size: .8em;
+        padding: .4em 1em;
+    }
+    .pending{
+          background: #3e858f;
+          color: white;
+
+    }
+    .accepted{
+          background: #558f3e;
+          color: white;
+    }
+    .delivered{
+          background: #4e8f3e;
+          color: white;
+    }
+    .cancelled{
+          background: #8f3e3e;
+          color: white;
+    }
+    .rejected{
+          background: #8a8f3e;
+          color: white;
+    }
+    .orders-wrapper{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
     }
     .profile-sidebar{
       flex: 1;
@@ -25,6 +60,8 @@
       flex: 4;
       display: flex;
       flex-wrap: wrap;
+      height: 80vh;
+      overflow: auto;
     }
     .profile-details{
       padding: 1em;
@@ -62,7 +99,28 @@
           }
       }
     }
+.order{
+    text-align: left;
+    background: white;
+    margin: 1em;
+    padding: 1em;
+    color: gray;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.order-title{
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+}
+.order-details{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+}
   }
+
 
 @media screen and (max-width: 48em) {
   .profile {
