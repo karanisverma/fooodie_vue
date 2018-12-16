@@ -14,20 +14,24 @@ export default {
       User.info = JSON.parse(userInfo)
       User.isLogin = true
       User.getOrders(User.info.phone, User.info.key)
-      .then(res => res.json())
-      .then((res) => {
-        User.orders = res.orders
-      })
+        .then(res => res.json())
+        .then(res => {
+          User.orders = res.orders
+        })
     }
   },
   computed: {
     pendingOrders () {
       const { User } = this.$store.state
-      return User.orders.filter(o => o.status === 'Pending' || o.status === 'Accepted')
+      return User.orders.filter(
+        o => o.status === 'Pending' || o.status === 'Accepted'
+      )
     },
     previousOrders () {
       const { User } = this.$store.state
-      return User.orders.filter(o => o.status !== 'Pending' && o.status !== 'Accepted')
+      return User.orders.filter(
+        o => o.status !== 'Pending' && o.status !== 'Accepted'
+      )
     },
     addresses () {
       const { User } = this.$store.state
@@ -50,6 +54,10 @@ export default {
     }
   },
   methods: {
+    getFormattedDate (stringDate) {
+      let date = new Date(stringDate)
+      return `${date.getDate()}/${date.getMonth()}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()} `
+    },
     switchTab (selectedTab) {
       this.activeTab = selectedTab
       let query = Object.assign({}, this.$route.query, {

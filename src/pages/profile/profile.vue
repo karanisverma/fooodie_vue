@@ -30,16 +30,25 @@
                         <span :class="[order.status.toLowerCase(),'tag']">{{order.status}}</span>
                     </div>
                     <div class="order-details">
-                        Time: {{order.time}}
-                        Amount: {{order.totalAmount}}
-                        Order Details:
-                        <div class="ordered-items" v-for ="item in order.order" :key="item.product_id">
-                            {{item.product_name}}
-                            {{item.quantity}}
+                        <div class="time-amount-wrapper">
+                            <span>Time: {{getFormattedDate(order.time)}}</span>
+                            <span>Amount: {{order.paidamount}}</span>
                         </div>
+                        <div class="order-item-wrapper">
+                            <span>
+                                Order Details:
+                            </span>
+                        <div class="items">
+                            <div class="ordered-items" v-for ="item in order.order" :key="item.product_id">
+                            <span>{{item.product_name}}</span>
+                            <span>{{item.quantity}}</span>
+                        </div>
+                        </div>
+                        </div>
+                    
                         <div class="location">
-                            Flat Number : {{order.location.flat_number}}
-                            Landmark : {{order.location.landmark}}
+                            <span>Flat Number : {{order.location.flat_number}}</span>
+                            <span>Landmark : {{order.location.landmark}}</span>
                         </div>
                     </div>
                 </div>
@@ -49,20 +58,29 @@
             <div class="orders-wrapper">
                 <div class="order" v-for="order in previousOrders" :key="order.order_id">
                     <div class="order-title">
-                        <span> #{{order.order_id}}</span>
+                        <span>#{{order.order_id}}</span>
                         <span :class="[order.status.toLowerCase(),'tag']">{{order.status}}</span>
                     </div>
                     <div class="order-details">
-                        Time: {{order.time}}
-                        Amount: {{order.totalAmount}}
-                        Order Details:
-                        <div class="ordered-items" v-for ="item in order.order" :key="item.product_id">
-                            {{item.product_name}}
-                            {{item.quantity}}
+                        <div class="time-amount-wrapper">
+                            <span>Time: {{getFormattedDate(order.time)}}</span>
+                            <span>Amount: {{order.paidamount}}</span>
                         </div>
+                        <div class="order-item-wrapper">
+                            <span>
+                                Order Details:
+                            </span>
+                        <div class="items">
+                            <div class="ordered-items" v-for ="item in order.order" :key="item.product_id">
+                            <span>{{item.product_name}}</span>
+                            <span>{{item.quantity}}</span>
+                        </div>
+                        </div>
+                        </div>
+                    
                         <div class="location">
-                            Flat Number : {{order.location.flat_number}}
-                            Landmark : {{order.location.landmark}}
+                            <span>Flat Number : {{order.location.flat_number}}</span>
+                            <span>Landmark : {{order.location.landmark}}</span>
                         </div>
                     </div>
                 </div>
