@@ -163,7 +163,7 @@
         </div>
     </div>
     </v-touch>
-     <cart/>
+     <cart @showLogin="$emit('showLogin')"/>
   </div>
 </template>
 

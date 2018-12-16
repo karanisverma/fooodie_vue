@@ -27,6 +27,15 @@ class UserState {
       }
     })
   }
+  getOrders (phoneNumber, key) {
+    return fetch(`${this.APIHOST}/api/v1/order/list/`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json; charset=utf-8',
+        'Authorization': `ApiKey ${phoneNumber}:${key}`
+      }
+    })
+  }
 }
 
 export default new Vuex.Store({

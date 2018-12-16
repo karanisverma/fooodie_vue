@@ -94,10 +94,20 @@ export default {
       //   '_blank' // <- This is what makes it open in a new window.
       // )
       // localStorage.removeItem('Cart')
-      this.$router.push({
-        name: 'CheckOut'
-      })
-      // location.reload()
+
+      // check if user is login?
+      // route it to the login flow
+      const {
+        User
+      } = this.$store.state
+      if (User.isLogin) {
+        this.$router.push({
+          name: 'CheckOut'
+        })
+      } else {
+        this.$emit('showLogin')
+        console.log('showing login emitted')
+      }
     },
     updateQuantity (updatedProductInfo) {
       const { Products } = this.$store.state
