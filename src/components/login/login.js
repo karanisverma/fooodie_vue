@@ -60,12 +60,13 @@ export default {
         phone: this.phone,
         password: this.password
       }
-      User.signupUser(userInfo).then(res => {
-        User.info = res
-        this.isLoading = false
-        this.userIntension = 'login'
-        this.$emit('signupSuccess', userInfo)
-      })
+      User.signupUser(userInfo)
+        .then(res => {
+          User.info = res
+          this.isLoading = false
+          this.userIntension = 'login'
+          this.$emit('signupSuccess', userInfo)
+        })
     }
   }
 }

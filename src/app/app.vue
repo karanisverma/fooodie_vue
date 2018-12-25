@@ -57,9 +57,11 @@
               <a v-if="!isLogin" @click.prevent="loginModel = true" href="#">
                 Login/Signup
               </a>
-              <a v-if="isLogin" @click.prevent="handelUserLogOut" href="#">
-                Logout
-              </a>
+              <router-link
+                v-if="isLogin"
+                :to="{name: 'Profile'}">
+                Profile  
+              </router-link>
             </li>
         </ul>
       </div>

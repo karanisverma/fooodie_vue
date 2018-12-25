@@ -34,6 +34,11 @@ export default {
       })
       this.$emit('update:show', !this.show)
     },
+    openUserProfile () {
+      this.$router.push({
+        name: 'Profile'
+      })
+    },
     openPrivacyPolicy () {
       this.$router.push({
         name: 'PrivacyPolicyPage'

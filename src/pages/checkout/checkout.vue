@@ -13,7 +13,10 @@
 							<h2>Your order has been placed successfully! 👍🏼</h2>
 							<p>Please make sure that you have your contact number: {{contactNumber}} reachable, 
 								we will call you for order confirmation. If it's not reachable we will not be able to accept your order.</p>
-							<button>Track Your Order</button>
+							<router-link 
+								:to="{name: 'Profile', query: { activeTab: 'upcomingOrder' } }">
+									<button>Track Your Order</button>
+							</router-link>
 						</div>
 						<div class="fail" v-if="!isOrderPlaced && !isLoading">
 							<h2>Oh! Something went wrong 🙄</h2>

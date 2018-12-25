@@ -60,7 +60,7 @@ export default {
     placeOrder () {
       this.isLoading = true
       this.showModal = true
-      const { Cart, User } = this.$store.state
+      const { Cart, User, Products } = this.$store.state
       const authToken = `ApiKey ${User.info.phone}:${User.info.key}`
       if (!this.selectedAddress) {
         alert('Please Select or Add the address')
@@ -77,11 +77,17 @@ export default {
       Cart.placeOrder(data, authToken)
         .then(res => res.json())
         .then(res => {
-          console.log('order placement success!------->', res)
+          // empting the cart once order is placed
+          localStorage.removeItem('Cart')
+          Cart.items = {}
+          Products.allProducts = Products.allProducts.map(product =>
+            Object.assign({}, product, { quantity: 0 })
+          )
           this.isLoading = false
           this.isOrderPlaced = true
+          console.log('Cart.items-->', JSON.stringify(Products.allProducts))
         })
-      console.log('data --->', JSON.stringify(data))
+        .catch(err => console.log('error-->', err))
     },
     handleAddressSelection (address) {
       localStorage.setItem('selectedAddress', JSON.stringify(address))

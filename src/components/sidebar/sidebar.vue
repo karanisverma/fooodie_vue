@@ -37,7 +37,6 @@
         </div>
         <div class="item" @click="openHowItWorks">
           <div class="icon">
-            <!-- <i class="material-icons">work</i> -->
             <i class="material-icons">directions_run</i>
           </div>
           <div class="item-name">How It Works</div>
@@ -61,8 +60,8 @@
           <div class="item-name" v-if="!isLogin" @click="$emit('showLogin')" href="#">
                 Login/Signup
           </div>
-          <div class="item-name" v-if="isLogin"  @click="$emit('showLogin')" href="#">
-                Logout
+          <div class="item-name" v-if="isLogin"  @click="openUserProfile" href="#">
+                Profile
           </div>
         </div>
       </nav>
