@@ -33,6 +33,12 @@ export default new Router({
         import(/* webpackChunkName: "page-terms-conditions" */ '../pages/terms-conditions')
     },
     {
+      path: '/checkout',
+      name: 'CheckOut',
+      component: () =>
+        import(/* webpackChunkName: "check-out" */ '../pages/checkout')
+    },
+    {
       path: '/how-it-works',
       name: 'HowItWorksPage',
       component: () =>
@@ -43,6 +49,12 @@ export default new Router({
       name: 'PrivacyPolicyPage',
       component: () =>
         import(/* webpackChunkName: "page-how-it-works" */ '../pages/privacy-policy')
+    },
+    {
+      path: '/profile',
+      name: 'Profile',
+      component: () =>
+        import(/* webpackChunkName: "page-404" */ '../pages/profile')
     },
     {
       path: '*',

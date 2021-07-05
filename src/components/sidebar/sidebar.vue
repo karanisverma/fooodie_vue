@@ -37,7 +37,6 @@
         </div>
         <div class="item" @click="openHowItWorks">
           <div class="icon">
-            <!-- <i class="material-icons">work</i> -->
             <i class="material-icons">directions_run</i>
           </div>
           <div class="item-name">How It Works</div>
@@ -50,9 +49,20 @@
         </div>
         <div class="item" @click="openPrivacyPolicy">
           <div class="icon">
-            <i class="material-icons">lock</i>
+            <i class="material-icons">notes</i>
           </div>
           <div class="item-name">Privacy policy</div>
+        </div>
+                <div class="item" @click="openTermsConditions">
+          <div class="icon">
+            <i class="material-icons">lock</i>
+          </div>
+          <div class="item-name" v-if="!isLogin" @click="$emit('showLogin')" href="#">
+                Login/Signup
+          </div>
+          <div class="item-name" v-if="isLogin"  @click="openUserProfile" href="#">
+                Profile
+          </div>
         </div>
       </nav>
       <div class="sidebar-footer">

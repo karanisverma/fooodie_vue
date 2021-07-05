@@ -1,0 +1,66 @@
+.address-picker {
+ .address-list, .selected-address{ display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+  flex:1;
+}
+.selected-address {
+  flex-direction: column;
+  p{
+    padding-left: 2%;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0;
+    line-height: 1em;
+    text-decoration: underline;
+  }
+
+}
+  .address {
+    width: 40%;
+    margin: 2% 2%;
+    padding: 3%;
+    background: white;
+    text-align: left;
+    border-radius: 3px;
+}
+  .landmark{
+    font-weight: normal;
+    color: darkslategray;
+    text-align: left;
+    font-size: 18px;
+  }
+  .flat-number{
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    color: black;
+  }
+  .full-address{
+    color: gray;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+  }
+  .delivery-selector{
+    box-sizing: border-box;
+    color: #575757;
+    position: relative;
+    border: transparent;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    background: #efeb42;
+    padding: .7em;
+    margin-top: 1em;
+    width: 50%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    min-height: 35px;
+  }
+}
+
+
+@media screen and (max-width: 48em) {
+}

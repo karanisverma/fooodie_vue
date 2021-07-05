@@ -53,12 +53,23 @@
               Help And Support
             </router-link>
           </li>
+            <li>
+              <a v-if="!isLogin" @click.prevent="loginModel = true" href="#">
+                Login/Signup
+              </a>
+              <router-link
+                v-if="isLogin"
+                :to="{name: 'Profile'}">
+                Profile  
+              </router-link>
+            </li>
         </ul>
       </div>
     </div>
-    <router-view @toggleSidebar="showSidebar = !showSidebar" @toggleCartSidebar ="showCartSidebar = !showCartSidebar"></router-view>
-    <sidebar :show.sync="showSidebar"/>
-    <cart :show.sync="showCartSidebar"/>
+    <Login mode="login" v-if="loginModel" @hideLogin='loginModel = false' @loginSuccess='handelUserLogin'/>
+    <router-view @toggleSidebar="showSidebar = !showSidebar" @showLogin="loginModel = true" @toggleCartSidebar ="showCartSidebar = !showCartSidebar"></router-view>
+    <sidebar :show.sync="showSidebar" @showLogin='loginModel = true'/>
+    <!-- <cart :show.sync="showCartSidebar"/> -->
 
     <footer class="web-view">
       <div class="web-wrapper">
@@ -93,6 +104,11 @@
                 :to="{ name: 'PrivacyPolicyPage'}">
                 Privacy Policy
               </router-link>
+            </li>
+            <li>
+              <p v-if="!isLogin" @click="loginModel = true">
+                Login
+              </p>
             </li>
           </ul>
         </div>

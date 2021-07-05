@@ -3,6 +3,7 @@ export default {
   data () {
     return {
       showSidebar: false,
+      loginModel: false,
       showCartSidebar: false,
       showModal: false,
       infoMessage: 'We will be back on Monday! (18 June 2018)'
@@ -11,7 +12,31 @@ export default {
   created () {
     this.getAllProducts()
   },
+  mounted () {
+    const { User } = this.$store.state
+    let userInfo = localStorage.getItem('user')
+    if (userInfo) {
+      User.info = JSON.parse(userInfo)
+      User.isLogin = true
+    }
+  },
+  computed: {
+    isLogin () {
+      const { User } = this.$store.state
+      return User.isLogin
+    }
+  },
   methods: {
+    handelUserLogOut () {
+      localStorage.removeItem('user')
+      const { User } = this.$store.state
+      User.userInfo = {}
+      User.isLogin = false
+    },
+    handelUserLogin (res) {
+      localStorage.setItem('user', JSON.stringify(res.user))
+      this.loginModel = false
+    },
     getAllProducts () {
       let { Products } = this.$store.state
       let { Cart } = this.$store.state
@@ -38,7 +63,9 @@ export default {
     Sidebar: () =>
       import(/* webpackChunkName: 'component-sidebar' */ '../components/sidebar'),
     Cart: () =>
-      import(/* webpackChunkName: 'component-sidebar' */ '../components/cart')
+      import(/* webpackChunkName: 'component-sidebar' */ '../components/cart'),
+    Login: () =>
+      import(/* webpackChunkName: 'component-sidebar' */ '../components/login')
   },
   watch: {
     $route () {

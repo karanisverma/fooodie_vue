@@ -3,12 +3,7 @@
 import QuantityButtonComponent from '~/components/quantity-button'
 export default {
   name: 'Cart',
-  props: {
-    show: {
-      required: true,
-      type: Boolean
-    }
-  },
+  props: {},
   data () {
     return {
       minimumOrder: 399,
@@ -91,18 +86,26 @@ export default {
         order.push('_Delivery Charge_ -----> 49')
       }
       order.push(totalCost)
-      let orderString = order.join('\n')
-      let whatsappOrderUri = encodeURIComponent(orderString)
-      window.open(
-        'https://api.whatsapp.com/send?phone=919111351935&text=' +
-          whatsappOrderUri,
-        '_blank' // <- This is what makes it open in a new window.
-      )
-      localStorage.clear()
-      location.reload()
-    },
-    toggleSidebar () {
-      this.$emit('update:show', !this.show)
+      // let orderString = order.join('\n')
+      // let whatsappOrderUri = encodeURIComponent(orderString)
+      // window.open(
+      //   'https://api.whatsapp.com/send?phone=919111351935&text=' +
+      //     whatsappOrderUri,
+      //   '_blank' // <- This is what makes it open in a new window.
+      // )
+      // localStorage.removeItem('Cart')
+
+      // check if user is login?
+      // route it to the login flow
+      const { User } = this.$store.state
+      if (User.isLogin) {
+        this.$router.push({
+          name: 'CheckOut'
+        })
+      } else {
+        this.$emit('showLogin')
+        console.log('showing login emitted')
+      }
     },
     updateQuantity (updatedProductInfo) {
       const { Products } = this.$store.state

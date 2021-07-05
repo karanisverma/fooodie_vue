@@ -11,6 +11,12 @@ export default {
   data () {
     return {}
   },
+  computed: {
+    isLogin () {
+      const { User } = this.$store.state
+      return User.isLogin
+    }
+  },
   methods: {
     toggleSidebar () {
       this.$emit('update:show', !this.show)
@@ -27,6 +33,11 @@ export default {
         name: 'TermsAndConditions'
       })
       this.$emit('update:show', !this.show)
+    },
+    openUserProfile () {
+      this.$router.push({
+        name: 'Profile'
+      })
     },
     openPrivacyPolicy () {
       this.$router.push({
